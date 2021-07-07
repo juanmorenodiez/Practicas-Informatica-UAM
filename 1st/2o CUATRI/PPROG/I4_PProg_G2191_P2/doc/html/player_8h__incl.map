@@ -1,0 +1,6 @@
+<map id="include/player.h" name="include/player.h">
+<area shape="rect" id="node2" href="$object_8h.html" title="Implements the game object commands. " alt="" coords="10,155,78,181"/>
+<area shape="rect" id="node5" href="$inventory_8h.html" title="organises the objects in a backpack " alt="" coords="79,80,166,107"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="Defines some structures and enumerations. " alt="" coords="91,229,157,256"/>
+<area shape="rect" id="node6" href="$set_8h.html" title="helps us manage other modules with a better organisation using its functions to change values..." alt="" coords="157,155,208,181"/>
+</map>

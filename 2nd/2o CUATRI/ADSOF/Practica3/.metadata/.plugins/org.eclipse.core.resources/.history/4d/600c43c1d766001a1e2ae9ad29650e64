@@ -1,0 +1,38 @@
+package ads.practica3;
+
+
+public class LavadoraYFrigorifico extends Electrodomestico{
+    private Dimension dimensiones;
+    private double peso;
+
+    public LavadoraYFrigorifico(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica, Dimension d, double p) {
+        super(marca, modelo, precioBase, claseEnergetica);
+        this.dimensiones = d;
+        this.peso = p;
+    }
+
+    public double precioEntrega() {
+        return 0;
+    }
+
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setDimensiones(Dimension dimensiones) {
+        this.dimensiones = dimensiones;
+    }
+
+    public Dimension getDimensiones() {
+        return dimensiones;
+    }
+    
+    public String ToString() {
+		return this.getMarca() + " "+ this.getModelo() + ", " + this.getPrecioBase() + " Euros";
+	}
+}

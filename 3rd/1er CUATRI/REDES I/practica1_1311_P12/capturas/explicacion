@@ -1,0 +1,5 @@
+Las capturas de pantalla añadidas muestran tanto en Wireshark como en nuestro programa que se obtiene la misma salida. Capturan el mismo
+número de paquetes y dichos paquetes contienen lo mismo. La única diferencia es que al realizarlo mediante la terminal genera un único
+paquete más, pero se debe al retardo del CTRL+C.
+
+Se muestra la comparación entre Wireshark y la terminal y comprobamos que la salida es correcta para un tamaño de bytes mayor a 15.

@@ -1,0 +1,59 @@
+--AUTORES: ANDRES MENA GODINO Y JUAN MORENO DIEZ
+--GRUPO: INGLES, 1291
+--SIMPLE QUERIES:1 (name, time and tweet from users who tweeted in 2018)
+
+select screen_name, tweet_timestamp, text_tweet
+from tweet natural join user1
+where tweet_timestamp >= '2018-01-01' and tweet_timestamp <= '2018-12-31'
+
+   screen_name		tweet_timestamp		text_tweet
+1" jack";"2018-09-20";"Nothing to say"
+2" tora_tora_tora";"2018-09-17";"Better go to sleep."
+3" jack";"2018-07-16";"Better not."
+4" joe_pipitone";"2018-09-18";"No... we are not"
+5" tora_tora_tora";"2018-09-19";"Better not."
+6" tora_tora_tora";"2018-02-02";"Of maybe yes."
+7" miles_beavis";"2018-09-17";"Bob, I hate you"
+8" tora_tora_tora";"2018-09-16";"No, definitely not."
+9" tora_tora_tora";"2018-02-02";"Hey... I am Bob!"
+10" bill_mahler";"2018-01-05";"Bob, I hate you"
+
+
+
+
+
+--SIMPLE QUERIES:2 (show name of the user and tweet of the tweets which have the word or part of word 'not' and the name of the user)
+
+select screen_name, text_tweet
+from tweet natural join user1
+where text_tweet like '%not%'
+
+   screen_name		text_tweet
+1" trump_trumpet";"Better not."
+2" thelonius";"Better not."
+3" ann_karen";"Let't not get philosophical"
+4" tora_tora_tora";"No, definitely not."
+5" tora_tora_tora";"Better not."
+6" joe_pipitone";"No... we are not"
+7" jack";"Better not."
+8" jack";"Beter not."
+
+
+
+
+
+
+--SIMPLE QUERIES:3 (show text of all tweets which have been retweeted, and the original tweet id)
+
+select text_tweet, retweet_of
+from tweet
+where retweet_of <>'NULL'
+
+  text_tweet	retweet_of
+1"Better not.";"216"
+2"Oops... what is this?";"206"
+3"Beter not.";"208"
+4"Better not.";"216"
+5"Hey... I am Bob!";"211"
+6"Better not.";"216"
+

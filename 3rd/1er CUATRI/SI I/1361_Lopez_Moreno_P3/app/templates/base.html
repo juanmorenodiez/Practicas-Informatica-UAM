@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MJ Films</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href= {{url_for('static', filename = 'estilo.css')}}/>
+</head>
+
+<body class="light-grey">
+
+
+<!-- Top container -->
+<div class="topbar">
+	{% block search%} {% endblock %}
+
+  <span class="item-bar">MJ Films</span>
+</div>
+
+<nav class="sidebar"><br>
+
+ <div class="listblock">
+
+	<fieldset>
+      <div class="col">
+
+      <span><strong> {% block nombreusuario %} {% endblock %} </strong></span><br>
+		<div>	<a href={{ url_for('index') }} class="button">Home</a></div>
+		<div>	<a href={{ url_for('cart') }} class="button">Cart</a></div>
+		<div>	<a href={{ url_for('history') }} class="button">Orders</a></div>
+		<div>	<a href={{ url_for('login') }} class="button">Log In</a></div>
+		<div>	<a href={{ url_for('logout') }} class="button">Log Out</a></div>
+		<div>	<a href={{ url_for('register') }} class="button">Register</a></div>
+
+    	</div>
+	</fieldset>
+
+
+		{% block categories%}
+		{% endblock %}
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="main">
+	{% block content%} {% endblock %}
+</div>
+
+<div class="footer">
+  <span class="center">Created by Mario Lopez & Juan Moreno</span>
+</div>
+
+</body>
+</html>

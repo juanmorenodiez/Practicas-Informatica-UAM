@@ -1,0 +1,65 @@
+package ads.practica3;
+
+public abstract class Electrodomestico {
+    private String marca;
+    private String modelo;
+    private double precioBase;
+    private ClaseEnergetica claseEnergetica;
+
+    public Electrodomestico(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precioBase = precioBase;
+        this.claseEnergetica = claseEnergetica;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setPrecioBase(double precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    public double getPrecioBase() {
+        return precioBase;
+    }
+
+    public abstract double precioEntrega();
+
+
+    public ClaseEnergetica getClaseEnergetica() {
+        return claseEnergetica;
+    }
+
+    public void setClaseEnergetica(ClaseEnergetica claseEnergetica) {
+        this.claseEnergetica = claseEnergetica;
+    }
+    
+    @Override
+    public boolean equals(Object e) {
+    	if (e == null) {
+    		return false;
+    	}
+	
+    	if (this.getClass().equals(e.getClass()) && this.getMarca().equals(((Electrodomestico) e).getMarca()) && this.getModelo().equals(((Electrodomestico) e).getModelo())) {
+    		return true;
+    	}
+    	
+    	return false;
+    }
+    
+
+}

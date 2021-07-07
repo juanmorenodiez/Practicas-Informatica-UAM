@@ -1,0 +1,130 @@
+Turbo Assembler	 Version 3.2	    03/05/19 20:42:31	    Page 1
+PRACT1c.ASM
+
+
+
+      1				     ;**************************************************************************
+      2				     ; SBM 2019. ESTRUCTURA BÁSICA DE UN PROGRAMA EN ENSAMBLADOR
+      3				     ;**************************************************************************
+      4
+      5				     ; DEFINICION DEL SEGMENTO DE DATOS
+      6
+      7	0000			     DATOS SEGMENT
+      8
+      9	0000  1918				     DATO_1 DW 1918H			     ;Datos de libre elección que	    +
+     10				     utilizamos	para escribir en las direcciones de memoria físicas calculadas.
+     11	0002  2034				     DATO_2 DW 2034H
+     12	0004  0636				     DATO_3 DW 0636H
+     13
+     14	0006			     DATOS ENDS
+     15				     ;**************************************************************************
+     16				     ; DEFINICION DEL SEGMENTO DE PILA
+     17
+     18	0000			     PILA SEGMENT STACK	"STACK"
+     19
+     20	0000  40*(00)				     DB	40H DUP	(0) ;ejemplo de	inicialización, 64 bytes inicializados	a 0
+     21
+     22	0040			     PILA ENDS
+     23
+     24				     ;**************************************************************************
+     25				     ; DEFINICION DEL SEGMENTO EXTRA
+     26
+     27	0000			     EXTRA SEGMENT
+     28
+     29	0000  0000 0000				     RESULT DW 0,0 ;ejemplo de inicialización.	2 PALABRAS (4 BYTES)
+     30
+     31	0004			     EXTRA ENDS
+     32
+     33				     ;**************************************************************************
+     34				     ; DEFINICION DEL SEGMENTO DE CODIGO
+     35
+     36	0000			     CODE SEGMENT
+     37
+     38				     ASSUME CS:	CODE, DS: DATOS, ES: EXTRA, SS:	PILA
+     39
+     40				     ; COMIENZO	DEL PROCEDIMIENTO PRINCIPAL
+     41
+     42	0000			     INICIO PROC
+     43
+     44						     ; COMIENZO	DEL PROGRAMA
+     45
+     46						     ;Primera Comprobacion
+     47
+     48	0000  B8 0535				     MOV AX, 0535H   ;			     Guardamos en AX el	valor 0535H;
+     49	0003  8E D8				     MOV DS, AX					     ;Inicializamos el segmento	de  +
+     50				     datos de tal forma	que apunte a la	direccion contenida en AX que en este caso es 0535H.
+     51
+     52	0005  BB 0210				     MOV BX, 0210H			     ;Inicializamos el registro	BX con el   +
+     53				     valor 0210H.
+     54	0008  BF 1011				     MOV DI, 1011H				     ;Inicializamos el registro	DI  +
+     55				     con el valor 1011H.
+     56
+     57	000B  A1 0000r				     MOV AX, DATO_1
+Turbo Assembler	 Version 3.2	    03/05/19 20:42:31	    Page 2
+PRACT1c.ASM
+
+
+
+     58	000E  A3 1234				     MOV DS:[1234H], AX		     ;Guardamos	en la direccion	06584H la DATO_1 =  +
+     59				     1918H
+     60	0011  A0 1234				     MOV AL, DS:[1234H]		     ;Escribe en el registro de	un byte	AL el	    +
+     61				     contenido de la la	posición de memoria 06584H, AL=18H.
+     62
+     63						     ;Segunda Comprobacion
+     64
+     65	0014  8B 07				     MOV AX, [BX]				     ;Lee el contenido de la	    +
+     66				     posición de memoria física 05560H y lo guarda en	el registro AX
+     67	0016  8B 0E 0002r			     MOV CX, DATO_2			 ;En C se guarda el DATO_2 = 2034H
+     68	001A  89 0F				     MOV [BX], CX				     ;Guardamos	en la direccion	    +
+     69				     05560H el dato 2034H
+     70	001C  8B 17				     MOV DX, [BX]				     ;En el registro DX	se debe	    +
+     71				     guardar el	dato 3420H
+     72
+     73						     ;Tercera Comprobacion
+     74
+     75	001E  A1 0004r				     MOV AX, DATO_3
+     76	0021  88 05				     MOV [DI], AL				     ;Escribe en la posición de    +
+     77				     memoria 06361H el contenido de AL = 36h
+     78
+     79						     ; FIN DEL PROGRAMA
+     80
+     81	0023  B8 4C00				     MOV AX, 4C00H
+     82	0026  CD 21				     INT 21H
+     83	0028			     INICIO ENDP
+     84
+     85				     ; FIN DEL SEGMENTO	DE CODIGO
+     86
+     87	0028			     CODE ENDS
+     88
+     89				     ; FIN DEL PROGRAMA	INDICANDO DONDE	COMIENZA LA EJECUCION
+     90
+     91				     END INICIO
+Turbo Assembler	 Version 3.2	    03/05/19 20:42:31	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "03/05/19"
+??FILENAME			  Text	 "PRACT1c "
+??TIME				  Text	 "20:42:31"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 PRACT1C
+@WORDSIZE			  Text	 2
+DATO_1				  Word	 DATOS:0000
+DATO_2				  Word	 DATOS:0002
+DATO_3				  Word	 DATOS:0004
+INICIO				  Near	 CODE:0000
+RESULT				  Word	 EXTRA:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  0028 Para	  none
+DATOS				  16  0006 Para	  none
+EXTRA				  16  0004 Para	  none
+PILA				  16  0040 Para	  Stack	  STACK
+

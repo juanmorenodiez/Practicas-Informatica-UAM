@@ -1,0 +1,48 @@
+Ejercicio 3:
+
+Como podemos observar cuando ejecutamos el código, los hijos imprimen su primer mensaje, pero no imprimen el segundo. Esto ocurre porque después de imprimir su primer mensaje, el hijo duerme durante 30 segundos antes de imprimir su segundo mensaje. Paralelamente, el padre duerme durante cinco segundos, y a continuación manda una señal de terminación a su hijo, que termina de forma instantánea, sin haber podido esperar el tiempo para imprimir su segundo mensaje. Esto se realiza en bucle para cada uno de los hijos que el padre va creando
+
+3.a) 
+La llamada a sigaction no hace que se ejecute el manejador, lo que hace es habilitarlo, para cuando se reciba una señal “SIGINT”, se maneje con la información que hemos introducido en nuestra estructura sigaction.
+
+3b)
+El printf aparece en pantalla cuando se recibe la señal "SIGINT", y por ello se ejecuta el manejador
+
+3c)
+Cuando un programa recibe una señal y no la tiene capturada, pueden ocurrir dos cosas:
+	1) La señal es ignorada
+	2) Lo que ocurre en la mayoría de los casos, la señal la gestiona el SO, invocando a la rutina de tratamiento de esa señal por defecto. Suele provocar la terminación del proceso mediante una llamada a exit, y además a veces se genera un fichero llamado "core" que contiene el volcado de memoria del contexto del proceso 
+
+3d)
+Esto es porque las señales SIGKILL Y SIGSTOP no pueden ser capturadas, ni bloqueadas ni ignoradas.
+
+
+
+Ejercicio 6a:
+
+Lo que realizamos en este programa es primero establecer una alarma. A continuación, bloqueamos las señales que nos pide el enunciado, y comenzamos a imprimir números. Tras la primera impresión de números desde cero hasta N-1, desbloqueamos de nuestra máscara las señales sigusr1 y sigalarm. La alarma se había establecido para 40 segundos, por lo que pasado ese tiempo, como ya habíamos eliminado la señal de la máscara, al enviarse la señal de alarma producirá que el proceso finalice.
+
+6a_opcional)
+
+Hemos decidido crear este programa para comprobar que se están bloqueando correctamente las señales. Por ello, hemos establecido manejadores para cada una de las señales, y así sabemos si se está lanzando correctamente sigalarm, y también podemos probar desde otra terminal a mandar estas señales al proceso, y confirmar que cuando estas están bloqueadas, el proceso no las recibe.
+
+Ejercicio 8:
+
+a) Se producen tanto lecturas como escrituras. Como el fork se ejecuta una vez, solo hay un proceso hijo que se va alternando
+con el padre.
+
+b) En este apartado se crean 10 procesos hijos que deberían leer y cuando acabasen las lecturas, cerrar los procesos hijos y 
+que al padre le de tiempo a escribir mientras los lectores esperan. Pero unicamente realiza dos lecturas, imprime el PID del padre
+y al realizar el Ctrl+c termina.
+
+c) En este apartado, al no haber tiempo de espera, (SECS = 0), al padre no le da tiempo a escribir y los hijos harían las 10 lecturas.
+Nos ocurre lo mismo que en el apartado anterior.
+
+d) Al eliminar los dos sleeps de los bucles, solo se realizan escrituras, ya que el padre es el que realiza esa acción y no da tiempo
+a que los lectores actúen.
+
+Ejercicio 9:
+
+Lo que realizamos en este ejercicio es lo siguiente: creamos un único semáforo de exclusión mutua (estamos dando prioridad a los escritores, ya que si llega un lector, tendrá que esperar a que los escritores que estaban listos, realicen su escritura). A continuación, creamos N_PROC hijos, que de uno en uno, irán añadiendo al fichero su id, y una vez salen de la sección crítica, realizan la espera entre 0 y una 1 decima. El padre por otra parte, le protegemos de la señal sigterm, para que cuando anuncie el ganador de la carrera, él no se vea afectado. El padre realiza una espera de un segundo, y luego accede a la sección crítica, en la que leerá todo el fichero, comprobando cuántas veces ha escrito cada proceso su id. En caso de que varios procesos superen las 20 escrituras, se selecciona el proceso con más escrituras de todos ellos. Tras cada lectura del fichero, nos aseguramos de borrarlo para que vuelvan a empezar a escribir.
+
+

@@ -1,0 +1,118 @@
+\hypertarget{command_8h}{}\section{include/command.h File Reference}
+\label{command_8h}\index{include/command.\+h@{include/command.\+h}}
+
+
+Contains the command list and the declaration of the get user input function.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{command_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50c}{enum\+\_\+\+Command} \hyperlink{command_8h_a0473597db8c45c0289b6b8e2f8abbe32}{T\+\_\+\+Command}\hypertarget{command_8h_a0473597db8c45c0289b6b8e2f8abbe32}{}\label{command_8h_a0473597db8c45c0289b6b8e2f8abbe32}
+
+\begin{DoxyCompactList}\small\item\em command list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50c}{enum\+\_\+\+Command} \{ \\*
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca785693a1d550a18688638e9124af41d0}{N\+O\+\_\+\+C\+MD} = -\/1, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca6ce26a62afab55d7606ad4e92428b30c}{U\+N\+K\+N\+O\+WN}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca7a10b5d68d31711288e1fe0fa17dbf4f}{E\+X\+IT}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca362b5ae0e519db264a4b2607d37d2a7e}{G\+R\+A\+SP}, 
+\\*
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca8b0b0025af76a3d8f0b7b1d4758e51a6}{D\+R\+OP}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50cabc5a79c786d2b239440dd3b92c402ef4}{T\+H\+R\+OW}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50caed65b7dfe470f4e500b15f7074bb7fa2}{C\+H\+E\+CK}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50caed3ef32890b6da0919b57254c5206c62}{M\+O\+VE}, 
+\\*
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca141759a3bd88e1f969f53ce070705fcd}{T\+U\+R\+N\+ON}, 
+\hyperlink{command_8h_ace19ba2296a74e4aef53304e0934c50ca564ee0e901bafdd34855cf0ad96ef60c}{T\+U\+R\+N\+O\+FF}, 
+{\bfseries U\+N\+L\+O\+CK}, 
+{\bfseries S\+A\+VE}, 
+\\*
+{\bfseries L\+O\+AD}
+ \}\begin{DoxyCompactList}\small\item\em command list \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{command_8h_a0473597db8c45c0289b6b8e2f8abbe32}{T\+\_\+\+Command} \hyperlink{command_8h_a7ad92506157db30fe6e1941d62752291}{command\+\_\+get\+\_\+user\+\_\+input} ()
+\begin{DoxyCompactList}\small\item\em gets the command selected \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the command list and the declaration of the get user input function. 
+
+It is composed by the enumeration that lists all the commands available in the game. These are the actions that a player can make when playing the game.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Enumeration Type Documentation}
+\index{command.\+h@{command.\+h}!enum\+\_\+\+Command@{enum\+\_\+\+Command}}
+\index{enum\+\_\+\+Command@{enum\+\_\+\+Command}!command.\+h@{command.\+h}}
+\subsubsection[{\texorpdfstring{enum\+\_\+\+Command}{enum_Command}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf enum\+\_\+\+Command}}\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50c}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50c}
+
+
+command list 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+\_\+\+C\+MD@{N\+O\+\_\+\+C\+MD}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!N\+O\+\_\+\+C\+MD@{N\+O\+\_\+\+C\+MD}}\item[{\em 
+N\+O\+\_\+\+C\+MD\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca785693a1d550a18688638e9124af41d0}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca785693a1d550a18688638e9124af41d0}
+}]error \index{U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!U\+N\+K\+N\+O\+WN@{U\+N\+K\+N\+O\+WN}}\item[{\em 
+U\+N\+K\+N\+O\+WN\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca6ce26a62afab55d7606ad4e92428b30c}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca6ce26a62afab55d7606ad4e92428b30c}
+}]unknown command \index{E\+X\+IT@{E\+X\+IT}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!E\+X\+IT@{E\+X\+IT}}\item[{\em 
+E\+X\+IT\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca7a10b5d68d31711288e1fe0fa17dbf4f}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca7a10b5d68d31711288e1fe0fa17dbf4f}
+}]exit command \index{G\+R\+A\+SP@{G\+R\+A\+SP}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!G\+R\+A\+SP@{G\+R\+A\+SP}}\item[{\em 
+G\+R\+A\+SP\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca362b5ae0e519db264a4b2607d37d2a7e}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca362b5ae0e519db264a4b2607d37d2a7e}
+}]grasp command \index{D\+R\+OP@{D\+R\+OP}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!D\+R\+OP@{D\+R\+OP}}\item[{\em 
+D\+R\+OP\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca8b0b0025af76a3d8f0b7b1d4758e51a6}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca8b0b0025af76a3d8f0b7b1d4758e51a6}
+}]drop command \index{T\+H\+R\+OW@{T\+H\+R\+OW}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!T\+H\+R\+OW@{T\+H\+R\+OW}}\item[{\em 
+T\+H\+R\+OW\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50cabc5a79c786d2b239440dd3b92c402ef4}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50cabc5a79c786d2b239440dd3b92c402ef4}
+}]throw command \index{C\+H\+E\+CK@{C\+H\+E\+CK}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!C\+H\+E\+CK@{C\+H\+E\+CK}}\item[{\em 
+C\+H\+E\+CK\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50caed65b7dfe470f4e500b15f7074bb7fa2}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50caed65b7dfe470f4e500b15f7074bb7fa2}
+}]check command \index{M\+O\+VE@{M\+O\+VE}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!M\+O\+VE@{M\+O\+VE}}\item[{\em 
+M\+O\+VE\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50caed3ef32890b6da0919b57254c5206c62}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50caed3ef32890b6da0919b57254c5206c62}
+}]move command \index{T\+U\+R\+N\+ON@{T\+U\+R\+N\+ON}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!T\+U\+R\+N\+ON@{T\+U\+R\+N\+ON}}\item[{\em 
+T\+U\+R\+N\+ON\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca141759a3bd88e1f969f53ce070705fcd}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca141759a3bd88e1f969f53ce070705fcd}
+}]swithcing on command \index{T\+U\+R\+N\+O\+FF@{T\+U\+R\+N\+O\+FF}!command.\+h@{command.\+h}}\index{command.\+h@{command.\+h}!T\+U\+R\+N\+O\+FF@{T\+U\+R\+N\+O\+FF}}\item[{\em 
+T\+U\+R\+N\+O\+FF\hypertarget{command_8h_ace19ba2296a74e4aef53304e0934c50ca564ee0e901bafdd34855cf0ad96ef60c}{}\label{command_8h_ace19ba2296a74e4aef53304e0934c50ca564ee0e901bafdd34855cf0ad96ef60c}
+}]swithcing off command \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{command.\+h@{command.\+h}!command\+\_\+get\+\_\+user\+\_\+input@{command\+\_\+get\+\_\+user\+\_\+input}}
+\index{command\+\_\+get\+\_\+user\+\_\+input@{command\+\_\+get\+\_\+user\+\_\+input}!command.\+h@{command.\+h}}
+\subsubsection[{\texorpdfstring{command\+\_\+get\+\_\+user\+\_\+input()}{command_get_user_input()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+\_\+\+Command} command\+\_\+get\+\_\+user\+\_\+input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{command_8h_a7ad92506157db30fe6e1941d62752291}{}\label{command_8h_a7ad92506157db30fe6e1941d62752291}
+
+
+gets the command selected 
+
+Detects the command a user has written and converts it to a numerical code.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{command_8h_a0473597db8c45c0289b6b8e2f8abbe32}{T\+\_\+\+Command} ==$>$ Number from -\/1 to 9 with the command code. 
+\end{DoxyReturn}

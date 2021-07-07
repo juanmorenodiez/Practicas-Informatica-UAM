@@ -1,0 +1,9 @@
+<map id="src/space_test.c" name="src/space_test.c">
+<area shape="rect" id="node5" href="$space_8h.html" title="Defines the space related function. " alt="" coords="150,80,218,107"/>
+<area shape="rect" id="node9" href="$space__test_8h.html" title="It declares the tests for the space module. " alt="" coords="22,155,119,181"/>
+<area shape="rect" id="node10" href="$test_8h_source.html" title="test.h" alt="" coords="531,80,586,107"/>
+<area shape="rect" id="node11" href="$inventory_8h.html" title="organises the objects in a backpack " alt="" coords="242,80,329,107"/>
+<area shape="rect" id="node6" href="$types_8h.html" title="Defines some structures and enumerations. " alt="" coords="197,229,262,256"/>
+<area shape="rect" id="node7" href="$object_8h.html" title="Implements the game object commands. " alt="" coords="195,155,263,181"/>
+<area shape="rect" id="node8" href="$set_8h.html" title="helps us manage other modules with a better organisation using its functions to change values..." alt="" coords="288,155,339,181"/>
+</map>

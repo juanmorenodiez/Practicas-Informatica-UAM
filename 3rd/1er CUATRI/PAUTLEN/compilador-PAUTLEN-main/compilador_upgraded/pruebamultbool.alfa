@@ -1,0 +1,18 @@
+main {
+	boolean res1;
+	boolean res2;
+	boolean res3;
+	boolean res4;
+	boolean res5;
+	res1 = true;
+	res2 = false;
+	res3 = true*true;
+	res4 = false*false;
+	res5 = true*false;
+
+	printf res3;
+	printf res4;
+	printf res5;
+	
+
+}

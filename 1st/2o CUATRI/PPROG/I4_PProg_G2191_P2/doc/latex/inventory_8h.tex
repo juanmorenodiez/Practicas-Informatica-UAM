@@ -1,0 +1,330 @@
+\hypertarget{inventory_8h}{}\section{include/inventory.h File Reference}
+\label{inventory_8h}\index{include/inventory.\+h@{include/inventory.\+h}}
+
+
+organises the objects in a backpack  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}object.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}set.\+h\char`\"{}}\\*
+Include dependency graph for inventory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{inventory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{inventory_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Inventory}{\+\_\+\+Inventory} \hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory}
+\begin{DoxyCompactList}\small\item\em set and max objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$ \hyperlink{inventory_8h_a5d6b47f7a727932c56d66a65fb540910}{inventory\+\_\+create} ()
+\begin{DoxyCompactList}\small\item\em creates an inventory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{inventory_8h_a670571ee9591b73ca5dfbc0b79b45882}{inventory\+\_\+destroy} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{inventory_8h_a91549cebec2fd5c6f3ec0c7d6448dc31}{inventory\+\_\+add\+\_\+id} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em adds an id \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{inventory_8h_a3e4734307f0bc60bdb14a432328495f7}{inventory\+\_\+delete\+\_\+id} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em deletes and id \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{inventory_8h_a5d7d0f3bbe7439f1f7e47f3cf4acc704}{inventory\+\_\+get\+\_\+object} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv, int position)
+\begin{DoxyCompactList}\small\item\em gets the id of an object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{inventory_8h_a49a57de1417c72d6a976a31af7ed9f33}{inventory\+\_\+has\+\_\+object} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em checks if there is an object in the inventory \end{DoxyCompactList}\item 
+\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$ \hyperlink{inventory_8h_a4b9a14258433fc87eadf9354547ab938}{inventory\+\_\+get\+\_\+set} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv)
+\begin{DoxyCompactList}\small\item\em gets and id using pointer to set \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{inventory_8h_a7e6e5fac8c72945a9022ff69772cb72c}{inventory\+\_\+print} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv)
+\begin{DoxyCompactList}\small\item\em prints the inventory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{inventory_8h_a294538bee7ebbc19c120d63a6bc603cf}{inventory\+\_\+is\+\_\+empty} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv)
+\begin{DoxyCompactList}\small\item\em checks if the inventory is empty \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{inventory_8h_a046e96fa72b449e8efca96fee6a33062}{inventory\+\_\+is\+\_\+full} (\hyperlink{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{Inventory} $\ast$inv)
+\begin{DoxyCompactList}\small\item\em checks if the inventory is full \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+organises the objects in a backpack 
+
+This module helps the organisation and the managing of the objects by using different functions that enables the player to work with an inventory of objects.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{inventory.\+h@{inventory.\+h}!Inventory@{Inventory}}
+\index{Inventory@{Inventory}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{Inventory}{Inventory}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Inventory} {\bf Inventory}}\hypertarget{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}{}\label{inventory_8h_a2253bf64ac4ce6a9c1d6f39c0b0d32a3}
+
+
+set and max objects. 
+
+Struct for organising the objects using a pointer to set and a maximum number of objects(int). 
+
+\subsection{Function Documentation}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+add\+\_\+id@{inventory\+\_\+add\+\_\+id}}
+\index{inventory\+\_\+add\+\_\+id@{inventory\+\_\+add\+\_\+id}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+add\+\_\+id(\+Inventory $\ast$inv, Id id)}{inventory_add_id(Inventory *inv, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} inventory\+\_\+add\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a91549cebec2fd5c6f3ec0c7d6448dc31}{}\label{inventory_8h_a91549cebec2fd5c6f3ec0c7d6448dc31}
+
+
+adds an id 
+
+It is the function in charge of adding ids to the inventory by using the appropriate set function.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+create@{inventory\+\_\+create}}
+\index{inventory\+\_\+create@{inventory\+\_\+create}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+create()}{inventory_create()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Inventory}$\ast$ inventory\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a5d6b47f7a727932c56d66a65fb540910}{}\label{inventory_8h_a5d6b47f7a727932c56d66a65fb540910}
+
+
+creates an inventory 
+
+It creates a new inventory initializing the variables of the structure, checks is something goes wrong and if it does go wrong, returns N\+U\+LL.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Pointer to inventory, N\+U\+LL if something goes wrong. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+delete\+\_\+id@{inventory\+\_\+delete\+\_\+id}}
+\index{inventory\+\_\+delete\+\_\+id@{inventory\+\_\+delete\+\_\+id}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+delete\+\_\+id(\+Inventory $\ast$inv, Id id)}{inventory_delete_id(Inventory *inv, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} inventory\+\_\+delete\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a3e4734307f0bc60bdb14a432328495f7}{}\label{inventory_8h_a3e4734307f0bc60bdb14a432328495f7}
+
+
+deletes and id 
+
+Function in charge of deleting and id of the inventory that you have already added when it is necessary.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+destroy@{inventory\+\_\+destroy}}
+\index{inventory\+\_\+destroy@{inventory\+\_\+destroy}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+destroy(\+Inventory $\ast$inv)}{inventory_destroy(Inventory *inv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} inventory\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a670571ee9591b73ca5dfbc0b79b45882}{}\label{inventory_8h_a670571ee9591b73ca5dfbc0b79b45882}
+
+
+frees memory 
+
+Receives pointer to inventory and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+get\+\_\+object@{inventory\+\_\+get\+\_\+object}}
+\index{inventory\+\_\+get\+\_\+object@{inventory\+\_\+get\+\_\+object}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+get\+\_\+object(\+Inventory $\ast$inv, int position)}{inventory_get_object(Inventory *inv, int position)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} inventory\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a5d7d0f3bbe7439f1f7e47f3cf4acc704}{}\label{inventory_8h_a5d7d0f3bbe7439f1f7e47f3cf4acc704}
+
+
+gets the id of an object 
+
+Function in charge of getting an object by using its id, that id is selected with a position (int).
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+{\em position} & position of the object (int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+get\+\_\+set@{inventory\+\_\+get\+\_\+set}}
+\index{inventory\+\_\+get\+\_\+set@{inventory\+\_\+get\+\_\+set}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+get\+\_\+set(\+Inventory $\ast$inv)}{inventory_get_set(Inventory *inv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set}$\ast$ inventory\+\_\+get\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a4b9a14258433fc87eadf9354547ab938}{}\label{inventory_8h_a4b9a14258433fc87eadf9354547ab938}
+
+
+gets and id using pointer to set 
+
+Function in which we will get the set of ids by using our pointer to set which is defined in the data structure.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to inventory(set of ids). 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+has\+\_\+object@{inventory\+\_\+has\+\_\+object}}
+\index{inventory\+\_\+has\+\_\+object@{inventory\+\_\+has\+\_\+object}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+has\+\_\+object(\+Inventory $\ast$inv, Id id)}{inventory_has_object(Inventory *inv, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} inventory\+\_\+has\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a49a57de1417c72d6a976a31af7ed9f33}{}\label{inventory_8h_a49a57de1417c72d6a976a31af7ed9f33}
+
+
+checks if there is an object in the inventory 
+
+Function that, by calling the function\+: set\+\_\+has\+\_\+id can check that there is an object in the inventory using its id.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+is\+\_\+empty@{inventory\+\_\+is\+\_\+empty}}
+\index{inventory\+\_\+is\+\_\+empty@{inventory\+\_\+is\+\_\+empty}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+is\+\_\+empty(\+Inventory $\ast$inv)}{inventory_is_empty(Inventory *inv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} inventory\+\_\+is\+\_\+empty (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a294538bee7ebbc19c120d63a6bc603cf}{}\label{inventory_8h_a294538bee7ebbc19c120d63a6bc603cf}
+
+
+checks if the inventory is empty 
+
+Function that will help us in other functions that need to check if there is any object in the inventory.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+is\+\_\+full@{inventory\+\_\+is\+\_\+full}}
+\index{inventory\+\_\+is\+\_\+full@{inventory\+\_\+is\+\_\+full}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+is\+\_\+full(\+Inventory $\ast$inv)}{inventory_is_full(Inventory *inv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} inventory\+\_\+is\+\_\+full (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a046e96fa72b449e8efca96fee6a33062}{}\label{inventory_8h_a046e96fa72b449e8efca96fee6a33062}
+
+
+checks if the inventory is full 
+
+Function that will help us in other functions that need to check if the entire inventory is full of objects
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{inventory.\+h@{inventory.\+h}!inventory\+\_\+print@{inventory\+\_\+print}}
+\index{inventory\+\_\+print@{inventory\+\_\+print}!inventory.\+h@{inventory.\+h}}
+\subsubsection[{\texorpdfstring{inventory\+\_\+print(\+Inventory $\ast$inv)}{inventory_print(Inventory *inv)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} inventory\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf Inventory} $\ast$}]{inv}
+\end{DoxyParamCaption}
+)}\hypertarget{inventory_8h_a7e6e5fac8c72945a9022ff69772cb72c}{}\label{inventory_8h_a7e6e5fac8c72945a9022ff69772cb72c}
+
+
+prints the inventory 
+
+Function in charge of printing the inventory, in order to check that everything is working correctly by calling the function in set module that prints the values.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em inv} & pointer to inventory. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

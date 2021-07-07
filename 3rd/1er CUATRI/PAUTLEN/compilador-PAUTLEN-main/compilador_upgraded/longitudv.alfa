@@ -1,0 +1,9 @@
+main {
+    	array int[4] v;
+	int longitud;
+	
+	longitud = €v;
+	printf longitud;
+	
+
+}

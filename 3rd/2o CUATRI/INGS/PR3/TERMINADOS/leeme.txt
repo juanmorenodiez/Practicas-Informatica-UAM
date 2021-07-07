@@ -1,0 +1,7 @@
+INGENIERÍA DEL SOFTWARE - EQUIPO 5
+
+En el documento de Análisis incluimos:
+ - el Diagrama de Casos de Uso en su versión final(1.3), pero adjuntamos una carpeta con las demás versiones intermedias.
+
+En el documento de Diseño incluimos:
+ - el Diagrama de Clases su versión final(1.2) pero al igual que antes, incluimos en una carpeta la primera versión de este.

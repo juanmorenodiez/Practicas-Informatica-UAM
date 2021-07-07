@@ -1,0 +1,342 @@
+\hypertarget{player__test_8c}{}\section{src/player\+\_\+test.c File Reference}
+\label{player__test_8c}\index{src/player\+\_\+test.\+c@{src/player\+\_\+test.\+c}}
+
+
+It tests player module.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}player\+\_\+test.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}test.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}inventory.\+h\char`\"{}}\\*
+Include dependency graph for player\+\_\+test.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player__test_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{player__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}{M\+A\+X\+\_\+\+T\+E\+S\+TS}~16
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{player__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main function for player unit tests. \end{DoxyCompactList}\item 
+void \hyperlink{player__test_8c_ab29768452373e16bb6aaa1f7998f62fb}{test1\+\_\+player\+\_\+create} ()
+\item 
+void \hyperlink{player__test_8c_a4f6eca5f9d8c08d2a7fc70c209ecf854}{test2\+\_\+player\+\_\+create} ()
+\item 
+void \hyperlink{player__test_8c_aae84b37f9cc0fbde18a62807385c359a}{test3\+\_\+player\+\_\+create} ()
+\item 
+void \hyperlink{player__test_8c_a14d75d99f9fce3bd703b0c242c8690f9}{test1\+\_\+player\+\_\+destroy} ()
+\item 
+void \hyperlink{player__test_8c_ae873be01647faf96d3906aa9629e87f0}{test2\+\_\+player\+\_\+destroy} ()
+\item 
+void \hyperlink{player__test_8c_a53eb6ee101f01fe988c5da03129d2e2f}{test1\+\_\+player\+\_\+get\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_a83e8fea42cd87151cd67d0643a78134f}{test2\+\_\+player\+\_\+get\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_ac8d8b030a98c0e44f4e98e08cda59537}{test1\+\_\+player\+\_\+set\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_a9e7db6b857907187146df64abd16aca5}{test2\+\_\+player\+\_\+set\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_a0685839b423f685dcdabb7b9fe411cd1}{test1\+\_\+player\+\_\+remove\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_af9e74e12ad6961761f1ff61afa56be3e}{test2\+\_\+player\+\_\+remove\+\_\+object} ()
+\item 
+void \hyperlink{player__test_8c_a8841b3b289649eb76edaa8110ad5899c}{test1\+\_\+player\+\_\+has\+\_\+id} ()
+\item 
+void \hyperlink{player__test_8c_afa75f333281fc35b24968a5629f09b0b}{test2\+\_\+player\+\_\+has\+\_\+id} ()
+\item 
+void \hyperlink{player__test_8c_a3b450c7540eddb05810dc9c25e4de082}{test3\+\_\+player\+\_\+has\+\_\+id} ()
+\item 
+void \hyperlink{player__test_8c_ad4a86b57bc18593265c205d7b27b9ecb}{test1\+\_\+player\+\_\+get\+\_\+inventory} ()
+\item 
+void \hyperlink{player__test_8c_a8f3a62c708fbed848568841ca8b1cd26}{test2\+\_\+player\+\_\+get\+\_\+inventory} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It tests player module. 
+
+\begin{DoxyAuthor}{Author}
+Andres Mena 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+31-\/03-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!M\+A\+X\+\_\+\+T\+E\+S\+TS@{M\+A\+X\+\_\+\+T\+E\+S\+TS}}
+\index{M\+A\+X\+\_\+\+T\+E\+S\+TS@{M\+A\+X\+\_\+\+T\+E\+S\+TS}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+T\+E\+S\+TS}{MAX_TESTS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+T\+E\+S\+TS~16}\hypertarget{player__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}{}\label{player__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}
+Max amount of tests posible 
+
+\subsection{Function Documentation}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!main@{main}}
+\index{main@{main}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{player__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Main function for player unit tests. 
+
+You may execute A\+LL or a S\+I\+N\+G\+LE test 1.-\/ No parameter -\/$>$ A\+LL test are executed 2.-\/ A number means a particular test (the one identified by that number) is executed \index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+create@{test1\+\_\+player\+\_\+create}}
+\index{test1\+\_\+player\+\_\+create@{test1\+\_\+player\+\_\+create}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+create()}{test1_player_create()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_ab29768452373e16bb6aaa1f7998f62fb}{}\label{player__test_8c_ab29768452373e16bb6aaa1f7998f62fb}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000105}{Test}]Test player creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Non N\+U\+LL pointer to player 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+destroy@{test1\+\_\+player\+\_\+destroy}}
+\index{test1\+\_\+player\+\_\+destroy@{test1\+\_\+player\+\_\+destroy}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+destroy()}{test1_player_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a14d75d99f9fce3bd703b0c242c8690f9}{}\label{player__test_8c_a14d75d99f9fce3bd703b0c242c8690f9}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000108}{Test}]Test player creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US == E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+get\+\_\+inventory@{test1\+\_\+player\+\_\+get\+\_\+inventory}}
+\index{test1\+\_\+player\+\_\+get\+\_\+inventory@{test1\+\_\+player\+\_\+get\+\_\+inventory}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+get\+\_\+inventory()}{test1_player_get_inventory()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+get\+\_\+inventory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_ad4a86b57bc18593265c205d7b27b9ecb}{}\label{player__test_8c_ad4a86b57bc18593265c205d7b27b9ecb}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000113}{Test}]Test player inventory \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+U\+LL 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+get\+\_\+object@{test1\+\_\+player\+\_\+get\+\_\+object}}
+\index{test1\+\_\+player\+\_\+get\+\_\+object@{test1\+\_\+player\+\_\+get\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+get\+\_\+object()}{test1_player_get_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a53eb6ee101f01fe988c5da03129d2e2f}{}\label{player__test_8c_a53eb6ee101f01fe988c5da03129d2e2f}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000115}{Test}]Test getting objects from player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+has\+\_\+id@{test1\+\_\+player\+\_\+has\+\_\+id}}
+\index{test1\+\_\+player\+\_\+has\+\_\+id@{test1\+\_\+player\+\_\+has\+\_\+id}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+has\+\_\+id()}{test1_player_has_id()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+has\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a8841b3b289649eb76edaa8110ad5899c}{}\label{player__test_8c_a8841b3b289649eb76edaa8110ad5899c}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000110}{Test}]Test if player has id \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+B\+O\+OL == F\+A\+L\+SE 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+remove\+\_\+object@{test1\+\_\+player\+\_\+remove\+\_\+object}}
+\index{test1\+\_\+player\+\_\+remove\+\_\+object@{test1\+\_\+player\+\_\+remove\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+remove\+\_\+object()}{test1_player_remove_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+remove\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a0685839b423f685dcdabb7b9fe411cd1}{}\label{player__test_8c_a0685839b423f685dcdabb7b9fe411cd1}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000119}{Test}]Test removing objects from player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test1\+\_\+player\+\_\+set\+\_\+object@{test1\+\_\+player\+\_\+set\+\_\+object}}
+\index{test1\+\_\+player\+\_\+set\+\_\+object@{test1\+\_\+player\+\_\+set\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+player\+\_\+set\+\_\+object()}{test1_player_set_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+player\+\_\+set\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_ac8d8b030a98c0e44f4e98e08cda59537}{}\label{player__test_8c_ac8d8b030a98c0e44f4e98e08cda59537}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000117}{Test}]Test setting objects to player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+create@{test2\+\_\+player\+\_\+create}}
+\index{test2\+\_\+player\+\_\+create@{test2\+\_\+player\+\_\+create}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+create()}{test2_player_create()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a4f6eca5f9d8c08d2a7fc70c209ecf854}{}\label{player__test_8c_a4f6eca5f9d8c08d2a7fc70c209ecf854}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000106}{Test}]Test player creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Player ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Player\+\_\+\+ID == Supplied player Id 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+destroy@{test2\+\_\+player\+\_\+destroy}}
+\index{test2\+\_\+player\+\_\+destroy@{test2\+\_\+player\+\_\+destroy}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+destroy()}{test2_player_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_ae873be01647faf96d3906aa9629e87f0}{}\label{player__test_8c_ae873be01647faf96d3906aa9629e87f0}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000109}{Test}]Test player creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US == OK 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+get\+\_\+inventory@{test2\+\_\+player\+\_\+get\+\_\+inventory}}
+\index{test2\+\_\+player\+\_\+get\+\_\+inventory@{test2\+\_\+player\+\_\+get\+\_\+inventory}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+get\+\_\+inventory()}{test2_player_get_inventory()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+get\+\_\+inventory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a8f3a62c708fbed848568841ca8b1cd26}{}\label{player__test_8c_a8f3a62c708fbed848568841ca8b1cd26}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000114}{Test}]Test player inventory \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player and inventory 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+inventory not N\+U\+LL 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+get\+\_\+object@{test2\+\_\+player\+\_\+get\+\_\+object}}
+\index{test2\+\_\+player\+\_\+get\+\_\+object@{test2\+\_\+player\+\_\+get\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+get\+\_\+object()}{test2_player_get_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a83e8fea42cd87151cd67d0643a78134f}{}\label{player__test_8c_a83e8fea42cd87151cd67d0643a78134f}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000116}{Test}]Test getting objects from player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player (with object) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+object ID 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+has\+\_\+id@{test2\+\_\+player\+\_\+has\+\_\+id}}
+\index{test2\+\_\+player\+\_\+has\+\_\+id@{test2\+\_\+player\+\_\+has\+\_\+id}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+has\+\_\+id()}{test2_player_has_id()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+has\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_afa75f333281fc35b24968a5629f09b0b}{}\label{player__test_8c_afa75f333281fc35b24968a5629f09b0b}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000111}{Test}]Test if player has id \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+B\+O\+OL == F\+A\+L\+SE 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+remove\+\_\+object@{test2\+\_\+player\+\_\+remove\+\_\+object}}
+\index{test2\+\_\+player\+\_\+remove\+\_\+object@{test2\+\_\+player\+\_\+remove\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+remove\+\_\+object()}{test2_player_remove_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+remove\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_af9e74e12ad6961761f1ff61afa56be3e}{}\label{player__test_8c_af9e74e12ad6961761f1ff61afa56be3e}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000120}{Test}]Test removing objects from player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player (with objects) 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test2\+\_\+player\+\_\+set\+\_\+object@{test2\+\_\+player\+\_\+set\+\_\+object}}
+\index{test2\+\_\+player\+\_\+set\+\_\+object@{test2\+\_\+player\+\_\+set\+\_\+object}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+player\+\_\+set\+\_\+object()}{test2_player_set_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+player\+\_\+set\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a9e7db6b857907187146df64abd16aca5}{}\label{player__test_8c_a9e7db6b857907187146df64abd16aca5}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000118}{Test}]Test setting objects to player \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test3\+\_\+player\+\_\+create@{test3\+\_\+player\+\_\+create}}
+\index{test3\+\_\+player\+\_\+create@{test3\+\_\+player\+\_\+create}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+player\+\_\+create()}{test3_player_create()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+player\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_aae84b37f9cc0fbde18a62807385c359a}{}\label{player__test_8c_aae84b37f9cc0fbde18a62807385c359a}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000107}{Test}]Test player creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Player ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Player location == 0 
+\end{DoxyPostcond}
+\index{player\+\_\+test.\+c@{player\+\_\+test.\+c}!test3\+\_\+player\+\_\+has\+\_\+id@{test3\+\_\+player\+\_\+has\+\_\+id}}
+\index{test3\+\_\+player\+\_\+has\+\_\+id@{test3\+\_\+player\+\_\+has\+\_\+id}!player\+\_\+test.\+c@{player\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+player\+\_\+has\+\_\+id()}{test3_player_has_id()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+player\+\_\+has\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{player__test_8c_a3b450c7540eddb05810dc9c25e4de082}{}\label{player__test_8c_a3b450c7540eddb05810dc9c25e4de082}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000112}{Test}]Test if player has id \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Pointer to player and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+B\+O\+OL == T\+R\+UE 
+\end{DoxyPostcond}

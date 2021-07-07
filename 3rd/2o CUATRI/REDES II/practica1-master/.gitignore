@@ -1,0 +1,5 @@
+htmlfiles/
+obj/
+lib/
+server
+.vscode/

@@ -1,0 +1,276 @@
+\hypertarget{set_8h}{}\section{include/set.h File Reference}
+\label{set_8h}\index{include/set.\+h@{include/set.\+h}}
+
+
+helps us manage other modules with a better organisation using its functions to change values.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+Include dependency graph for set.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{set_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{set_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Set}{\+\_\+\+Set} \hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set}
+\begin{DoxyCompactList}\small\item\em id and number of ids \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$ \hyperlink{set_8h_abcc73b7ad3913fc92dd95d366c9c8687}{set\+\_\+create} ()
+\begin{DoxyCompactList}\small\item\em creates a set \end{DoxyCompactList}\item 
+void \hyperlink{set_8h_a9d762a027f1c3bcdd22f70ee9093a7dd}{set\+\_\+destroy} (\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{set_8h_ab464b368bff979f29376f9b85675e547}{set\+\_\+add\+\_\+value} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id, \hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set)
+\begin{DoxyCompactList}\small\item\em adds a value defined by the set \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{set_8h_ad46a5d9be2d890c89866723df02d39ef}{set\+\_\+delete\+\_\+value} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id, \hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set)
+\begin{DoxyCompactList}\small\item\em deletes a value already defined \end{DoxyCompactList}\item 
+int \hyperlink{set_8h_a844c749b0d18e9a97156a8aa9caabcd9}{set\+\_\+get\+\_\+nids} (\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set)
+\begin{DoxyCompactList}\small\item\em gets the number of ids \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{set_8h_a319cad66db01db8729d86139a9743aa4}{get\+\_\+set} (\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set, int position)
+\begin{DoxyCompactList}\small\item\em gets an id using a set \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{set_8h_a796847f6bc6d359fd8e757323b30514a}{set\+\_\+has\+\_\+id} (\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em checks the id of a set \end{DoxyCompactList}\item 
+void \hyperlink{set_8h_a1c41ccff75cd22c0bd739b3cc61f16b9}{set\+\_\+print\+\_\+values} (\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$set)
+\begin{DoxyCompactList}\small\item\em Prints a list with the ids of the elements of a list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+helps us manage other modules with a better organisation using its functions to change values. 
+
+The functions of the set module, will help us in other modules. By using the functions of this module, we will be able to modify and change values such as the id of an object and we will be able to do it in a more organised way.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{set.\+h@{set.\+h}!Set@{Set}}
+\index{Set@{Set}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{Set}{Set}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Set} {\bf Set}}\hypertarget{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{}\label{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}
+
+
+id and number of ids 
+
+Struct for managing the values and adding ids by using an id and the number of ids. 
+
+\subsection{Function Documentation}
+\index{set.\+h@{set.\+h}!get\+\_\+set@{get\+\_\+set}}
+\index{get\+\_\+set@{get\+\_\+set}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{get\+\_\+set(\+Set $\ast$set, int position)}{get_set(Set *set, int position)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} get\+\_\+set (
+\begin{DoxyParamCaption}
+\item[{{\bf Set} $\ast$}]{set, }
+\item[{int}]{position}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_a319cad66db01db8729d86139a9743aa4}{}\label{set_8h_a319cad66db01db8729d86139a9743aa4}
+
+
+gets an id using a set 
+
+Function in which the Id of the object in a received position is returned.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em set} & pointer to set. \\
+\hline
+{\em position} & position of the set(int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if set is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+add\+\_\+value@{set\+\_\+add\+\_\+value}}
+\index{set\+\_\+add\+\_\+value@{set\+\_\+add\+\_\+value}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+add\+\_\+value(\+Id id, Set $\ast$set)}{set_add_value(Id id, Set *set)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} set\+\_\+add\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id, }
+\item[{{\bf Set} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_ab464b368bff979f29376f9b85675e547}{}\label{set_8h_ab464b368bff979f29376f9b85675e547}
+
+
+adds a value defined by the set 
+
+It is the function in charge of adding sets to other functions that require it.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & (long int). \\
+\hline
+{\em set} & pointer to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+create@{set\+\_\+create}}
+\index{set\+\_\+create@{set\+\_\+create}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+create()}{set_create()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set}$\ast$ set\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_abcc73b7ad3913fc92dd95d366c9c8687}{}\label{set_8h_abcc73b7ad3913fc92dd95d366c9c8687}
+
+
+creates a set 
+
+It creates a new set, if id is -\/1(N\+O\+\_\+\+ID), N\+U\+LL is returned, if not, memory for a new set is reserved and created. If anything goes wrong, it returns N\+U\+LL.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Pointer to set, N\+U\+LL if something goes wrong. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+delete\+\_\+value@{set\+\_\+delete\+\_\+value}}
+\index{set\+\_\+delete\+\_\+value@{set\+\_\+delete\+\_\+value}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+delete\+\_\+value(\+Id id, Set $\ast$set)}{set_delete_value(Id id, Set *set)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} set\+\_\+delete\+\_\+value (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id, }
+\item[{{\bf Set} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_ad46a5d9be2d890c89866723df02d39ef}{}\label{set_8h_ad46a5d9be2d890c89866723df02d39ef}
+
+
+deletes a value already defined 
+
+Function in charge of deleting sets when you are willing to do it and when it is necessary.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & long int. \\
+\hline
+{\em set} & pointer to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+destroy@{set\+\_\+destroy}}
+\index{set\+\_\+destroy@{set\+\_\+destroy}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+destroy(\+Set $\ast$set)}{set_destroy(Set *set)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Set} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_a9d762a027f1c3bcdd22f70ee9093a7dd}{}\label{set_8h_a9d762a027f1c3bcdd22f70ee9093a7dd}
+
+
+frees memory 
+
+Receives pointer to set and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em set} & pointer to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+O\+ID F\+U\+N\+C\+T\+I\+ON T\+Y\+PE. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+get\+\_\+nids@{set\+\_\+get\+\_\+nids}}
+\index{set\+\_\+get\+\_\+nids@{set\+\_\+get\+\_\+nids}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+get\+\_\+nids(\+Set $\ast$set)}{set_get_nids(Set *set)}}]{\setlength{\rightskip}{0pt plus 5cm}int set\+\_\+get\+\_\+nids (
+\begin{DoxyParamCaption}
+\item[{{\bf Set} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_a844c749b0d18e9a97156a8aa9caabcd9}{}\label{set_8h_a844c749b0d18e9a97156a8aa9caabcd9}
+
+
+gets the number of ids 
+
+Function in charge of returning the number of ids by using that will be used when considered useful and convenient.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em set} & pointer to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to set (int) referring to the number of ids. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+has\+\_\+id@{set\+\_\+has\+\_\+id}}
+\index{set\+\_\+has\+\_\+id@{set\+\_\+has\+\_\+id}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+has\+\_\+id(\+Set $\ast$set, Id id)}{set_has_id(Set *set, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} set\+\_\+has\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Set} $\ast$}]{set, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_a796847f6bc6d359fd8e757323b30514a}{}\label{set_8h_a796847f6bc6d359fd8e757323b30514a}
+
+
+checks the id of a set 
+
+It is the function that will be used in other modules to check if that function is using an id by passing two arguments\+: a pointer to set and an id.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em set} & pointer to set. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{set.\+h@{set.\+h}!set\+\_\+print\+\_\+values@{set\+\_\+print\+\_\+values}}
+\index{set\+\_\+print\+\_\+values@{set\+\_\+print\+\_\+values}!set.\+h@{set.\+h}}
+\subsubsection[{\texorpdfstring{set\+\_\+print\+\_\+values(\+Set $\ast$set)}{set_print_values(Set *set)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+print\+\_\+values (
+\begin{DoxyParamCaption}
+\item[{{\bf Set} $\ast$}]{set}
+\end{DoxyParamCaption}
+)}\hypertarget{set_8h_a1c41ccff75cd22c0bd739b3cc61f16b9}{}\label{set_8h_a1c41ccff75cd22c0bd739b3cc61f16b9}
+
+
+Prints a list with the ids of the elements of a list. 
+
+Function in charge of printing the set, in order to check that everything is working correctly.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em set} & pointer to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+O\+ID F\+U\+N\+C\+T\+I\+ON T\+Y\+PE, IT O\+N\+LY P\+R\+I\+N\+TS T\+HE L\+I\+NE WE O\+R\+D\+E\+R\+ED IT TO P\+R\+I\+NT. 
+\end{DoxyReturn}

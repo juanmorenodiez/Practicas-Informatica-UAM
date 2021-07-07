@@ -1,0 +1,13 @@
+<map id="include/player.h" name="include/player.h">
+<area shape="rect" id="node2" href="$player_8c.html" title="Implements the game player commands. " alt="" coords="165,80,256,107"/>
+<area shape="rect" id="node3" href="$player__test_8c.html" title="It tests player module. " alt="" coords="281,80,399,107"/>
+<area shape="rect" id="node4" href="$game_8h.html" title="It implements the GAME structure declarates all public game.c functions. " alt="" coords="423,80,534,107"/>
+<area shape="rect" id="node5" href="$game_8c.html" title="Defines the game module. " alt="" coords="293,229,379,256"/>
+<area shape="rect" id="node6" href="$game__loop_8c.html" title="initializes the game " alt="" coords="565,229,683,256"/>
+<area shape="rect" id="node7" href="$GameManagement_8c.html" title="Contains the function that loads spaces. " alt="" coords="5,229,171,256"/>
+<area shape="rect" id="node8" href="$graphic__engine_8c.html" title="defines the graphic engine " alt="" coords="750,229,893,256"/>
+<area shape="rect" id="node9" href="$object_8c.html" title="Implements the game object commands. " alt="" coords="475,155,565,181"/>
+<area shape="rect" id="node10" href="$dialogue_8h.html" title="Includes all the functionality used in the dialogue module. " alt="" coords="273,155,399,181"/>
+<area shape="rect" id="node11" href="$GameManagement_8h.html" title="Contains the declaration for game_reader.c functions. " alt="" coords="61,155,249,181"/>
+<area shape="rect" id="node12" href="$graphic__engine_8h.html" title="defines the graphic engine " alt="" coords="640,155,805,181"/>
+</map>

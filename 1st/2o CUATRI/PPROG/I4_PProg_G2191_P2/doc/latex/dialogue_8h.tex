@@ -1,0 +1,642 @@
+\hypertarget{dialogue_8h}{}\section{include/dialogue.h File Reference}
+\label{dialogue_8h}\index{include/dialogue.\+h@{include/dialogue.\+h}}
+
+
+Includes all the functionality used in the dialogue module.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+Include dependency graph for dialogue.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dialogue_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{dialogue_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{dialogue_8h_ad069233c613ec944c257e638a784995c}{dialogue\+\_\+check\+\_\+space\+\_\+error} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error in spaces \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_afa8c48c70f3237e9bda43359431fdfae}{dialogue\+\_\+check\+\_\+error} (char $\ast$oname)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error in spaces and objects \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a61a500ac7fd9354bcd02e6ea87bf004e}{dialogue\+\_\+check\+\_\+space\+\_\+success} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success in spaces \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_adb5a55e8a732244ce0098876ba8d71e9}{dialogue\+\_\+movement\+\_\+success} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space, char $\ast$cardinal)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success in movements \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a5e2d393f794a28c1599c82deebc86eec}{dialogue\+\_\+check\+\_\+object\+\_\+success} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$object)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success in checking an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a2afe0a62619498c4901bfad95623ca68}{dialogue\+\_\+movement\+\_\+error} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space, char $\ast$cardinal)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error in movements \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_afaccfa0802694861fd16d341f5fe0000}{dialogue\+\_\+throw\+\_\+die} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$die)
+\begin{DoxyCompactList}\small\item\em shows dialogue when throwing the die \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a9bdc603b507386d5b571bff73e76446f}{dialogue\+\_\+drop\+\_\+object\+\_\+error} (char $\ast$oname, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} act\+\_\+space, int j)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while dropping an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a1a76549390e0e8fe0d995868d15d38ee}{dialogue\+\_\+drop\+\_\+object\+\_\+success} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$object, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} act\+\_\+space)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success while dropping an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a1fa4917a65fd5b37d13b17de45c29e3d}{dialogue\+\_\+grasp\+\_\+object\+\_\+error} (char $\ast$oname, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} act\+\_\+space, int j)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while grasping an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a8ea8137ea45fcf20d2bc1f5d27a8860c}{dialogue\+\_\+grasp\+\_\+object\+\_\+success} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$object, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} act\+\_\+space)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success while grasping an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_adfed869e8fea0bac5b67f567f51ae95b}{dialogue\+\_\+unknown} ()
+\begin{DoxyCompactList}\small\item\em shows dialogue when introducing an unknown command \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_adaac05650dd4cc6312b3200c8cfbc5e3}{dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable} (char $\ast$oname, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space\+\_\+id)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while grasping an object that is not movable \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a6a65260ade4162e962f190894dedd04a}{dialogue\+\_\+turnon\+\_\+object\+\_\+success} (char $\ast$oname)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success while turning on an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_ab273e8bc8c74be3e695ddd0b20383535}{dialogue\+\_\+turnon\+\_\+object\+\_\+error} (char $\ast$oname, int j, int k)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while turning on an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a03bb4bcb30b096b81c60e18c6727c6e0}{dialogue\+\_\+turnoff\+\_\+object\+\_\+success} (char $\ast$oname)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success while turning off an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a50e5a6b2c821cea158ceada240c542d6}{dialogue\+\_\+turnoff\+\_\+object\+\_\+error} (char $\ast$oname, int j)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while turning off an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a2bd7ede8cc08a3a5dbac38f1990de814}{dialogue\+\_\+unlock\+\_\+success} (char $\ast$object, char $\ast$link)
+\begin{DoxyCompactList}\small\item\em shows dialogue when success while unlocking a door \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_a992dfad74514a3fe7dfe081b993aca95}{dialogue\+\_\+unlock\+\_\+error} (char $\ast$object, char $\ast$link, int j, int k)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while unlocking a door \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{dialogue_8h_ace7e6623bd79b3e3d9dc5f65f278776a}{dialogue\+\_\+movement\+\_\+link\+\_\+error} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} space, char $\ast$cardinal)
+\begin{DoxyCompactList}\small\item\em shows dialogue when error while moving \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Includes all the functionality used in the dialogue module. 
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+check\+\_\+error@{dialogue\+\_\+check\+\_\+error}}
+\index{dialogue\+\_\+check\+\_\+error@{dialogue\+\_\+check\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+check\+\_\+error(char $\ast$oname)}{dialogue_check_error(char *oname)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+check\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_afa8c48c70f3237e9bda43359431fdfae}{}\label{dialogue_8h_afa8c48c70f3237e9bda43359431fdfae}
+
+
+shows dialogue when error in spaces and objects 
+
+Checks if there is an error in the location of spaces and objects.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & (pointer to char). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+check\+\_\+object\+\_\+success@{dialogue\+\_\+check\+\_\+object\+\_\+success}}
+\index{dialogue\+\_\+check\+\_\+object\+\_\+success@{dialogue\+\_\+check\+\_\+object\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+check\+\_\+object\+\_\+success(\+Object $\ast$object)}{dialogue_check_object_success(Object *object)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+check\+\_\+object\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a5e2d393f794a28c1599c82deebc86eec}{}\label{dialogue_8h_a5e2d393f794a28c1599c82deebc86eec}
+
+
+shows dialogue when success in checking an object 
+
+Checks the position of an object and shows a message either it is in its original position or not.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+check\+\_\+space\+\_\+error@{dialogue\+\_\+check\+\_\+space\+\_\+error}}
+\index{dialogue\+\_\+check\+\_\+space\+\_\+error@{dialogue\+\_\+check\+\_\+space\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+check\+\_\+space\+\_\+error(\+Game $\ast$game, Id space)}{dialogue_check_space_error(Game *game, Id space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+check\+\_\+space\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_ad069233c613ec944c257e638a784995c}{}\label{dialogue_8h_ad069233c613ec944c257e638a784995c}
+
+
+shows dialogue when error in spaces 
+
+Checks if there is an error in the space that the player wants to interact with.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to game. \\
+\hline
+{\em space} & Id (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+check\+\_\+space\+\_\+success@{dialogue\+\_\+check\+\_\+space\+\_\+success}}
+\index{dialogue\+\_\+check\+\_\+space\+\_\+success@{dialogue\+\_\+check\+\_\+space\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+check\+\_\+space\+\_\+success(\+Game $\ast$game, Id space)}{dialogue_check_space_success(Game *game, Id space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+check\+\_\+space\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a61a500ac7fd9354bcd02e6ea87bf004e}{}\label{dialogue_8h_a61a500ac7fd9354bcd02e6ea87bf004e}
+
+
+shows dialogue when success in spaces 
+
+Checks if there is something wrong with the space you want to interact with and shows a message if there is no error.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to game. \\
+\hline
+{\em space} & Id (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+drop\+\_\+object\+\_\+error@{dialogue\+\_\+drop\+\_\+object\+\_\+error}}
+\index{dialogue\+\_\+drop\+\_\+object\+\_\+error@{dialogue\+\_\+drop\+\_\+object\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+drop\+\_\+object\+\_\+error(char $\ast$oname, Game $\ast$game, Id act\+\_\+space, int j)}{dialogue_drop_object_error(char *oname, Game *game, Id act_space, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+drop\+\_\+object\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname, }
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{act\+\_\+space, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a9bdc603b507386d5b571bff73e76446f}{}\label{dialogue_8h_a9bdc603b507386d5b571bff73e76446f}
+
+
+shows dialogue when error while dropping an object 
+
+Checks if there is an error when trying to drop an object and shows a message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+{\em act\+\_\+space} & Id (long int). \\
+\hline
+{\em j} & (int value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+drop\+\_\+object\+\_\+success@{dialogue\+\_\+drop\+\_\+object\+\_\+success}}
+\index{dialogue\+\_\+drop\+\_\+object\+\_\+success@{dialogue\+\_\+drop\+\_\+object\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+drop\+\_\+object\+\_\+success(\+Object $\ast$object, Game $\ast$game, Id act\+\_\+space)}{dialogue_drop_object_success(Object *object, Game *game, Id act_space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+drop\+\_\+object\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{object, }
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{act\+\_\+space}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a1a76549390e0e8fe0d995868d15d38ee}{}\label{dialogue_8h_a1a76549390e0e8fe0d995868d15d38ee}
+
+
+shows dialogue when success while dropping an object 
+
+Checks if there is an error when trying to drop an object and shows a message if the object has been dropped succesfully.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & pointer to object. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+{\em act\+\_\+space} & Id (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+grasp\+\_\+object\+\_\+error@{dialogue\+\_\+grasp\+\_\+object\+\_\+error}}
+\index{dialogue\+\_\+grasp\+\_\+object\+\_\+error@{dialogue\+\_\+grasp\+\_\+object\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+grasp\+\_\+object\+\_\+error(char $\ast$oname, Game $\ast$game, Id act\+\_\+space, int j)}{dialogue_grasp_object_error(char *oname, Game *game, Id act_space, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+grasp\+\_\+object\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname, }
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{act\+\_\+space, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a1fa4917a65fd5b37d13b17de45c29e3d}{}\label{dialogue_8h_a1fa4917a65fd5b37d13b17de45c29e3d}
+
+
+shows dialogue when error while grasping an object 
+
+Checks if there is an error when trying to grasp an object and shows a message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+{\em act\+\_\+space} & Id (long int). \\
+\hline
+{\em j} & (int value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable@{dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable}}
+\index{dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable@{dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable(char $\ast$oname, Game $\ast$game, Id space\+\_\+id)}{dialogue_grasp_object_error_movable(char *oname, Game *game, Id space_id)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+grasp\+\_\+object\+\_\+error\+\_\+movable (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname, }
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_adaac05650dd4cc6312b3200c8cfbc5e3}{}\label{dialogue_8h_adaac05650dd4cc6312b3200c8cfbc5e3}
+
+
+shows dialogue when error while grasping an object that is not movable 
+
+Checks if there is an error when trying to grasp a non-\/movable object and shows a message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+{\em space\+\_\+id} & Id (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+grasp\+\_\+object\+\_\+success@{dialogue\+\_\+grasp\+\_\+object\+\_\+success}}
+\index{dialogue\+\_\+grasp\+\_\+object\+\_\+success@{dialogue\+\_\+grasp\+\_\+object\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+grasp\+\_\+object\+\_\+success(\+Object $\ast$object, Game $\ast$game, Id act\+\_\+space)}{dialogue_grasp_object_success(Object *object, Game *game, Id act_space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+grasp\+\_\+object\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{object, }
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{act\+\_\+space}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a8ea8137ea45fcf20d2bc1f5d27a8860c}{}\label{dialogue_8h_a8ea8137ea45fcf20d2bc1f5d27a8860c}
+
+
+shows dialogue when success while grasping an object 
+
+Checks if there is an error when trying to grasp an object and shows a message if the object has been grasped succesfully.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & pointer to object. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+{\em act\+\_\+space} & Id (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+movement\+\_\+error@{dialogue\+\_\+movement\+\_\+error}}
+\index{dialogue\+\_\+movement\+\_\+error@{dialogue\+\_\+movement\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+movement\+\_\+error(\+Game $\ast$game, Id space, char $\ast$cardinal)}{dialogue_movement_error(Game *game, Id space, char *cardinal)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+movement\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space, }
+\item[{char $\ast$}]{cardinal}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a2afe0a62619498c4901bfad95623ca68}{}\label{dialogue_8h_a2afe0a62619498c4901bfad95623ca68}
+
+
+shows dialogue when error in movements 
+
+Checks the different movements and shows a message that tells the player that the movement is not allowed if there is an error while checking the movement.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to game. \\
+\hline
+{\em space} & Id (long int). \\
+\hline
+{\em cardinal} & (char). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+movement\+\_\+link\+\_\+error@{dialogue\+\_\+movement\+\_\+link\+\_\+error}}
+\index{dialogue\+\_\+movement\+\_\+link\+\_\+error@{dialogue\+\_\+movement\+\_\+link\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+movement\+\_\+link\+\_\+error(\+Game $\ast$game, Id space, char $\ast$cardinal)}{dialogue_movement_link_error(Game *game, Id space, char *cardinal)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+movement\+\_\+link\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space, }
+\item[{char $\ast$}]{cardinal}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_ace7e6623bd79b3e3d9dc5f65f278776a}{}\label{dialogue_8h_ace7e6623bd79b3e3d9dc5f65f278776a}
+
+
+shows dialogue when error while moving 
+
+Checks if there is an error when trying to make a move
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to game. \\
+\hline
+{\em space} & long int \\
+\hline
+{\em cardinal} & pointer to char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+movement\+\_\+success@{dialogue\+\_\+movement\+\_\+success}}
+\index{dialogue\+\_\+movement\+\_\+success@{dialogue\+\_\+movement\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+movement\+\_\+success(\+Game $\ast$game, Id space, char $\ast$cardinal)}{dialogue_movement_success(Game *game, Id space, char *cardinal)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+movement\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{{\bf Id}}]{space, }
+\item[{char $\ast$}]{cardinal}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_adb5a55e8a732244ce0098876ba8d71e9}{}\label{dialogue_8h_adb5a55e8a732244ce0098876ba8d71e9}
+
+
+shows dialogue when success in movements 
+
+Checks the different movements and shows a message that describes where have you been moved and the name of the space.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to game. \\
+\hline
+{\em space} & Id (long int). \\
+\hline
+{\em cardinal} & (char). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+throw\+\_\+die@{dialogue\+\_\+throw\+\_\+die}}
+\index{dialogue\+\_\+throw\+\_\+die@{dialogue\+\_\+throw\+\_\+die}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+throw\+\_\+die(\+Die $\ast$die)}{dialogue_throw_die(Die *die)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+throw\+\_\+die (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{die}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_afaccfa0802694861fd16d341f5fe0000}{}\label{dialogue_8h_afaccfa0802694861fd16d341f5fe0000}
+
+
+shows dialogue when throwing the die 
+
+Checks if there is any error with the die and shows a message with the value of the die.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em die} & pointer do Die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message when throwing the die). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+turnoff\+\_\+object\+\_\+error@{dialogue\+\_\+turnoff\+\_\+object\+\_\+error}}
+\index{dialogue\+\_\+turnoff\+\_\+object\+\_\+error@{dialogue\+\_\+turnoff\+\_\+object\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+turnoff\+\_\+object\+\_\+error(char $\ast$oname, int j)}{dialogue_turnoff_object_error(char *oname, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+turnoff\+\_\+object\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a50e5a6b2c821cea158ceada240c542d6}{}\label{dialogue_8h_a50e5a6b2c821cea158ceada240c542d6}
+
+
+shows dialogue when error while turning off an object 
+
+Checks if there is an error when trying to turn off an object and shows a message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+{\em j} & (int value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+turnoff\+\_\+object\+\_\+success@{dialogue\+\_\+turnoff\+\_\+object\+\_\+success}}
+\index{dialogue\+\_\+turnoff\+\_\+object\+\_\+success@{dialogue\+\_\+turnoff\+\_\+object\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+turnoff\+\_\+object\+\_\+success(char $\ast$oname)}{dialogue_turnoff_object_success(char *oname)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+turnoff\+\_\+object\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a03bb4bcb30b096b81c60e18c6727c6e0}{}\label{dialogue_8h_a03bb4bcb30b096b81c60e18c6727c6e0}
+
+
+shows dialogue when success while turning off an object 
+
+Checks if there is an error when trying to turn off an object and shows a message if the object has been turned off succesfully.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+turnon\+\_\+object\+\_\+error@{dialogue\+\_\+turnon\+\_\+object\+\_\+error}}
+\index{dialogue\+\_\+turnon\+\_\+object\+\_\+error@{dialogue\+\_\+turnon\+\_\+object\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+turnon\+\_\+object\+\_\+error(char $\ast$oname, int j, int k)}{dialogue_turnon_object_error(char *oname, int j, int k)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+turnon\+\_\+object\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname, }
+\item[{int}]{j, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_ab273e8bc8c74be3e695ddd0b20383535}{}\label{dialogue_8h_ab273e8bc8c74be3e695ddd0b20383535}
+
+
+shows dialogue when error while turning on an object 
+
+Checks if there is an error when trying to turn on an object and shows a message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+{\em j} & (int value). \\
+\hline
+{\em k} & (int value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+turnon\+\_\+object\+\_\+success@{dialogue\+\_\+turnon\+\_\+object\+\_\+success}}
+\index{dialogue\+\_\+turnon\+\_\+object\+\_\+success@{dialogue\+\_\+turnon\+\_\+object\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+turnon\+\_\+object\+\_\+success(char $\ast$oname)}{dialogue_turnon_object_success(char *oname)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+turnon\+\_\+object\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{oname}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a6a65260ade4162e962f190894dedd04a}{}\label{dialogue_8h_a6a65260ade4162e962f190894dedd04a}
+
+
+shows dialogue when success while turning on an object 
+
+Checks if there is an error when trying to turn on an object and shows a message if the object has been turned on succesfully.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em oname} & pointer to char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+unknown@{dialogue\+\_\+unknown}}
+\index{dialogue\+\_\+unknown@{dialogue\+\_\+unknown}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+unknown()}{dialogue_unknown()}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+unknown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_adfed869e8fea0bac5b67f567f51ae95b}{}\label{dialogue_8h_adfed869e8fea0bac5b67f567f51ae95b}
+
+
+shows dialogue when introducing an unknown command 
+
+Checks if there is an error while introducing a command and shows an error message.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if the command is unknown). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+unlock\+\_\+error@{dialogue\+\_\+unlock\+\_\+error}}
+\index{dialogue\+\_\+unlock\+\_\+error@{dialogue\+\_\+unlock\+\_\+error}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+unlock\+\_\+error(char $\ast$object, char $\ast$link, int j, int k)}{dialogue_unlock_error(char *object, char *link, int j, int k)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+unlock\+\_\+error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{object, }
+\item[{char $\ast$}]{link, }
+\item[{int}]{j, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a992dfad74514a3fe7dfe081b993aca95}{}\label{dialogue_8h_a992dfad74514a3fe7dfe081b993aca95}
+
+
+shows dialogue when error while unlocking a door 
+
+Checks if there is an error when trying to unlock a door shows a message
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & pointer to char. \\
+\hline
+{\em link} & pointer to char. \\
+\hline
+{\em j} & (int value). \\
+\hline
+{\em k} & (int value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is an error). 
+\end{DoxyReturn}
+\index{dialogue.\+h@{dialogue.\+h}!dialogue\+\_\+unlock\+\_\+success@{dialogue\+\_\+unlock\+\_\+success}}
+\index{dialogue\+\_\+unlock\+\_\+success@{dialogue\+\_\+unlock\+\_\+success}!dialogue.\+h@{dialogue.\+h}}
+\subsubsection[{\texorpdfstring{dialogue\+\_\+unlock\+\_\+success(char $\ast$object, char $\ast$link)}{dialogue_unlock_success(char *object, char *link)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ dialogue\+\_\+unlock\+\_\+success (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{object, }
+\item[{char $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{dialogue_8h_a2bd7ede8cc08a3a5dbac38f1990de814}{}\label{dialogue_8h_a2bd7ede8cc08a3a5dbac38f1990de814}
+
+
+shows dialogue when success while unlocking a door 
+
+Checks if there is an error when trying to unlock a door
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & pointer to char. \\
+\hline
+{\em link} & pointer to char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char (string of characters that shows a message if there is success). 
+\end{DoxyReturn}

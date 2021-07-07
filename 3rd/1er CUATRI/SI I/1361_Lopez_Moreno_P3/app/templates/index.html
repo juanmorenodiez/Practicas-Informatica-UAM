@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ Title }}
+{% endblock%}
+
+{% block user_validated %}
+
+{% endblock %}
+
+{% block search %}
+<form action="{{url_for('index')}}" method="post" novalidate>
+  <input type="text" placeholder="Search.." name="busqueda" class="center">
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
+
+{% block categories%}
+<form action="" method="get" id="categories">
+  <input type="submit" name = "filtrocat" value = "filtrar">
+</form>
+<select name="categoria" class = "dropbtn" form="categories">
+  <option value="Drama" onclick="">Drama</option>
+  <option value="Accion">Acción</option>
+  <option value="Ciencia Ficción">Ciencia Ficción</option>
+</select>
+{% endblock %}
+
+{% block nombreusuario%}
+  {{email}}
+  <br>
+  Saldo: {{saldo}}€
+{% endblock %}
+
+{% block content %}
+
+<head>
+<title>films</title>
+<link rel="stylesheet" href = {{url_for('static', filename = 'estilo.css')}}/>
+<meta charset="UTF-8">
+</head>
+
+<body class= "iframe-content">
+  <div class="flex-container">
+    {% if not movies_1949 is string %}
+      <ul>
+      {% for item in movies_1949 %}
+      <figcaption> <u> <a href="{{url_for('detalles', film=item.titulo)}}">
+        <tr>
+          <td>{{item.year}}</td>
+          <td>{{item.titulo}}</td>
+          <td>{{item.ventas}}</td>
+        </tr>
+        {{item.movietitle}}
+      </a></u></figcaption>
+      {% endfor %}
+      <ul>
+    {% else %}
+      <h1>{{ movies_1949 }}</h1>
+    {% endif %}
+  </div>
+</body>
+{% endblock %}

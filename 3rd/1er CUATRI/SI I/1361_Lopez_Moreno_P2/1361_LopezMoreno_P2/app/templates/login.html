@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock%}
+
+{% block content %}
+
+{% if flag == True %}
+<script type = text/javascript>
+window.alert("El usuario ya existe")
+</script>
+
+{% endif %}
+    <h1>Sign In</h1>
+    <form action="" method="post" novalidate onsubmit=url_for(setCookie)>
+        <label><b>E-mail</b></label>
+        <input name="mail" type="text" placeholder="Enter e-mail" value = "{{ user_name }}">
+        <label><b>Password</b></label>
+        <input name="password" type="password" placeholder="Enter password">
+        <input type="submit" value="Login">
+    </form>
+{% endblock %}

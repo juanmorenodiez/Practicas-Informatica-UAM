@@ -1,0 +1,470 @@
+\hypertarget{link_8h}{}\section{include/link.h File Reference}
+\label{link_8h}\index{include/link.\+h@{include/link.\+h}}
+
+
+links spaces  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+Include dependency graph for link.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{link_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{link_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Link}{\+\_\+\+Link} \hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link}
+\begin{DoxyCompactList}\small\item\em link definition \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$ \hyperlink{link_8h_a8090d7f529cfd6a2fc5df3dd379fe514}{link\+\_\+create} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em creates a link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a85c4dd77887bf31f651ea1162144d712}{link\+\_\+destroy} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a3fd49fb1a3f19be4fc800ff07820cafb}{link\+\_\+set\+\_\+id} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets an id \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a6c7a3bd7a856288c377edbcd045912e6}{link\+\_\+set\+\_\+name} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em sets a name \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a526a62eef81c93938b7e8ee4a754c63c}{link\+\_\+set\+\_\+link1} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets link number one \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a5e595d652382a65538d7017b82774d42}{link\+\_\+set\+\_\+link2} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets link number two \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a172c8b5a328c0451c74647439c74a60d}{link\+\_\+set\+\_\+status} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, \hyperlink{types_8h_a3425906c2a1ce4f324e3b2006ece02cd}{L\+I\+N\+K\+\_\+\+ST} st)
+\begin{DoxyCompactList}\small\item\em sets the status of the link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{link_8h_a2bbd320f995a72b2ea7ea639b1c81892}{link\+\_\+get\+\_\+id} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets id of the link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{link_8h_a5ab57cf8161d09e8cda55c234d22ab66}{link\+\_\+get\+\_\+link1} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets id of the link number one \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{link_8h_ad274fe544465f3684d22b2a4dfa2c0bd}{link\+\_\+get\+\_\+link2} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets id of the link number two \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{link_8h_aaab4c9c7d5492873cafd9e11dc0f8059}{link\+\_\+get\+\_\+name} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets name of the link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3425906c2a1ce4f324e3b2006ece02cd}{L\+I\+N\+K\+\_\+\+ST} \hyperlink{link_8h_a477b0cf9e85264be7ef7e41d69ff2154}{link\+\_\+get\+\_\+status} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets the status of the link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a95ea756dad592e65440a33dfbe47edcf}{link\+\_\+print} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em prints links \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{link_8h_ad064a2ab07b42a46988ae27c57bfc0b6}{link\+\_\+get\+\_\+key} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link)
+\begin{DoxyCompactList}\small\item\em gets key to open link \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{link_8h_a394f1e4bd521e02c72a6473f14bab609}{link\+\_\+set\+\_\+key} (\hyperlink{link_8h_ae3b299941e67be6971bfd64a25505eff}{Link} $\ast$link, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} key)
+\begin{DoxyCompactList}\small\item\em sets key to open link \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+links spaces 
+
+Module that links the spaces of the game by putting together the ones who are\+: \char`\"{}death\char`\"{}, \char`\"{}goose\char`\"{} and \char`\"{}bridge\char`\"{}. It also links spaces which distance is one space between them.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{link.\+h@{link.\+h}!Link@{Link}}
+\index{Link@{Link}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{Link}{Link}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Link} {\bf Link}}\hypertarget{link_8h_ae3b299941e67be6971bfd64a25505eff}{}\label{link_8h_ae3b299941e67be6971bfd64a25505eff}
+
+
+link definition 
+
+Struct for storing a link with its properties. 
+
+\subsection{Function Documentation}
+\index{link.\+h@{link.\+h}!link\+\_\+create@{link\+\_\+create}}
+\index{link\+\_\+create@{link\+\_\+create}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+create(\+Id id)}{link_create(Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Link}$\ast$ link\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a8090d7f529cfd6a2fc5df3dd379fe514}{}\label{link_8h_a8090d7f529cfd6a2fc5df3dd379fe514}
+
+
+creates a link 
+
+It creates a new link, if id is -\/1(N\+O\+\_\+\+ID), N\+U\+LL is returned, if not, memory for a new link is reserved and created. If anything goes wrong, it returns N\+U\+LL.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to link, N\+U\+LL if something goes wrong. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+destroy@{link\+\_\+destroy}}
+\index{link\+\_\+destroy@{link\+\_\+destroy}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+destroy(\+Link $\ast$link)}{link_destroy(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a85c4dd77887bf31f651ea1162144d712}{}\label{link_8h_a85c4dd77887bf31f651ea1162144d712}
+
+
+frees memory 
+
+Receives pointer to link and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+id@{link\+\_\+get\+\_\+id}}
+\index{link\+\_\+get\+\_\+id@{link\+\_\+get\+\_\+id}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+id(\+Link $\ast$link)}{link_get_id(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} link\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a2bbd320f995a72b2ea7ea639b1c81892}{}\label{link_8h_a2bbd320f995a72b2ea7ea639b1c81892}
+
+
+gets id of the link 
+
+Returns the id of the link, if ID = N\+O\+\_\+\+ID(-\/1), gives E\+R\+R\+OR and returns N\+O\+\_\+\+ID.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if link is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+key@{link\+\_\+get\+\_\+key}}
+\index{link\+\_\+get\+\_\+key@{link\+\_\+get\+\_\+key}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+key(\+Link $\ast$link)}{link_get_key(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} link\+\_\+get\+\_\+key (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_ad064a2ab07b42a46988ae27c57bfc0b6}{}\label{link_8h_ad064a2ab07b42a46988ae27c57bfc0b6}
+
+
+gets key to open link 
+
+Function in charge of returning the key that is used to open a link.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if object is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+link1@{link\+\_\+get\+\_\+link1}}
+\index{link\+\_\+get\+\_\+link1@{link\+\_\+get\+\_\+link1}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+link1(\+Link $\ast$link)}{link_get_link1(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} link\+\_\+get\+\_\+link1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a5ab57cf8161d09e8cda55c234d22ab66}{}\label{link_8h_a5ab57cf8161d09e8cda55c234d22ab66}
+
+
+gets id of the link number one 
+
+Returns the id of the link number one compared, if ID = N\+O\+\_\+\+ID(-\/1), gives E\+R\+R\+OR and returns N\+O\+\_\+\+ID.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if link is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+link2@{link\+\_\+get\+\_\+link2}}
+\index{link\+\_\+get\+\_\+link2@{link\+\_\+get\+\_\+link2}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+link2(\+Link $\ast$link)}{link_get_link2(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} link\+\_\+get\+\_\+link2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_ad274fe544465f3684d22b2a4dfa2c0bd}{}\label{link_8h_ad274fe544465f3684d22b2a4dfa2c0bd}
+
+
+gets id of the link number two 
+
+Returns the id of the link number two, if ID = N\+O\+\_\+\+ID(-\/1), gives E\+R\+R\+OR and returns N\+O\+\_\+\+ID.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if link is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+name@{link\+\_\+get\+\_\+name}}
+\index{link\+\_\+get\+\_\+name@{link\+\_\+get\+\_\+name}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+name(\+Link $\ast$link)}{link_get_name(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ link\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_aaab4c9c7d5492873cafd9e11dc0f8059}{}\label{link_8h_aaab4c9c7d5492873cafd9e11dc0f8059}
+
+
+gets name of the link 
+
+Returns a constant string of characters which will be the name of the link.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constant string of characters. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+get\+\_\+status@{link\+\_\+get\+\_\+status}}
+\index{link\+\_\+get\+\_\+status@{link\+\_\+get\+\_\+status}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+get\+\_\+status(\+Link $\ast$link)}{link_get_status(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+I\+N\+K\+\_\+\+ST} link\+\_\+get\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a477b0cf9e85264be7ef7e41d69ff2154}{}\label{link_8h_a477b0cf9e85264be7ef7e41d69ff2154}
+
+
+gets the status of the link 
+
+If there is an error, C\+L\+O\+SE is returned, normally it will return the O\+P\+EN status because it will be working properly.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\+I\+NK S\+T\+A\+T\+US, C\+L\+O\+SE if argument received is N\+U\+LL, if not, O\+P\+EN. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+print@{link\+\_\+print}}
+\index{link\+\_\+print@{link\+\_\+print}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+print(\+Link $\ast$link)}{link_print(Link *link)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a95ea756dad592e65440a33dfbe47edcf}{}\label{link_8h_a95ea756dad592e65440a33dfbe47edcf}
+
+
+prints links 
+
+Function in charge of printing the link, in order to check that everything is working correctly by calling some of its functions.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+id@{link\+\_\+set\+\_\+id}}
+\index{link\+\_\+set\+\_\+id@{link\+\_\+set\+\_\+id}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+id(\+Link $\ast$link, Id id)}{link_set_id(Link *link, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a3fd49fb1a3f19be4fc800ff07820cafb}{}\label{link_8h_a3fd49fb1a3f19be4fc800ff07820cafb}
+
+
+sets an id 
+
+If there is an error, E\+R\+R\+OR is returned, if not, it establishes an id for the link.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+key@{link\+\_\+set\+\_\+key}}
+\index{link\+\_\+set\+\_\+key@{link\+\_\+set\+\_\+key}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+key(\+Link $\ast$link, Id key)}{link_set_key(Link *link, Id key)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+key (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{{\bf Id}}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a394f1e4bd521e02c72a6473f14bab609}{}\label{link_8h_a394f1e4bd521e02c72a6473f14bab609}
+
+
+sets key to open link 
+
+Function that it is used to set a link to the key that enables us to open that link with the key.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em key} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+link1@{link\+\_\+set\+\_\+link1}}
+\index{link\+\_\+set\+\_\+link1@{link\+\_\+set\+\_\+link1}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+link1(\+Link $\ast$link, Id id)}{link_set_link1(Link *link, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+link1 (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a526a62eef81c93938b7e8ee4a754c63c}{}\label{link_8h_a526a62eef81c93938b7e8ee4a754c63c}
+
+
+sets link number one 
+
+If there is an error, E\+R\+R\+OR is returned, if not, it gives an id to the first link compared.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+link2@{link\+\_\+set\+\_\+link2}}
+\index{link\+\_\+set\+\_\+link2@{link\+\_\+set\+\_\+link2}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+link2(\+Link $\ast$link, Id id)}{link_set_link2(Link *link, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+link2 (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a5e595d652382a65538d7017b82774d42}{}\label{link_8h_a5e595d652382a65538d7017b82774d42}
+
+
+sets link number two 
+
+If there is an error, E\+R\+R\+OR is returned, if not, it gives an id to the second link compared.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+name@{link\+\_\+set\+\_\+name}}
+\index{link\+\_\+set\+\_\+name@{link\+\_\+set\+\_\+name}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+name(\+Link $\ast$link, char $\ast$name)}{link_set_name(Link *link, char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a6c7a3bd7a856288c377edbcd045912e6}{}\label{link_8h_a6c7a3bd7a856288c377edbcd045912e6}
+
+
+sets a name 
+
+If there is an error, E\+R\+R\+OR is returned, if not, it copies the char string into the link name.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em name} & name (char string). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{link.\+h@{link.\+h}!link\+\_\+set\+\_\+status@{link\+\_\+set\+\_\+status}}
+\index{link\+\_\+set\+\_\+status@{link\+\_\+set\+\_\+status}!link.\+h@{link.\+h}}
+\subsubsection[{\texorpdfstring{link\+\_\+set\+\_\+status(\+Link $\ast$link, L\+I\+N\+K\+\_\+\+S\+T st)}{link_set_status(Link *link, LINK_ST st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} link\+\_\+set\+\_\+status (
+\begin{DoxyParamCaption}
+\item[{{\bf Link} $\ast$}]{link, }
+\item[{{\bf L\+I\+N\+K\+\_\+\+ST}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{link_8h_a172c8b5a328c0451c74647439c74a60d}{}\label{link_8h_a172c8b5a328c0451c74647439c74a60d}
+
+
+sets the status of the link 
+
+If the link is open, it returns O\+P\+EN, if not, the link is not working and returns C\+L\+O\+SE.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em link} & pointer to link. \\
+\hline
+{\em st} & link status. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

@@ -1,0 +1,9 @@
+<map id="src/player_test.c" name="src/player_test.c">
+<area shape="rect" id="node5" href="$player_8h.html" title="Implements the game player commands. " alt="" coords="133,80,201,107"/>
+<area shape="rect" id="node8" href="$inventory_8h.html" title="organises the objects in a backpack " alt="" coords="205,155,292,181"/>
+<area shape="rect" id="node10" href="$player__test_8h.html" title="It declares the tests for the player module. " alt="" coords="21,229,118,256"/>
+<area shape="rect" id="node11" href="$test_8h_source.html" title="test.h" alt="" coords="454,80,509,107"/>
+<area shape="rect" id="node6" href="$object_8h.html" title="Implements the game object commands. " alt="" coords="142,229,210,256"/>
+<area shape="rect" id="node7" href="$types_8h.html" title="Defines some structures and enumerations. " alt="" coords="185,304,250,331"/>
+<area shape="rect" id="node9" href="$set_8h.html" title="helps us manage other modules with a better organisation using its functions to change values..." alt="" coords="235,229,286,256"/>
+</map>

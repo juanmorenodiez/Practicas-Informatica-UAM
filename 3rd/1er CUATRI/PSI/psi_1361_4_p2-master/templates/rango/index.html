@@ -1,0 +1,56 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Rango
+{% endblock %}
+
+
+{% block body_block %}
+    <h1>Rango says...</h1>
+		<div>
+			{% if user.is_authenticated %}
+                howdy {{ user.username }}!
+            {% else %}
+                hey there partner!
+            {% endif %}
+        </br><strong>{{ boldmessage }}</strong>
+		</div>
+		<div>
+		{% if categories %}
+            <h2>Most viewed categories</h2>
+		<ul>
+			{% for category in categories %}
+			<!-- The following line is changed to add an HTML hyperlink -->
+			<li>
+                <a href="{% url 'rango:show_category' category.slug %}">
+                    {{ category.name }}
+                </a>
+            </li>
+			{% endfor %}
+		</ul>
+		{% else %}
+			<strong>There are no categories present.</strong>
+		{% endif %}
+		</div>
+        <div>
+		{% if pages %}
+            <h2>Most viewed pages</h2>
+		<ul>
+			{% for page in pages %}
+			<!-- The following line is changed to add an HTML hyperlink -->
+			<li>
+			<a href="{{ page.url }}">{{ page.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		{% else %}
+			<strong>There are no pages present.</strong>
+		{% endif %}
+		</div>
+		<div>
+			<a href="/rango/about/">About Rango</a><br/>
+            <a href="/rango/add_category/">Add New Category</a><br/>
+			<img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" />
+		</div>
+	{% endblock %}

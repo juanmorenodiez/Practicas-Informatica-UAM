@@ -1,0 +1,64 @@
+package ads.practica3;
+
+import java.text.*;
+
+public class VentaDomicilio extends Venta {
+    public VentaDomicilio(Electrodomestico eV, Electrodomestico eE) {
+        super(eV, eE);
+    }
+
+    public VentaDomicilio(Electrodomestico eV) {
+        super(eV);
+    }
+
+    public double precioTotal(){
+        return this.getElectrodomesticoVenta().getPrecioBase() - this.descuento() + this.getElectrodomesticoVenta().precioEntrega();
+    }
+    
+    public String getLinea1() {
+    	DecimalFormatSymbols separadoresPersonalizados = new DecimalFormatSymbols();
+    	separadoresPersonalizados.setDecimalSeparator('.');
+    	DecimalFormat formato = new DecimalFormat("#.00", separadoresPersonalizados);
+    	return "Producto vendido: " + this.getElectrodomesticoVenta().getMarca() + " " +
+                this.getElectrodomesticoVenta().getModelo() + ", " + formato.format(this.getElectrodomesticoVenta().getPrecioBase()) + " Euros\n";
+    }
+    
+    public String getLinea2() {
+    	DecimalFormatSymbols separadoresPersonalizados = new DecimalFormatSymbols();
+    	separadoresPersonalizados.setDecimalSeparator('.');
+    	DecimalFormat formato = new DecimalFormat("#.00", separadoresPersonalizados);
+    	return "Precio producto:     " + formato.format(this.getElectrodomesticoVenta().getPrecioBase()) + " Euros\n";
+    }
+    
+    public String getLinea3() {
+    	DecimalFormatSymbols separadoresPersonalizados = new DecimalFormatSymbols();
+    	separadoresPersonalizados.setDecimalSeparator('.');
+    	DecimalFormat formato = new DecimalFormat("#.00", separadoresPersonalizados);
+    	return "Descuento entrega:   " + formato.format(this.descuento()) + " Euros\n";
+    }
+
+    public String getLinea4() {
+    	DecimalFormatSymbols separadoresPersonalizados = new DecimalFormatSymbols();
+    	separadoresPersonalizados.setDecimalSeparator('.');
+    	DecimalFormat formato = new DecimalFormat("#.00", separadoresPersonalizados);
+    	return "Coste porte:         " + formato.format(this.getElectrodomesticoVenta().precioEntrega()) + " Euros \n";
+    }
+    
+    public String getTotal() {
+    	DecimalFormatSymbols separadoresPersonalizados = new DecimalFormatSymbols();
+    	separadoresPersonalizados.setDecimalSeparator('.');
+    	DecimalFormat formato = new DecimalFormat("#.00", separadoresPersonalizados);
+    	return "TOTAL:              "               + formato.format(this.precioTotal()) + " Euros\n";
+    }
+
+    public String getTicket() {
+        return "--------------------------------------------\n" +
+                this.getLinea1()
+                +"-------------------------------------------- \n" +
+                this.getLinea2() +
+                this.getLinea3() +
+                this.getLinea4() +
+                this.getTotal();
+    }
+
+}

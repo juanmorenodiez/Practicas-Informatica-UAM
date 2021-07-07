@@ -1,0 +1,221 @@
+\hypertarget{GameManagement_8c}{}\section{src/\+Game\+Management.c File Reference}
+\label{GameManagement_8c}\index{src/\+Game\+Management.\+c@{src/\+Game\+Management.\+c}}
+
+
+Contains the function that loads spaces.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Game\+Management.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}link.\+h\char`\"{}}\\*
+Include dependency graph for Game\+Management.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{GameManagement_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_a17503aa3d2345dc2f670ae0995ee9d81}{game\+\_\+management\+\_\+load\+\_\+graphics} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$s, char $\ast$filename, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em loads the graphics \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_a51753ca919dffdc97f2249bd5edc4fa5}{game\+\_\+management\+\_\+load\+\_\+spaces} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em loads the spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_a59fad5fbf3d2f209ff5ab55060ad6974}{game\+\_\+management\+\_\+load\+\_\+objects} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em loads the objects \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_a784e0d137d6ffdade3b65165be3a24bc}{game\+\_\+management\+\_\+load\+\_\+links} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em loads the links \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_a7deb885075e008a0f2637330ce753047}{game\+\_\+management\+\_\+save\+\_\+game} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em saves the game \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{GameManagement_8c_afc72ef5dcc7b540e92ce2bec4fc0c466}{game\+\_\+management\+\_\+load\+\_\+game} (\hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game, char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em saves the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the function that loads spaces. 
+
+The file is in charge of loading the structural part of the game such as the spaces, the objects and the links.
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+load\+\_\+game@{game\+\_\+management\+\_\+load\+\_\+game}}
+\index{game\+\_\+management\+\_\+load\+\_\+game@{game\+\_\+management\+\_\+load\+\_\+game}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+load\+\_\+game(\+Game $\ast$game, char $\ast$filename)}{game_management_load_game(Game *game, char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+load\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_afc72ef5dcc7b540e92ce2bec4fc0c466}{}\label{GameManagement_8c_afc72ef5dcc7b540e92ce2bec4fc0c466}
+
+
+saves the game 
+
+Function used to load the currect game positioning of objects, spaces, etc. and loads a new file
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game. \\
+\hline
+{\em filename} & a string with the name of the file from where the game is load. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+load\+\_\+graphics@{game\+\_\+management\+\_\+load\+\_\+graphics}}
+\index{game\+\_\+management\+\_\+load\+\_\+graphics@{game\+\_\+management\+\_\+load\+\_\+graphics}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+load\+\_\+graphics(\+Space $\ast$s, char $\ast$filename, Id id)}{game_management_load_graphics(Space *s, char *filename, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+load\+\_\+graphics (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{s, }
+\item[{char $\ast$}]{filename, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_a17503aa3d2345dc2f670ae0995ee9d81}{}\label{GameManagement_8c_a17503aa3d2345dc2f670ae0995ee9d81}
+
+
+loads the graphics 
+
+Detects graphics in a file (P.\+E graphics.\+txt) and loads them into a game.
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a pointer to the space where the graphics will be loaded. \\
+\hline
+{\em filename} & a string with the name of the file in where the spaces are loaded. \\
+\hline
+{\em id} & long int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+load\+\_\+links@{game\+\_\+management\+\_\+load\+\_\+links}}
+\index{game\+\_\+management\+\_\+load\+\_\+links@{game\+\_\+management\+\_\+load\+\_\+links}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+load\+\_\+links(\+Game $\ast$game, char $\ast$filename)}{game_management_load_links(Game *game, char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+load\+\_\+links (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_a784e0d137d6ffdade3b65165be3a24bc}{}\label{GameManagement_8c_a784e0d137d6ffdade3b65165be3a24bc}
+
+
+loads the links 
+
+Detects links in a file (P.\+E. data.\+dat) and loads them into a game
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game where the links will be loaded. \\
+\hline
+{\em filename} & a string with the name of the file in where the links are saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+load\+\_\+objects@{game\+\_\+management\+\_\+load\+\_\+objects}}
+\index{game\+\_\+management\+\_\+load\+\_\+objects@{game\+\_\+management\+\_\+load\+\_\+objects}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+load\+\_\+objects(\+Game $\ast$game, char $\ast$filename)}{game_management_load_objects(Game *game, char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+load\+\_\+objects (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_a59fad5fbf3d2f209ff5ab55060ad6974}{}\label{GameManagement_8c_a59fad5fbf3d2f209ff5ab55060ad6974}
+
+
+loads the objects 
+
+Detects objects in a file (P.\+E. data.\+dat) and loads them into a game
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game where the objects will be loaded. \\
+\hline
+{\em filename} & a string with the name of the file in where the objects are saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+load\+\_\+spaces@{game\+\_\+management\+\_\+load\+\_\+spaces}}
+\index{game\+\_\+management\+\_\+load\+\_\+spaces@{game\+\_\+management\+\_\+load\+\_\+spaces}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+load\+\_\+spaces(\+Game $\ast$game, char $\ast$filename)}{game_management_load_spaces(Game *game, char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+load\+\_\+spaces (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_a51753ca919dffdc97f2249bd5edc4fa5}{}\label{GameManagement_8c_a51753ca919dffdc97f2249bd5edc4fa5}
+
+
+loads the spaces 
+
+Detects spaces in a file (P.\+E. data.\+dat) and loads them into a game.
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game where the spaces will be loaded. \\
+\hline
+{\em filename} & a string with the name of the file in where the spaces are saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{Game\+Management.\+c@{Game\+Management.\+c}!game\+\_\+management\+\_\+save\+\_\+game@{game\+\_\+management\+\_\+save\+\_\+game}}
+\index{game\+\_\+management\+\_\+save\+\_\+game@{game\+\_\+management\+\_\+save\+\_\+game}!Game\+Management.\+c@{Game\+Management.\+c}}
+\subsubsection[{\texorpdfstring{game\+\_\+management\+\_\+save\+\_\+game(\+Game $\ast$game, char $\ast$filename)}{game_management_save_game(Game *game, char *filename)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} game\+\_\+management\+\_\+save\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf Game} $\ast$}]{game, }
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}\hypertarget{GameManagement_8c_a7deb885075e008a0f2637330ce753047}{}\label{GameManagement_8c_a7deb885075e008a0f2637330ce753047}
+
+
+saves the game 
+
+Function used to save the currect game positioning of objects, spaces, etc. and creates a new file
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em game} & a pointer to the game. \\
+\hline
+{\em filename} & a string with the name of the file in where the game is saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

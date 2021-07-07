@@ -1,0 +1,16 @@
+Juan Moreno Díez
+Mario López Zamorano
+
+Normativa de entrega cumplida en su totalidad: 5% - No realizado
+Fichero leeme.txt bien explicado: 5% - parcialmente realizado
+Recibir tramas Ethernet, realizar comprobaciones y llamar correctamente a la función de callback de nivel superior 10% - realizado
+Enviar tramas Ethernet  correctamente 10% - realizado
+Enviar correctamente peticiones ARP 10% - realizado
+Procesar correctamente peticiones ARP recibidas 15% - realizado
+Enviar correctamente respuestas ARP 10% - realizado
+Procesar correctamente respuestas ARP 15% - parcialmente realizado
+Manejo correcto de la caché ARP 5% - 
+Uso correcto de Locks 5% - realizado
+Realiza correctamente el ARP gratuito 10% - realizado
+
+

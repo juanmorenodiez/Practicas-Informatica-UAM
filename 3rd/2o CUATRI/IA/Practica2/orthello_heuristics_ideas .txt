@@ -1,0 +1,5 @@
+1. http://home.datacomm.ch/t_wolf/tw/misc/reversi/html/index.html#Eval
+2. http://www.cs.cornell.edu/~yuli/othello/othello.html
+3. https://stackoverflow.com/questions/13314288/need-heuristic-function-for-reversiothello-ideas
+4. https://courses.cs.washington.edu/courses/cse573/04au/Project/mini1/RUSSIA/Final_Paper.pdf
+5. http://ceur-ws.org/Vol-1107/paper2.pdf

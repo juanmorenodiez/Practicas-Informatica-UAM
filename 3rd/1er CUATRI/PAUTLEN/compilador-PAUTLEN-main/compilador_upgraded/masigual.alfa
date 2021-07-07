@@ -1,0 +1,10 @@
+main {
+	int e1;
+	int e2;
+	e1 = 5;
+	e2 = 2;
+	e2 += e1;
+
+	printf e2;
+
+}

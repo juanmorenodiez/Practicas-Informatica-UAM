@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ History }}
+{% endblock%}
+
+{% block content %}
+<body class="iframe-content">
+<div class="panel">
+    <div>
+      <div>
+        <h2>Historial de compras</h2>
+        <table class="tablehistory">
+          {%for item in movies %}
+          <tr>
+            <td><i></i></td>
+            <td> {{item}}</td>
+          {% endfor %}
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

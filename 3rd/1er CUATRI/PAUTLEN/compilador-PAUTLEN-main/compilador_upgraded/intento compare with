@@ -1,0 +1,8 @@
+if (exp){
+ x = 1;
+}
+
+compare exp with exp {
+< { x = 1 }
+= { x = 2 }
+> { x = 3 } }

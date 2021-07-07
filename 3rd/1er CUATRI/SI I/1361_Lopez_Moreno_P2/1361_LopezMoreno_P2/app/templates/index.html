@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ Index }}
+{% endblock%}
+
+{% block user_validated %}
+
+{% endblock %}
+
+{% block search %}
+<form action="{{url_for('index')}}" method="post" novalidate>
+  <input type="text" placeholder="Search.." name="busqueda" class="center">
+  <input type="submit" value="Submit">
+</form>
+{% endblock %}
+
+{% block categories%}
+<form action="" method="get" id="categories">
+  <input type="submit" name = "filtrocat" value = "filtrar">
+</form>
+<select name="categoria" class = "dropbtn" form="categories">
+  <option value="Drama" onclick="">Drama</option>
+  <option value="Accion">Acción</option>
+  <option value="Ciencia Ficción">Ciencia Ficción</option>
+</select>
+{% endblock %}
+
+{% block nombreusuario%}
+  {{email}}
+  <br>
+  Saldo: {{saldo}}€
+{% endblock %}
+
+{% block content %}
+
+<head>
+<title>films</title>
+<link rel="stylesheet" href = {{url_for('static', filename = 'estilo.css')}}/>
+<meta charset="UTF-8">
+</head>
+
+<body class= "iframe-content">
+  <div class="flex-container">
+  {%for item in movies %}
+  <figure>
+
+  <a href = {{url_for('detalles', film=item.titulo)}}><img src = "{{url_for('static', filename = 'film_photos/'+item.poster)}}" class="cover"></a>
+
+  
+  <div align="center">
+    <figcaption> <u> <a href="{{url_for('detalles', film=item.titulo)}}">{{item.titulo}}</a></u> </figcaption>
+  </figure>
+  {% endfor %}
+  </div>
+</body>
+{% endblock %}

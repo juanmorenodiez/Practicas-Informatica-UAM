@@ -1,0 +1,17 @@
+main {
+	int i;
+	int num;
+	int num2;
+	num2 = 4;
+
+	for(i=0; (i < 4) i++;) {
+		num++;
+	}
+	
+	for(i=0; (i < 4) i++;) {
+		num2+=2;
+	}
+	
+	printf num;
+	printf num2;
+}

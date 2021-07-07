@@ -1,0 +1,116 @@
+{ "peliculas":
+  [
+    {
+      "id": 1,
+      "titulo": "Avengers Endgame",
+      "poster": "endgame.jpg",
+      "precio": 7.5,
+      "categoria": "Ciencia Ficción",
+      "descripcion": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+    },
+    {
+      "id": 2,
+      "titulo": "Avatar",
+      "poster": "avatar.jpg",
+      "precio": 10,
+      "categoria": "Ciencia Ficción",
+      "descripcion": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
+    },
+    {
+      "id": 3,
+      "titulo": "Casino Royale",
+      "poster": "casinoroyale.jpg",
+      "precio": 5.5,
+      "categoria": "Accion",
+      "descripcion": " A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home."
+    },
+    {
+      "id": 4,
+      "titulo": "Limitless",
+      "poster": "limitless.jpg",
+      "precio": 3.5,
+      "categoria": "Drama",
+      "descripcion": "With the help of a mysterious pill that enables the user to access one hundred percent of his brain abilities, a struggling writer becomes a financial wizard, but it also puts him in a new world with lots of dangers."
+    },
+    {
+      "id": 5,
+      "titulo": "Matrix",
+      "poster": "matrix.jpg",
+      "precio": 12,
+      "categoria": "Ciencia Ficción",
+      "descripcion": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+    },
+    {
+      "id": 6,
+      "titulo": "Pain & Gain",
+      "poster": "painandgain.jpg",
+      "precio": 8.75,
+      "categoria": "Accion",
+      "descripcion": "A trio of bodybuilders in Florida get caught up in an extortion ring and a kidnapping scheme that goes terribly wrong."
+    },
+    {
+      "id": 7,
+      "titulo": "Shutter Island",
+      "poster": "shutterisland.jpg",
+      "precio": 9.25,
+      "categoria": "Drama",
+      "descripcion": "In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane."
+    },
+    {
+      "id": 8,
+      "titulo": "Wolf of Wall Street",
+      "poster": "wolfofwallstreet.jpg",
+      "precio": 6.25,
+      "categoria": "Drama",
+      "descripcion": "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government."
+    },
+    {
+      "id": 9,
+      "titulo": "Ad Astra",
+      "poster": "adastra.jpg",
+      "precio": 8,
+      "categoria": "Drama",
+      "descripcion": "Astronaut Roy McBride undertakes a mission across an unforgiving solar system to uncover the truth about his missing father and his doomed expedition that now, 30 years later, threatens the universe."
+    },
+    {
+      "id": 10,
+      "titulo": "Intocable",
+      "poster": "intocable.jpg",
+      "precio": 12.5,
+      "categoria": "Drama",
+      "descripcion": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver."
+    },
+    {
+      "id": 11,
+      "titulo": "Joker",
+      "poster": "joker.jpg",
+      "precio": 9.75,
+      "categoria": "Drama",
+      "descripcion": "In Gotham City, mentally-troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: The Joker."
+    },
+    {
+      "id": 12,
+      "titulo": "Jurassic Park",
+      "poster": "jurassicpark.jpg",
+      "precio": 4.5,
+      "categoria": "Ciencia Ficción",
+      "descripcion": "A pragmatic Paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose."
+    },
+    {
+      "id": 13,
+      "titulo": "Pulp Fiction",
+      "poster": "pulpfiction.jpg",
+      "precio": 7,
+      "categoria": "Accion",
+      "descripcion": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    },
+    {
+      "id": 14,
+      "titulo": "Transformers",
+      "poster": "transformers.jpg",
+      "precio": 3.25,
+      "categoria": "Accion",
+      "descripcion": "An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager."
+    }
+  ]
+}

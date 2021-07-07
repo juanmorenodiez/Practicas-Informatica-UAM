@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ Detalles }}
+{% endblock%}
+
+
+{% block content %}
+<body class="iframe-content">
+
+<h1 class = "film-headers">{{item.titulo}}</h1>
+	
+		<div class = "film-description"> {{item.anio}} </div>
+    <br>
+		<div class = "film-description"> Precio: {{item.precio}}€ </div>
+		<br>
+		<fieldset>
+      <form action="" method="post" novalidate>
+        <input type="submit" name="add" class="button" value="Add to Cart">
+      </form>
+		</fieldset>
+
+
+</body>
+{% endblock %}

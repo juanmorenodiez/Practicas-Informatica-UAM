@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<head>
+<title>cart</title>
+<link rel="stylesheet" href = {{url_for('static', filename = 'estilo.css')}}/>
+<meta charset="UTF-8">
+</head>
+
+<body class= "iframe-content">
+<div class="panel">
+    <div>
+      <div>
+        <h2>Cart</h2>
+        <table class="tablehistory">
+          {%for key, value in movies.items() %}
+          <tr>
+            <td><i></i></td>
+            <td> {{key}}</td>
+            <td> {{value}}</td>
+            <td>
+              <a href="{{url_for('elim', film=key)}}">Eliminar</a>
+          </td>
+          </tr>
+          {% endfor %}
+          <form action="" method="get" name="incrementar">
+            Tarjeta
+            <input type="text" name="tarjeta">
+            <br>
+            Ingresar<input type="text" name="incrementar">
+            <br>
+            <input type="submit" name = "incrementar" value = "Confirmar">
+          </form>
+        </table>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>Precio Total: {{total}}€</div>
+
+    <form action="" method="post" novalidate>
+      <br>
+      <input type="submit" name="purchase" class="button" value="Purchase films">
+    </form>
+  </div>
+</body>
+
+</body>
+{% endblock %}

@@ -1,0 +1,72 @@
+Para todo el documento, 0 es cerrado y 1 abierto, o 0 false y 1 true, o 0 no y 1 sí.
+
+Espacios: Id espacio|nombre espacio|norte|sur|este|oeste|arriba|abajo|descripcion breve|descripcion larga|ilumination
+Objectos: Id objeto|nombre|casilla inicial|descripcion antes de mover|descripcion despues de mover|Movible|Oculto|Abre cierto link|Iluminador|Iluminador encendido?
+Links: Id link|nombre|conexion 1|conexion 2|estado (0 o 1), 0 abierto, 1 cerrado
+
+
+
+#s:01|Casilla 01|02|-1|-1|-1|-1|-1|Starting room|This is the begining of the game, you should grab some objects before moving on|1
+#s:02|Casilla 02|-1|01|03|04|06|-1|Stairs room|From here, you will be able to go to the second floor|-1
+#s:03|Casilla 03|-1|-1|-1|02|-1|-1|Books room|Grab the key in order to open Ricky's shop|-1
+#s:04|Casilla 04|-1|05|02|-1|-1|-1|Pipes room|Here you can play around with the pipes and have some fun!!|-1
+#s:05|Casilla 05|04|-1|-1|-1|-1|-1|Ricky shop|Grab the gem so that you can go upstair!|-1
+#s:06|Casilla 06|10|-1|09|07|-1|02|Second Floor entrance|In this room you will be able to make a hole in the wall using the stone|-1
+#s:07|Casilla 07|08|-1|06|-1|-1|-1|Challenge room|Throw the die "t" or "throw". When you get a 5, you will be able to grab the key!!|-1
+#s:08|Casilla 08|-1|07|-1|-1|-1|-1|Mafia's room|This room took most of your properties, just leaving you with the candle. At least, now you can take the handle which seems useful...|-1
+#s:09|Casilla 09|-1|06|-1|-1|-1|-1|Secret room|This is the secret room, you are progressing greatly in the game|-1
+#s:10|Casilla 10|11|06|-1|-1|-1|-1|Exit to city|You finally made it!! Just one step away from being free... |-1
+#s:11|Casilla 11|-1|-1|-1|-1|-1|-1|City|GAME FINISHED!! THANKS FOR PLAYING, NOW YOU CAN ENJOY YOUR FREEDOM|-1
+
+
+
+
+#o:01|Boots|01|A pair of boots|You are moving with an extra pair of boots!|1|0|NO_ID|0|0
+#o:02|Trousers|01|Grab this trousers to be well dressed|You are moving with an extra trouser!|1|0|NO_ID|0|0
+#o:03|T-shirt|01|Grab this cool t-shirt to impress the rest of animals|You are moving with an extra t-shirt|1|0|NO_ID|0|0
+#o:04|Water|01|You should give this to Giotto|Find Giotto and give him the bottle!|1|0|NO_ID|0|0
+#o:05|Candle|01|Grab it in order to illuminate the rooms|You can use this to iluminate the rooms|1|0|NO_ID|1|0
+#o:06|Johny|02|Luigi!! Where have you placed the gem! We need to give it to the boss tomorrow!|NONE|0|1|NO_ID|0|0
+#o:07|Luigi|02|I had it in my bag pack when I left home|NONE|0|1|NO_ID|0|0
+#o:08|Key1|03|Key to open Ricky shop|Go to the door of Rickys shop!!|1|0|1|0|0
+#o:09|Ancientmouse|03|So glad you are here, I can't grab the key and I don't know who is it's propietary. Please grab it and find him|NONE|0|1|NO_ID|0|0
+#o:10|Gem|05|Grab this to be able to complete the game|Keep the gem in your inventory!|1|0|5|0|0
+#o:11|Ricky|05|Hello Rick, I have found this key and I think it is from your shop. Now you can grab the gem from my shop!|NONE|0|1|NO_ID|0|0
+#o:12|Wood|06|Looks like this can be useful...|This is just a useless piece of wood, but grab it!|1|0|NO_ID|0|0 
+#o:13|Table|06|Used to leave the wood|NONE|0|0|NO_ID|0|0
+#o:14|Die|07|Throw the die "t" or "throw". When you get a 5, you will be able to grab the key!!|NONE|0|0|NO_ID|0|0
+#o:15|Key2|07|Grab it to open the Mafia's room|Be careful, Mafia's room is dangerous!!|0|0|3|0|0
+#o:16|Boss|08|I am sorry, but I am keeping your objects in my room. You should be thankful you are still alive...|NONE|0|0|NO_ID|0|0
+#o:17|Salvatore|08|Sorry for the mess we have done with your objects... hahahaha|NONE|0|0|NO_ID|0|0
+#o:18|Stone|09|This may be useful...|Use this to dig the las hole.|1|0|NO_ID|0|0
+#o:19|Flower|09|This is merely decoration!!|NONE|0|0|NO_ID|0|0
+#o:20|Handle|08|Looks like you can use this to open a door|You can use this to open a secret room|1|0|08|0|0
+
+
+
+#l:01|lnk01|02|01|0|-1
+
+
+Este link deberia abrirse usando la key1
+#l:02|Ricky|04|05|1|08
+
+Este link deberia abrirse usando la key2
+#l:03|Mafia|08|07|1|15
+
+Este link deberia abrirse utilizando el stone
+#l:04|Hole|10|06|1|18
+
+
+#l:05|Exit|11|10|0|-1
+
+
+#l:06|lnk06|04|02|0|-1
+#l:07|lnk07|02|03|0|-1
+
+Este link deberia abrirse usando el handle
+#l:08|Secret|06|09|1|20
+
+#l:09|lnk09|07|06|0|-1
+#l:10|lnk10|02|06|0|-1
+
+

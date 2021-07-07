@@ -1,0 +1,32 @@
+package ads.practica3;
+
+
+public class Frigorifico extends LavadoraYFrigorifico {
+    private boolean esNofrost;
+
+    public Frigorifico(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica, Dimension d, double p, boolean esNofrost) {
+        super(marca, modelo, precioBase, claseEnergetica, d, p);
+        this.setEsNofrost(esNofrost);
+    }
+
+
+    @Override
+    public double precioEntrega() {
+        return (int) (this.getDimensiones().calcularDimension() * 70);
+
+    }
+
+
+	public boolean isEsNofrost() {
+		return esNofrost;
+	}
+
+
+	public void setEsNofrost(boolean esNofrost) {
+		this.esNofrost = esNofrost;
+	}
+	
+	public String toString() {
+		return this.getMarca() + " "+ this.getModelo() + ", " + this.getPrecioBase() + " Euros";
+	}
+}

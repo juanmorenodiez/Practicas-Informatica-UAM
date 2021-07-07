@@ -1,0 +1,10 @@
+main {
+	int e1;
+	int res;
+
+	e1 = 0;
+	res = !!e1;
+	
+	printf res;
+
+}

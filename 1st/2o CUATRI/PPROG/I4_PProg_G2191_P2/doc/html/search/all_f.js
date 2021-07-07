@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['player',['player',['../struct__Game.html#a31406605782d71ec00c4bf258ea76267',1,'_Game::player()'],['../player_8h.html#af30e2030635a69690f85e48bc6ef202f',1,'Player():&#160;player.h']]],
+  ['player_2ec',['player.c',['../player_8c.html',1,'']]],
+  ['player_2eh',['player.h',['../player_8h.html',1,'']]],
+  ['player_5fcreate',['player_create',['../player_8c.html#a97ea1d0deda3c51ef6ce63a13dab7a38',1,'player_create(Id id):&#160;player.c'],['../player_8h.html#a97ea1d0deda3c51ef6ce63a13dab7a38',1,'player_create(Id id):&#160;player.c']]],
+  ['player_5fdestroy',['player_destroy',['../player_8c.html#a4a602c75f8e3391cbd288c35a83a10fe',1,'player_destroy(Player *p):&#160;player.c'],['../player_8h.html#a4a602c75f8e3391cbd288c35a83a10fe',1,'player_destroy(Player *p):&#160;player.c']]],
+  ['player_5fget_5fid',['player_get_id',['../player_8c.html#ace9de3676a44420727bcc1d2935ae3e4',1,'player_get_id(Player *p):&#160;player.c'],['../player_8h.html#ace9de3676a44420727bcc1d2935ae3e4',1,'player_get_id(Player *p):&#160;player.c']]],
+  ['player_5fget_5finventory',['player_get_inventory',['../player_8c.html#a727c2314037de6f622a513eb1291838f',1,'player_get_inventory(Player *p):&#160;player.c'],['../player_8h.html#a727c2314037de6f622a513eb1291838f',1,'player_get_inventory(Player *p):&#160;player.c']]],
+  ['player_5fget_5flocation',['player_get_location',['../player_8c.html#a00fd04dabfe1024ea62fe7c335097db7',1,'player_get_location(Player *p):&#160;player.c'],['../player_8h.html#a00fd04dabfe1024ea62fe7c335097db7',1,'player_get_location(Player *p):&#160;player.c']]],
+  ['player_5fget_5fname',['player_get_name',['../player_8c.html#aaec42336dad00b854be6f071c653d645',1,'player_get_name(Player *p):&#160;player.c'],['../player_8h.html#aaec42336dad00b854be6f071c653d645',1,'player_get_name(Player *p):&#160;player.c']]],
+  ['player_5fget_5fobject',['player_get_object',['../player_8c.html#afdb5019868014ca1647d716989664795',1,'player_get_object(Player *p, int position):&#160;player.c'],['../player_8h.html#afdb5019868014ca1647d716989664795',1,'player_get_object(Player *p, int position):&#160;player.c']]],
+  ['player_5fhas_5fid',['player_has_id',['../player_8c.html#a50d2d4bf00b796ffd28bd91bfcfd4685',1,'player_has_id(Player *p, Id id):&#160;player.c'],['../player_8h.html#a50d2d4bf00b796ffd28bd91bfcfd4685',1,'player_has_id(Player *p, Id id):&#160;player.c']]],
+  ['player_5finventory_5fis_5fempty',['player_inventory_is_empty',['../player_8c.html#a8b27bf719c2fe3fa9a4712d28dc6f316',1,'player_inventory_is_empty(Player *p):&#160;player.c'],['../player_8h.html#a8b27bf719c2fe3fa9a4712d28dc6f316',1,'player_inventory_is_empty(Player *p):&#160;player.c']]],
+  ['player_5finventory_5fis_5ffull',['player_inventory_is_full',['../player_8c.html#a5b4a99b2bcfc728a1bc61d7d33db649e',1,'player_inventory_is_full(Player *p):&#160;player.c'],['../player_8h.html#a5b4a99b2bcfc728a1bc61d7d33db649e',1,'player_inventory_is_full(Player *p):&#160;player.c']]],
+  ['player_5fremove_5fobject',['player_remove_object',['../player_8c.html#a45c2b556f12fb90a1b9940bf8d79841f',1,'player_remove_object(Player *p, Id id):&#160;player.c'],['../player_8h.html#a45c2b556f12fb90a1b9940bf8d79841f',1,'player_remove_object(Player *p, Id id):&#160;player.c']]],
+  ['player_5fset_5fid',['player_set_id',['../player_8c.html#a1df02c30af1e7fd4ed798b62823d0206',1,'player_set_id(Player *p, Id id):&#160;player.c'],['../player_8h.html#a1df02c30af1e7fd4ed798b62823d0206',1,'player_set_id(Player *p, Id id):&#160;player.c']]],
+  ['player_5fset_5flocation',['player_set_location',['../player_8c.html#a53cf87aa437ae42972050bd6da169888',1,'player_set_location(Player *p, Id location):&#160;player.c'],['../player_8h.html#a53cf87aa437ae42972050bd6da169888',1,'player_set_location(Player *p, Id location):&#160;player.c']]],
+  ['player_5fset_5fname',['player_set_name',['../player_8c.html#a5c123d5c69f8d8fa0610c8212e56a3cd',1,'player_set_name(Player *p, char *name):&#160;player.c'],['../player_8h.html#a5c123d5c69f8d8fa0610c8212e56a3cd',1,'player_set_name(Player *p, char *name):&#160;player.c']]],
+  ['player_5fset_5fobject',['player_set_object',['../player_8c.html#a4096c89077192eedd36aebdba24e9e5e',1,'player_set_object(Player *p, Id id):&#160;player.c'],['../player_8h.html#a4096c89077192eedd36aebdba24e9e5e',1,'player_set_object(Player *p, Id id):&#160;player.c']]],
+  ['player_5ftest_2ec',['player_test.c',['../player__test_8c.html',1,'']]],
+  ['player_5ftest_2eh',['player_test.h',['../player__test_8h.html',1,'']]],
+  ['prompt',['PROMPT',['../screen_8c.html#accdbea14ea06c15e271784368bd993e8',1,'screen.c']]],
+  ['prop',['prop',['../struct__Object.html#a2acdcc90e7417c2ab1bc41e52a107c2d',1,'_Object']]]
+];

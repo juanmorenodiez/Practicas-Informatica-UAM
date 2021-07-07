@@ -1,0 +1,16 @@
+package ads.practica3;
+
+public enum ClaseEnergetica {
+    A(0), B(1), C(2), D(3), Desconocida(4);
+
+    private ClaseEnergetica(int v) {
+        this.valor = v;
+
+    }
+    private final int valor;
+
+
+    public int getValor() {
+        return valor;
+    }
+}

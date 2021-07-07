@@ -1,0 +1,11 @@
+<map id="include/game.h" name="include/game.h">
+<area shape="rect" id="node2" href="$command_8h.html" title="Contains the command list and the declaration of the get user input function. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$space_8h.html" title="Defines the space related function. " alt="" coords="90,155,158,181"/>
+<area shape="rect" id="node5" href="$object_8h.html" title="Implements the game object commands. " alt="" coords="267,229,335,256"/>
+<area shape="rect" id="node8" href="$player_8h.html" title="Implements the game player commands. " alt="" coords="222,80,290,107"/>
+<area shape="rect" id="node10" href="$die_8h.html" title="generates a die " alt="" coords="15,155,65,181"/>
+<area shape="rect" id="node11" href="$link_8h.html" title="links spaces " alt="" coords="360,229,413,256"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="Defines some structures and enumerations. " alt="" coords="165,304,230,331"/>
+<area shape="rect" id="node7" href="$set_8h.html" title="helps us manage other modules with a better organisation using its functions to change values..." alt="" coords="141,229,192,256"/>
+<area shape="rect" id="node9" href="$inventory_8h.html" title="organises the objects in a backpack " alt="" coords="182,155,269,181"/>
+</map>

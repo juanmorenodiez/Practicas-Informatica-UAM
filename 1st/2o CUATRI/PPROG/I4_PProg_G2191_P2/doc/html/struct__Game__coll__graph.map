@@ -1,0 +1,10 @@
+<map id="_Game" name="_Game">
+<area shape="rect" id="node2" href="$struct__Link.html" title="link definition " alt="" coords="5,196,59,223"/>
+<area shape="rect" id="node3" href="$struct__Die.html" title="die with id and last number " alt="" coords="83,196,133,223"/>
+<area shape="rect" id="node4" href="$struct__Space.html" title="spaces of the game " alt="" coords="148,145,215,172"/>
+<area shape="rect" id="node5" href="$struct__Set.html" title="id and number of ids " alt="" coords="195,5,245,32"/>
+<area shape="rect" id="node9" href="$struct__Inventory.html" title="set and max objects. " alt="" coords="219,95,301,121"/>
+<area shape="rect" id="node6" href="$struct__Object.html" title="object of the game " alt="" coords="347,196,413,223"/>
+<area shape="rect" id="node7" href="$structObjectproperties.html" title="properties of the objects in the game " alt="" coords="325,95,443,121"/>
+<area shape="rect" id="node8" href="$struct__Player.html" title="player definition " alt="" coords="252,196,319,223"/>
+</map>

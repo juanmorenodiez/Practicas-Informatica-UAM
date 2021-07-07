@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}
+  {{Register}}
+{% endblock%}
+
+{% block content %}
+
+<script type = "text/javascript">
+    function validacion() {
+      var name = document.formulario.firstname.value;
+      var password = document.formulario.password.value;
+      var password2 = document.formulario.password2.value;
+      var credit = document.formulario.credit.value;
+      var mail = document.formulario.mail.value;
+
+      if (name.length < 2 || name.indexOf(" ") != -1) {
+        alert("Name not valid...");
+        return false;
+      }
+
+      else if (password.length < 8 || name.indexOf(" ") != -1) {
+        alert("Password not valid...");
+        return false;
+      }
+
+      else if (mail.indexOf("@") == -1 || mail.indexOf(".") == -1) {
+        alert("E-mail not valid...");
+        return false;
+      }
+
+      else if (password != password2) {
+        alert("Passwords do not match...");
+        return false;
+      }
+
+      return true;
+    }
+
+  </script>
+
+  <body class="iframe-content">
+  <div>
+
+  <h2><b> Register </b></h2>
+
+  <form name = "formulario" action="" onsubmit="return validacion()" method="post">
+    First name:<br>
+  	<input type="text" name="firstname">
+  	<br>
+    Password:<br>
+  	<input type="text" name="password">
+    <br>
+    Confirm password:<br>
+    <input type="text" name="password2">
+    <br>
+    E-mail:<br>
+  	<input type="text" name="mail">
+  	<br>
+    Credit card:<br>
+  	<input type="number" name="credit">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+
+
+{% endblock %}

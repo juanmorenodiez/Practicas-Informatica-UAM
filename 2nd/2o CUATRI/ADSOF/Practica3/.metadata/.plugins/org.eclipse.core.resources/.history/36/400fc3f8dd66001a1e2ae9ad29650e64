@@ -1,0 +1,44 @@
+package ads.practica3;
+
+public class TelevisionCurva extends Television{
+	private Dimension dimensiones;
+	private double peso;
+	
+
+	public TelevisionCurva(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica, Integer dim, Dimension d, double peso) {
+		super(marca, modelo, precioBase, claseEnergetica, dim);
+		this.setDimensiones(d);
+		this.peso = peso;
+	}
+
+
+	public double getPeso() {
+		return peso;
+	}
+
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+
+
+	public Dimension getDimensiones() {
+		return dimensiones;
+	}
+
+
+	public void setDimensiones(Dimension dimensiones) {
+		this.dimensiones = dimensiones;
+	}
+	
+	@Override
+	public double precioEntrega () {
+		double porteTelevision;
+		double volumen;
+		
+		porteTelevision = super.precioEntrega();
+		volumen = this.dimensiones.calcularDimension() * 25.00;
+		
+		return porteTelevision + volumen;
+	}
+}

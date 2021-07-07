@@ -1,0 +1,9 @@
+
+Calculo de punto de función por subsistema
+	Nos devuelve los puntos de función ajustados y por jornadas
+	
+ Hoja de cálculo por cada subsistema
+ ficheros logicos internos y externos se cuentan solo una vez
+ caracteristicas generales delsistema es único
+ 
+ 

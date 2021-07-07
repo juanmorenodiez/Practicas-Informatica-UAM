@@ -1,0 +1,17 @@
+package ads.practica3;
+
+public class Dimension {
+    private double ancho;
+    private double fondo;
+    private double alto;
+
+    public Dimension(double x, double y, double z) {
+        this.ancho = x;
+        this.fondo = y;
+        this.alto = z;
+    }
+
+    public double calcularDimension(){
+        return (this.ancho * 0.01) + (this.fondo * 0.01) + (this.alto * 0.01);
+    }
+}

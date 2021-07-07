@@ -1,0 +1,7 @@
+main {	
+	int x;
+	array int[3] res;
+	x = €res;
+	printf x;
+
+}

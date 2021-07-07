@@ -1,0 +1,22 @@
+Juan Moreno Díez y Mario López Zamorano
+
+1) Normativa de entrega cumplida en su totalidad: 5% - Realizado
+2) Fichero leeme.txt bien explicado: 5% - Realizado
+3) Recibir y enviar datagramas UDP sin opciones IP ni fragmentación 25% - Realizado
+
+Ejecutamos el programa de prueba como se nos indica en el enunciado y la terminal que recibe el datagrama muestra la información correcta. Capturando información en wireshark desde h2, observamos que la cabecera udp está bien formada.
+
+4) Recibir y enviar mensajes ICMP sin opciones IP ni fragmentación (incluyendo pruebas con ping estándar) 25% -Realizado
+
+Ejecutamos el programa con los parámetros indicados y de manera similar obtenemos los resultados esperados. Desde wireshark podemos observar que se obtiene el ICMP reply de forma correcta.
+
+5) Enviar y recibir correctamente mensajes ICMP con opciones IP 10% - Parcialmente realizado
+
+Ejecutamos el programa con opciones pero nos sale el siguiente error:
+	-Error de longitud en la cabecera
+
+6) Enviar datagramas UDP con fragmentación 10% - No realizado
+7) Enviar datagramas UDP con fragmentación y opciones IP 10% - No realizado
+8) Enviar datagramas UDP fuera de la subred actual 10% - Realizado
+
+Ejecutamos el programa de prueba con la IP destino: 8.8.8.8, en wireshark podemos comprobar que se recibe la dirección del gateway.

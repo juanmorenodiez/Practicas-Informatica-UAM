@@ -1,0 +1,24 @@
+Mario López Zamorano
+Juan Moreno Díez
+
+Hemos incluido una carpeta que incluye las capturas de pantalla con una breve explicacion (carpeta llamada capturas)
+
+Normativa de entrega cumplida en su totalidad: Realizado: Lecturas del enunciado y comprobaciones de que nuestro programa cumple lo 
+exigido en la práctica.
+
+Contar paquetes de una traza: Realizado: Se ha comprobado mediante capturas de pantalla que el número de paquetes coincide con el 
+analizado en Wireshark
+
+Contar paquetes de la interfaz de red: Realizado: Muestra el número de paquetes capturados por dicha interfaz y se puede comprobar
+posteriormente capturando la traza que genera y el número será el mismo.
+
+Almacenar en una traza el tráfico capturado en vivo: Realizado: Se ha comprobado mediante capturas de pantalla que los byes mostrados 
+de la traza coinciden con los de Wireshark.
+
+Modificar fecha correctamente: Realizado: Hemos añadido la macro TIME_OFFSET, que añade 30 minutos a la variable header.ts.tv_sec.
+
+Imprimir los N primeros bytes de un paquete y validarlo con Wireshark (captura de pantalla): Realizado: Indicando el número de bytes que queremos que se muestren por argumento, nuestro programa muestra en hexadecimal ese número de bytes del paquete. Correctamente validado con Wireshark mediante capturas de pantalla.
+
+Cuestionario "Ejercicios de captura de tráfico": Realizado:
+
+

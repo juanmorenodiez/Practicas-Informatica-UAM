@@ -1,0 +1,5 @@
+<map id="include/inventory.h" name="include/inventory.h">
+<area shape="rect" id="node2" href="$types_8h.html" title="Defines some structures and enumerations. " alt="" coords="35,155,101,181"/>
+<area shape="rect" id="node3" href="$object_8h.html" title="Implements the game object commands. " alt="" coords="121,80,189,107"/>
+<area shape="rect" id="node5" href="$set_8h.html" title="helps us manage other modules with a better organisation using its functions to change values..." alt="" coords="45,80,96,107"/>
+</map>

@@ -1,0 +1,217 @@
+\hypertarget{die_8h}{}\section{include/die.h File Reference}
+\label{die_8h}\index{include/die.\+h@{include/die.\+h}}
+
+
+generates a die  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+Include dependency graph for die.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{die_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{die_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Die}{\+\_\+\+Die} \hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die}
+\begin{DoxyCompactList}\small\item\em die with id and last number \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$ \hyperlink{die_8h_a413bced882cd5cadbb1d8feaf367ed3f}{die\+\_\+create} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em creates a die \end{DoxyCompactList}\item 
+void \hyperlink{die_8h_a80d368f2c29bd18044c0f38fd0817bd6}{die\+\_\+destroy} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$d)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{die_8h_a39aff188cafaf3090455610aeb712a86}{die\+\_\+get\+\_\+id} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$d)
+\begin{DoxyCompactList}\small\item\em returns the id of a die \end{DoxyCompactList}\item 
+int \hyperlink{die_8h_a8f39093739dafbc2da02203255aa8930}{die\+\_\+get\+\_\+lastroll} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$d)
+\begin{DoxyCompactList}\small\item\em returns the last value of the die \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{die_8h_adedf377ce1667f5506b0ee1aff756852}{die\+\_\+roll} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$d)
+\begin{DoxyCompactList}\small\item\em generates a number between 1 and 6 \end{DoxyCompactList}\item 
+void \hyperlink{die_8h_a6fffbb733d4e104d0bc4e64f13c78e9d}{die\+\_\+print\+\_\+content} (\hyperlink{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{Die} $\ast$d)
+\begin{DoxyCompactList}\small\item\em prints the id and last roll of a die \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+generates a die 
+
+This module creates a dice that will generate a random number between 1 and 6 that will be the number of spaces that an object should move.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Typedef Documentation}
+\index{die.\+h@{die.\+h}!Die@{Die}}
+\index{Die@{Die}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{Die}{Die}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Die} {\bf Die}}\hypertarget{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}{}\label{die_8h_a892f0b0bf81d69a1f7a14ea238e36dd3}
+
+
+die with id and last number 
+
+Struct for storing a die that will show a random number and get the last roll. 
+
+\subsection{Function Documentation}
+\index{die.\+h@{die.\+h}!die\+\_\+create@{die\+\_\+create}}
+\index{die\+\_\+create@{die\+\_\+create}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+create(\+Id id)}{die_create(Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Die}$\ast$ die\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_a413bced882cd5cadbb1d8feaf367ed3f}{}\label{die_8h_a413bced882cd5cadbb1d8feaf367ed3f}
+
+
+creates a die 
+
+It creates a new inventory by initializing the variables of the structure and allocating mamory for a new die.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to die. 
+\end{DoxyReturn}
+\index{die.\+h@{die.\+h}!die\+\_\+destroy@{die\+\_\+destroy}}
+\index{die\+\_\+destroy@{die\+\_\+destroy}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+destroy(\+Die $\ast$d)}{die_destroy(Die *d)}}]{\setlength{\rightskip}{0pt plus 5cm}void die\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_a80d368f2c29bd18044c0f38fd0817bd6}{}\label{die_8h_a80d368f2c29bd18044c0f38fd0817bd6}
+
+
+frees memory 
+
+Receives pointer to die and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+O\+ID F\+U\+N\+C\+T\+I\+ON, F\+R\+E\+ES M\+E\+M\+O\+RY O\+N\+LY. 
+\end{DoxyReturn}
+\index{die.\+h@{die.\+h}!die\+\_\+get\+\_\+id@{die\+\_\+get\+\_\+id}}
+\index{die\+\_\+get\+\_\+id@{die\+\_\+get\+\_\+id}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+get\+\_\+id(\+Die $\ast$d)}{die_get_id(Die *d)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} die\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_a39aff188cafaf3090455610aeb712a86}{}\label{die_8h_a39aff188cafaf3090455610aeb712a86}
+
+
+returns the id of a die 
+
+Function in charge of returning the id of a die already created.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to die(id of the die). 
+\end{DoxyReturn}
+\index{die.\+h@{die.\+h}!die\+\_\+get\+\_\+lastroll@{die\+\_\+get\+\_\+lastroll}}
+\index{die\+\_\+get\+\_\+lastroll@{die\+\_\+get\+\_\+lastroll}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+get\+\_\+lastroll(\+Die $\ast$d)}{die_get_lastroll(Die *d)}}]{\setlength{\rightskip}{0pt plus 5cm}int die\+\_\+get\+\_\+lastroll (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_a8f39093739dafbc2da02203255aa8930}{}\label{die_8h_a8f39093739dafbc2da02203255aa8930}
+
+
+returns the last value of the die 
+
+Function in charge of returning the last roll generated by the die in orther to keep that value.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number that the die rolled last time. 
+\end{DoxyReturn}
+\index{die.\+h@{die.\+h}!die\+\_\+print\+\_\+content@{die\+\_\+print\+\_\+content}}
+\index{die\+\_\+print\+\_\+content@{die\+\_\+print\+\_\+content}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+print\+\_\+content(\+Die $\ast$d)}{die_print_content(Die *d)}}]{\setlength{\rightskip}{0pt plus 5cm}void die\+\_\+print\+\_\+content (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_a6fffbb733d4e104d0bc4e64f13c78e9d}{}\label{die_8h_a6fffbb733d4e104d0bc4e64f13c78e9d}
+
+
+prints the id and last roll of a die 
+
+Function in charge of printing the last roll of a die and its id in order to check that it is working correctly.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+V\+O\+ID F\+U\+N\+C\+T\+I\+ON, O\+N\+LY P\+R\+I\+N\+TS ID A\+ND N\+U\+M\+B\+ER OF T\+HE D\+IE BY C\+A\+L\+L\+I\+NG die\+\_\+get\+\_\+lastroll. 
+\end{DoxyReturn}
+\index{die.\+h@{die.\+h}!die\+\_\+roll@{die\+\_\+roll}}
+\index{die\+\_\+roll@{die\+\_\+roll}!die.\+h@{die.\+h}}
+\subsubsection[{\texorpdfstring{die\+\_\+roll(\+Die $\ast$d)}{die_roll(Die *d)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} die\+\_\+roll (
+\begin{DoxyParamCaption}
+\item[{{\bf Die} $\ast$}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{die_8h_adedf377ce1667f5506b0ee1aff756852}{}\label{die_8h_adedf377ce1667f5506b0ee1aff756852}
+
+
+generates a number between 1 and 6 
+
+Rolls a die, giving a random number between 1 and 6 and storing it in lastroll.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & pointer to die. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

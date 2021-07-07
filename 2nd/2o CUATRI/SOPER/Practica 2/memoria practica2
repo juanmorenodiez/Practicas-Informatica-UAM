@@ -1,0 +1,25 @@
+Ejercicio 2
+
+El hijo imprime su PID según el número de procesos que hayamos definido, en nuestro caso, 4 procesos.
+Esto se debe a que cada 5 segundos, el padre le está enviando una señal de terminación a cada hijo
+del bucle y por lo tanto, no duerme los 30 segundos y no imprime el segundo mensaje por pantalla.
+
+Ejercicio 3
+
+a) La llamada a sigaction es la que ejecuta el manejador
+b) El printf aparece cuando se produce una interrupción (Ctrl +C)
+c) No se ejecuta la función manejador ????
+d) Nunca sale el mensaje por pantalla porque SIGKILL mata al proceso que recibe la señal y por lo tanto no puede ser capturada.
+
+Ejercicio 8
+
+a) Se producen tanto lecturas como escrituras. Como el fork se ejectuta una vez, solo hay un proceso hijo que se va alternando
+con el padre.
+
+b) Se crean 10 procesos hijos. Se abresn todos los lectores y van leyendo mientras el padre espera. Cuando acaban las lecturas,
+se cierran y el padre escribe mientras los lectores esperan.
+
+c) Solo se producen lecturas, ya que no hay tiempo de espera entre lectura y lectura de los hijos. Por lo tanto al padre no le da 
+tiempo a escribir.
+
+d)

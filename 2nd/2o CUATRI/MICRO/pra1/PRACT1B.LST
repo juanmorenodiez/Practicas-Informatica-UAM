@@ -1,0 +1,127 @@
+Turbo Assembler	 Version 3.2	    03/05/19 20:39:36	    Page 1
+PRACT1b.ASM
+
+
+
+      1				     ;**************************************************************************
+      2				     ; SBM 2019. ESTRUCTURA BÁSICA DE UN PROGRAMA EN ENSAMBLADOR
+      3				     ;**************************************************************************
+      4
+      5				     ; DEFINICION DEL SEGMENTO DE DATOS
+      6
+      7	0000			     DATOS SEGMENT
+      8
+      9	0000  ??				     CONTADOR		     DB	     ?						    +
+     10				     ;Reservamos memoria para una variable, CONTADOR, de un byte de tamaño, sin inicializarla.
+     11	0001  CAFE				     TOME			     DW	     0CAFEH				    +
+     12				     ;Reservamos memoria para una variable, TOME, de dos bytes de tamaño y la inicializamos con el +
+     13				     valor CAFEH.
+     14	0003  64*(??)				     TABLA100		     DB	     100 DUP (?)				    +
+     15				     ;Reservamos 100 bytes para	una tabla llamada TABLA100 con DUP que reserva 100 veces un byte sin+
+     16				     inicializarlo.
+     17	0067  41 74 65 6E 63 69	C3+		     ERROR1		     DB	     "Atención: Entrada de datos incorrecta."	    +
+     18	      B3 6E 3A 20 45 6E	74+  ;Declaramos una variable de cadena	de caracteres ERROR1.
+     19	      72 61 64 61 20 64	65+
+     20	      20 64 61 74 6F 73	20+
+     21	      69 6E 63 6F 72 72	65+
+     22	      63 74 61 2E
+     23
+     24	008E			     DATOS ENDS
+     25
+     26				     ;**************************************************************************
+     27				     ; DEFINICION DEL SEGMENTO DE PILA
+     28
+     29	0000			     PILA SEGMENT STACK	"STACK"
+     30
+     31	0000  40*(00)				     DB	40H DUP	(0) ;ejemplo de	inicialización, 64 bytes inicializados	a 0
+     32
+     33	0040			     PILA ENDS
+     34
+     35				     ;**************************************************************************
+     36				     ; DEFINICION DEL SEGMENTO EXTRA
+     37
+     38	0000			     EXTRA SEGMENT
+     39
+     40	0000  0000 0000				     RESULT DW 0,0 ;ejemplo de inicialización.	2 PALABRAS (4 BYTES)
+     41
+     42	0004			     EXTRA ENDS
+     43
+     44				     ;**************************************************************************
+     45				     ; DEFINICION DEL SEGMENTO DE CODIGO
+     46
+     47	0000			     CODE SEGMENT
+     48
+     49				     ASSUME CS:	CODE, DS: DATOS, ES: EXTRA, SS:	PILA
+     50
+     51				     ; COMIENZO	DEL PROCEDIMIENTO PRINCIPAL
+     52
+     53	0000			     INICIO PROC
+     54
+     55						     ; COMIENZO	DEL PROGRAMA
+     56
+     57	0000  A0 0069r				     MOV     AL, ERROR1[3-1]			     ;Guardo en	en el registro AL de+
+Turbo Assembler	 Version 3.2	    03/05/19 20:39:36	    Page 2
+PRACT1b.ASM
+
+
+
+     58				     un	byte, el tercer	carácter de la	cadena ERROR1 "e" valor	ASCII 101 o 65H.
+     59	0003  A2 0066r				     MOV     TABLA100[63H], AL			     ;Copio en la posicion 63H de   +
+     60				     TABLA100 el contenido del registro	AL = 65H;
+     61
+     62	0006  A1 0001r				     MOV     AX, TOME						     ;Guardo en	el  +
+     63				     registro AX de dos	bytes, el contenido de la variable TOME.
+     64	0009  88 26 0026r			     MOV     TABLA100[23H], AH			     ;Copio el contenido del	    +
+     65				     registro AH en la posición 23H de	TABLA100.
+     66	000D  A2 0027r				     MOV     TABLA100[24H], AL			     ;Copio el contenido del	    +
+     67				     registro AL en la posición 24H de	TABLA100.
+     68
+     69	0010  A1 0001r				     MOV     AX, TOME						     ;Guardo en	el  +
+     70				     registro AX de dos	bytes, el contenido de la variable TOME, AH = CA AL =FE.
+     71	0013  A2 0000r				     MOV     CONTADOR, AL			     ;Copio el byte más	    +
+     72				     significativo de TOME, que	es CA guardado en el registro AH, en la	variable CONTADOR.
+     73
+     74						     ; FIN DEL PROGRAMA
+     75
+     76	0016  B8 4C00				     MOV     AX, 4C00H
+     77	0019  CD 21				     INT	     21H
+     78
+     79	001B			     INICIO ENDP
+     80
+     81				     ; FIN DEL SEGMENTO	DE CODIGO
+     82
+     83	001B			     CODE ENDS
+     84
+     85				     ; FIN DEL PROGRAMA	INDICANDO DONDE	COMIENZA LA EJECUCION
+     86
+     87				     END INICIO
+Turbo Assembler	 Version 3.2	    03/05/19 20:39:36	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "03/05/19"
+??FILENAME			  Text	 "PRACT1b "
+??TIME				  Text	 "20:39:36"
+??VERSION			  Number 0314
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 PRACT1B
+@WORDSIZE			  Text	 2
+CONTADOR			  Byte	 DATOS:0000
+ERROR1				  Byte	 DATOS:0067
+INICIO				  Near	 CODE:0000
+RESULT				  Word	 EXTRA:0000
+TABLA100			  Byte	 DATOS:0003
+TOME				  Word	 DATOS:0001
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  001B Para	  none
+DATOS				  16  008E Para	  none
+EXTRA				  16  0004 Para	  none
+PILA				  16  0040 Para	  Stack	  STACK
+

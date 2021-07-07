@@ -1,0 +1,57 @@
+package ads.practica3;
+
+
+public class Lavadora extends LavadoraYFrigorifico {
+    private double kilos;
+    private double rpm;
+
+
+    public Lavadora(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica, Dimension d, double kilos, double p, double rpm) {
+        super(marca, modelo, precioBase, claseEnergetica, d, p);
+        this.kilos = kilos;
+        this.rpm = rpm;
+    }
+
+    public Lavadora(String marca, String modelo, double precioBase, ClaseEnergetica claseEnergetica, Dimension d, double p) {
+        super(marca, modelo, precioBase, claseEnergetica, d, p);
+    }
+
+    public void setKilos(double kilos) {
+        this.kilos = kilos;
+    }
+
+    public double getKilos() {
+        return kilos;
+    }
+
+    public void setRpm(double rpm) {
+        this.rpm = rpm;
+    }
+
+    public double getRpm() {
+        return rpm;
+    }
+
+    @Override
+    public double precioEntrega() {
+        double adicional = 0;
+
+        if (this.getKilos() <= 50) {
+            return 35;
+        }
+
+        else if (this.getKilos() > 50) {
+            for (int i = 51; i <= this.getKilos(); i++) {
+                adicional += 0.50;
+            }
+
+            return 35 + adicional;
+        }
+        else
+            return 0;
+    }
+    
+    public String toString() {
+		return this.getMarca() + " "+ this.getModelo() + ", " + this.getPrecioBase() + " Euros";
+	}
+}

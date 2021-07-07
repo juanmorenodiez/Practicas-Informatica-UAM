@@ -1,0 +1,31 @@
+Pasos para demonizar proceso:
+
+1- Crear un ejecutable cualquiera: demonio.sh en nuestro caso que simplemente mostrará
+la siguiente cadena de caracteres: Demonizar Proceso
+
+2- En el directorio /etc/systemd/system hemos creado un fichero llamado demon.service con
+el siguiente texto:
+
+[Unit]
+Description=ROT13 demo service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=juanmoreno
+ExecStart=/home/juan/Documentos/Ingeniería Informática/4º año/2o CUATRI/REDES2/PRACTICAS/practica1/demonio.sh
+
+[Install]
+WantedBy=multi-user.target
+
+Estableciendo como nombre de usuario el de mi ordenador y en ExecStart el path hasta el script creado previamente.
+
+Realizamos los siguientes pasos:
+
+1. systemctl start demon
+2. systemctl enable demon
+
+Al realizar este segundo paso, la terminal nos indica lo siguiente: Created symlink /etc/systemd/system/multi-user.target.wants/demon.service → /etc/systemd/system/demon.service.
+

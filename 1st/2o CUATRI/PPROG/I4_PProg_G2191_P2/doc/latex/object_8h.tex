@@ -1,0 +1,812 @@
+\hypertarget{object_8h}{}\section{include/object.h File Reference}
+\label{object_8h}\index{include/object.\+h@{include/object.\+h}}
+
+
+Implements the game object commands.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+Include dependency graph for object.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{object_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{object_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{object_8h_a88b1ded1b83576bfb0683aeab25ae052}{M\+A\+X\+O\+B\+J\+N\+A\+ME}~30
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Object}{\+\_\+\+Object} \hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object}
+\begin{DoxyCompactList}\small\item\em object of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$ \hyperlink{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}{object\+\_\+create} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em creates an object \end{DoxyCompactList}\item 
+void \hyperlink{object_8h_a26c44b44a0fbeb25ef0984614c752dfc}{object\+\_\+destroy} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{object_8h_a9752f952077d92e3caad01bc0ef88219}{object\+\_\+get\+\_\+id} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the id of an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{object_8h_a1d9c831b8ea3bc3667c4bf166bd458dd}{object\+\_\+get\+\_\+name} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the name of an object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{object_8h_acf961fc31f1928c71c59d96a2ff0d1cd}{object\+\_\+get\+\_\+location} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the location of an object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a839f09c377c10dc0138e844c5c2f9324}{object\+\_\+set\+\_\+name} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em sets the name of an object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a8d07c8e2c06363c4a41b36198e57fc10}{object\+\_\+set\+\_\+id} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets an id for an object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a0a4d910353d6334df5831468ff5524f9}{object\+\_\+set\+\_\+location} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a4a4f1a7f753ec9295548c099ec755718}{object\+\_\+print} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, F\+I\+LE $\ast$f)
+\begin{DoxyCompactList}\small\item\em prints an object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{object_8h_a66311e7f25b9eba333bc2ddec8aba14f}{object\+\_\+get\+\_\+original\+\_\+description} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_ae70e3276ecd61873f1f0a540ee785e3f}{object\+\_\+set\+\_\+original\+\_\+description} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em sets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a169ccd54cbbdc828f67fd819ede6000d}{object\+\_\+set\+\_\+original\+\_\+position} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets position \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{object_8h_a0f486e12d9d5db67ed56f40b5cdc0f7f}{object\+\_\+get\+\_\+original\+\_\+position} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a684297abcecea4f985c22c09d7a2683e}{object\+\_\+set\+\_\+moved\+\_\+description} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em sets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a259c9fd13df4766071af2e0a0d7a1a87}{object\+\_\+set\+\_\+prop\+\_\+\+Movable} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} st)
+\begin{DoxyCompactList}\small\item\em sets status of mobility \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{object_8h_a98f562a9ee1801aea8f5f0212bdba008}{object\+\_\+get\+\_\+prop\+\_\+\+Movable} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the mobility status \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a2b49f5b9d0eba678c034bdf9c91b36b1}{object\+\_\+set\+\_\+prop\+\_\+\+Moved} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} st)
+\begin{DoxyCompactList}\small\item\em sets status of being moved \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{object_8h_a6dcd51ad45ff363d05ad96ca06ee56f5}{object\+\_\+get\+\_\+prop\+\_\+\+Moved} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the moved object \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a1514debf4d64d167eaf1dce61e0675df}{object\+\_\+set\+\_\+prop\+\_\+\+Hidden} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} st)
+\begin{DoxyCompactList}\small\item\em sets status of hidden \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{object_8h_a9a6ddffc3ac22a73f1161e1efda8b92d}{object\+\_\+get\+\_\+prop\+\_\+\+Hidden} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the hidden status \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a7a1071b9008fced8261ba7ea1b3f20b0}{object\+\_\+set\+\_\+prop\+\_\+\+Illuminate} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} st)
+\begin{DoxyCompactList}\small\item\em sets status of ilumination \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{object_8h_af6837f83ac2983f6e3214a16257afa59}{object\+\_\+get\+\_\+prop\+\_\+\+Illuminate} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the ilumination status \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_ae8d09d72e32a824c6eac741a623747ed}{object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} st)
+\begin{DoxyCompactList}\small\item\em sets status of switching on \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{object_8h_a85049c1ca7de81feec4e99e9951491c0}{object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the switched on status \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{object_8h_a7ada936990bfb9c93bf2f188de1a585b}{object\+\_\+set\+\_\+prop\+\_\+\+Open} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets status of opening \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{object_8h_a1ab2ce1f8aa99b8502044a6a78ff4993}{object\+\_\+get\+\_\+prop\+\_\+\+Open} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets the opened object \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{object_8h_ac1254bf414022a80a5e3d07887c89121}{object\+\_\+get\+\_\+moved\+\_\+description} (\hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements the game object commands. 
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{object.\+h@{object.\+h}!M\+A\+X\+O\+B\+J\+N\+A\+ME@{M\+A\+X\+O\+B\+J\+N\+A\+ME}}
+\index{M\+A\+X\+O\+B\+J\+N\+A\+ME@{M\+A\+X\+O\+B\+J\+N\+A\+ME}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+O\+B\+J\+N\+A\+ME}{MAXOBJNAME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+O\+B\+J\+N\+A\+ME~30}\hypertarget{object_8h_a88b1ded1b83576bfb0683aeab25ae052}{}\label{object_8h_a88b1ded1b83576bfb0683aeab25ae052}
+defines maximum number of objects 
+
+\subsection{Typedef Documentation}
+\index{object.\+h@{object.\+h}!Object@{Object}}
+\index{Object@{Object}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{Object}{Object}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Object} {\bf Object}}\hypertarget{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{}\label{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}
+
+
+object of the game 
+
+Struct for storing the different variables that an object should have 
+
+\subsection{Function Documentation}
+\index{object.\+h@{object.\+h}!object\+\_\+create@{object\+\_\+create}}
+\index{object\+\_\+create@{object\+\_\+create}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+create(\+Id id)}{object_create(Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ object\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}{}\label{object_8h_abb0cd30fca5fbddf137c6c04df66bbc7}
+
+
+creates an object 
+
+It creates a new object initializing the variables of the structure, checks is something goes wrong and if it does go wrong, returns N\+U\+LL.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to object, N\+U\+LL if something goes wrong. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+destroy@{object\+\_\+destroy}}
+\index{object\+\_\+destroy@{object\+\_\+destroy}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+destroy(\+Object $\ast$o)}{object_destroy(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}void object\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a26c44b44a0fbeb25ef0984614c752dfc}{}\label{object_8h_a26c44b44a0fbeb25ef0984614c752dfc}
+
+
+frees memory 
+
+Receives pointer to object and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+id@{object\+\_\+get\+\_\+id}}
+\index{object\+\_\+get\+\_\+id@{object\+\_\+get\+\_\+id}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+id(\+Object $\ast$o)}{object_get_id(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} object\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a9752f952077d92e3caad01bc0ef88219}{}\label{object_8h_a9752f952077d92e3caad01bc0ef88219}
+
+
+gets the id of an object 
+
+Function in charge of getting the id of an object by using a pointer to object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if object is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+location@{object\+\_\+get\+\_\+location}}
+\index{object\+\_\+get\+\_\+location@{object\+\_\+get\+\_\+location}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+location(\+Object $\ast$o)}{object_get_location(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} object\+\_\+get\+\_\+location (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_acf961fc31f1928c71c59d96a2ff0d1cd}{}\label{object_8h_acf961fc31f1928c71c59d96a2ff0d1cd}
+
+
+gets the location of an object 
+
+Function in charge of getting the location of an object and returning it.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+moved\+\_\+description@{object\+\_\+get\+\_\+moved\+\_\+description}}
+\index{object\+\_\+get\+\_\+moved\+\_\+description@{object\+\_\+get\+\_\+moved\+\_\+description}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+moved\+\_\+description(\+Object $\ast$o)}{object_get_moved_description(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ object\+\_\+get\+\_\+moved\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_ac1254bf414022a80a5e3d07887c89121}{}\label{object_8h_ac1254bf414022a80a5e3d07887c89121}
+
+
+gets description 
+
+Changes the description of the object that has already been created.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the description of the object (char). 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+name@{object\+\_\+get\+\_\+name}}
+\index{object\+\_\+get\+\_\+name@{object\+\_\+get\+\_\+name}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+name(\+Object $\ast$o)}{object_get_name(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ object\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a1d9c831b8ea3bc3667c4bf166bd458dd}{}\label{object_8h_a1d9c831b8ea3bc3667c4bf166bd458dd}
+
+
+gets the name of an object 
+
+Function in charge of showing the name of an object that has already been set.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char (name of the object). 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+original\+\_\+description@{object\+\_\+get\+\_\+original\+\_\+description}}
+\index{object\+\_\+get\+\_\+original\+\_\+description@{object\+\_\+get\+\_\+original\+\_\+description}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+original\+\_\+description(\+Object $\ast$o)}{object_get_original_description(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ object\+\_\+get\+\_\+original\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a66311e7f25b9eba333bc2ddec8aba14f}{}\label{object_8h_a66311e7f25b9eba333bc2ddec8aba14f}
+
+
+gets description 
+
+Changes the description of the object that has already been created.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the description of the object (char). 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+original\+\_\+position@{object\+\_\+get\+\_\+original\+\_\+position}}
+\index{object\+\_\+get\+\_\+original\+\_\+position@{object\+\_\+get\+\_\+original\+\_\+position}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+original\+\_\+position(\+Object $\ast$o)}{object_get_original_position(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} object\+\_\+get\+\_\+original\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a0f486e12d9d5db67ed56f40b5cdc0f7f}{}\label{object_8h_a0f486e12d9d5db67ed56f40b5cdc0f7f}
+
+
+gets description 
+
+It returns the description that has already been set for an object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char, string of characters that return the description of the object. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Hidden@{object\+\_\+get\+\_\+prop\+\_\+\+Hidden}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Hidden@{object\+\_\+get\+\_\+prop\+\_\+\+Hidden}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Hidden(\+Object $\ast$o)}{object_get_prop_Hidden(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} object\+\_\+get\+\_\+prop\+\_\+\+Hidden (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a9a6ddffc3ac22a73f1161e1efda8b92d}{}\label{object_8h_a9a6ddffc3ac22a73f1161e1efda8b92d}
+
+
+gets the hidden status 
+
+Function that returns a hidden object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Illuminate@{object\+\_\+get\+\_\+prop\+\_\+\+Illuminate}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Illuminate@{object\+\_\+get\+\_\+prop\+\_\+\+Illuminate}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Illuminate(\+Object $\ast$o)}{object_get_prop_Illuminate(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} object\+\_\+get\+\_\+prop\+\_\+\+Illuminate (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_af6837f83ac2983f6e3214a16257afa59}{}\label{object_8h_af6837f83ac2983f6e3214a16257afa59}
+
+
+gets the ilumination status 
+
+Function that returns an iluminated object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Movable@{object\+\_\+get\+\_\+prop\+\_\+\+Movable}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Movable@{object\+\_\+get\+\_\+prop\+\_\+\+Movable}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Movable(\+Object $\ast$o)}{object_get_prop_Movable(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} object\+\_\+get\+\_\+prop\+\_\+\+Movable (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a98f562a9ee1801aea8f5f0212bdba008}{}\label{object_8h_a98f562a9ee1801aea8f5f0212bdba008}
+
+
+gets the mobility status 
+
+Function that returns whether an object is movable or not.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Moved@{object\+\_\+get\+\_\+prop\+\_\+\+Moved}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Moved@{object\+\_\+get\+\_\+prop\+\_\+\+Moved}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Moved(\+Object $\ast$o)}{object_get_prop_Moved(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} object\+\_\+get\+\_\+prop\+\_\+\+Moved (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a6dcd51ad45ff363d05ad96ca06ee56f5}{}\label{object_8h_a6dcd51ad45ff363d05ad96ca06ee56f5}
+
+
+gets the moved object 
+
+Function that returns the moved object that you already know that can be movable.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Open@{object\+\_\+get\+\_\+prop\+\_\+\+Open}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Open@{object\+\_\+get\+\_\+prop\+\_\+\+Open}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Open(\+Object $\ast$o)}{object_get_prop_Open(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} object\+\_\+get\+\_\+prop\+\_\+\+Open (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a1ab2ce1f8aa99b8502044a6a78ff4993}{}\label{object_8h_a1ab2ce1f8aa99b8502044a6a78ff4993}
+
+
+gets the opened object 
+
+It gets the position of the objects which is defined in data.\+dat file that can be opened.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On@{object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On}}
+\index{object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On@{object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On(\+Object $\ast$o)}{object_get_prop_SwitchedOn(Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} object\+\_\+get\+\_\+prop\+\_\+\+Switched\+On (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a85049c1ca7de81feec4e99e9951491c0}{}\label{object_8h_a85049c1ca7de81feec4e99e9951491c0}
+
+
+gets the switched on status 
+
+Function that returns a status that can be iluminated and also is switched on.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+print@{object\+\_\+print}}
+\index{object\+\_\+print@{object\+\_\+print}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+print(\+Object $\ast$o, F\+I\+L\+E $\ast$f)}{object_print(Object *o, FILE *f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{F\+I\+LE $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a4a4f1a7f753ec9295548c099ec755718}{}\label{object_8h_a4a4f1a7f753ec9295548c099ec755718}
+
+
+prints an object 
+
+Writes the object data, used for debugging.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em f} & file to write the object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+id@{object\+\_\+set\+\_\+id}}
+\index{object\+\_\+set\+\_\+id@{object\+\_\+set\+\_\+id}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+id(\+Object $\ast$o, Id id)}{object_set_id(Object *o, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a8d07c8e2c06363c4a41b36198e57fc10}{}\label{object_8h_a8d07c8e2c06363c4a41b36198e57fc10}
+
+
+sets an id for an object 
+
+It spececifically changes the id of a particular object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+location@{object\+\_\+set\+\_\+location}}
+\index{object\+\_\+set\+\_\+location@{object\+\_\+set\+\_\+location}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+location(\+Object $\ast$o, Id id)}{object_set_location(Object *o, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+location (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a0a4d910353d6334df5831468ff5524f9}{}\label{object_8h_a0a4d910353d6334df5831468ff5524f9}
+
+
+sets location 
+
+Changes an object\textquotesingle{}s location ingame
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em id} & id of the object\textquotesingle{}s location. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+moved\+\_\+description@{object\+\_\+set\+\_\+moved\+\_\+description}}
+\index{object\+\_\+set\+\_\+moved\+\_\+description@{object\+\_\+set\+\_\+moved\+\_\+description}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+moved\+\_\+description(\+Object $\ast$o, char $\ast$description)}{object_set_moved_description(Object *o, char *description)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+moved\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{char $\ast$}]{description}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a684297abcecea4f985c22c09d7a2683e}{}\label{object_8h_a684297abcecea4f985c22c09d7a2683e}
+
+
+sets description 
+
+It prepares the description of an object that has been moved.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em description} & pointer to char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+name@{object\+\_\+set\+\_\+name}}
+\index{object\+\_\+set\+\_\+name@{object\+\_\+set\+\_\+name}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+name(\+Object $\ast$o, char $\ast$name)}{object_set_name(Object *o, char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a839f09c377c10dc0138e844c5c2f9324}{}\label{object_8h_a839f09c377c10dc0138e844c5c2f9324}
+
+
+sets the name of an object 
+
+Modifies an object\textquotesingle{}s name in order to set an specific name por each object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em name} & name of the object(char). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+original\+\_\+description@{object\+\_\+set\+\_\+original\+\_\+description}}
+\index{object\+\_\+set\+\_\+original\+\_\+description@{object\+\_\+set\+\_\+original\+\_\+description}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+original\+\_\+description(\+Object $\ast$o, char $\ast$description)}{object_set_original_description(Object *o, char *description)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+original\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{char $\ast$}]{description}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_ae70e3276ecd61873f1f0a540ee785e3f}{}\label{object_8h_ae70e3276ecd61873f1f0a540ee785e3f}
+
+
+sets description 
+
+It prepares the description of the objects which is defined in data.\+dat file. Principally describes what the objects do.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em description} & char (description of the object). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+original\+\_\+position@{object\+\_\+set\+\_\+original\+\_\+position}}
+\index{object\+\_\+set\+\_\+original\+\_\+position@{object\+\_\+set\+\_\+original\+\_\+position}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+original\+\_\+position(\+Object $\ast$o, Id id)}{object_set_original_position(Object *o, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+original\+\_\+position (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a169ccd54cbbdc828f67fd819ede6000d}{}\label{object_8h_a169ccd54cbbdc828f67fd819ede6000d}
+
+
+sets position 
+
+It prepares the position of the objects which is defined in data.\+dat file. Principally defines a position for the object.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Hidden@{object\+\_\+set\+\_\+prop\+\_\+\+Hidden}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Hidden@{object\+\_\+set\+\_\+prop\+\_\+\+Hidden}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Hidden(\+Object $\ast$o, B\+O\+O\+L st)}{object_set_prop_Hidden(Object *o, BOOL st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Hidden (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf B\+O\+OL}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a1514debf4d64d167eaf1dce61e0675df}{}\label{object_8h_a1514debf4d64d167eaf1dce61e0675df}
+
+
+sets status of hidden 
+
+It sets a new status to objects, a hidden status that allows the player to hide objects.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em st} & Boolean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Illuminate@{object\+\_\+set\+\_\+prop\+\_\+\+Illuminate}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Illuminate@{object\+\_\+set\+\_\+prop\+\_\+\+Illuminate}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Illuminate(\+Object $\ast$o, B\+O\+O\+L st)}{object_set_prop_Illuminate(Object *o, BOOL st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Illuminate (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf B\+O\+OL}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a7a1071b9008fced8261ba7ea1b3f20b0}{}\label{object_8h_a7a1071b9008fced8261ba7ea1b3f20b0}
+
+
+sets status of ilumination 
+
+It sets a new status to objects, an ilumination status that allows the player to iluminate objects.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em st} & Boolean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Movable@{object\+\_\+set\+\_\+prop\+\_\+\+Movable}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Movable@{object\+\_\+set\+\_\+prop\+\_\+\+Movable}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Movable(\+Object $\ast$o, B\+O\+O\+L st)}{object_set_prop_Movable(Object *o, BOOL st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Movable (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf B\+O\+OL}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a259c9fd13df4766071af2e0a0d7a1a87}{}\label{object_8h_a259c9fd13df4766071af2e0a0d7a1a87}
+
+
+sets status of mobility 
+
+It sets a new status to objects, defines if an object can me movable or not.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em st} & Boolean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Moved@{object\+\_\+set\+\_\+prop\+\_\+\+Moved}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Moved@{object\+\_\+set\+\_\+prop\+\_\+\+Moved}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Moved(\+Object $\ast$o, B\+O\+O\+L st)}{object_set_prop_Moved(Object *o, BOOL st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Moved (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf B\+O\+OL}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a2b49f5b9d0eba678c034bdf9c91b36b1}{}\label{object_8h_a2b49f5b9d0eba678c034bdf9c91b36b1}
+
+
+sets status of being moved 
+
+Defines an object that is movable and sets if that object is moved or not.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em st} & Boolean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Open@{object\+\_\+set\+\_\+prop\+\_\+\+Open}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Open@{object\+\_\+set\+\_\+prop\+\_\+\+Open}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Open(\+Object $\ast$o, Id id)}{object_set_prop_Open(Object *o, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Open (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_a7ada936990bfb9c93bf2f188de1a585b}{}\label{object_8h_a7ada936990bfb9c93bf2f188de1a585b}
+
+
+sets status of opening 
+
+It sets a new status to objects, with this function, objects can be used to open other objects.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{object.\+h@{object.\+h}!object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On@{object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On}}
+\index{object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On@{object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On}!object.\+h@{object.\+h}}
+\subsubsection[{\texorpdfstring{object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On(\+Object $\ast$o, B\+O\+O\+L st)}{object_set_prop_SwitchedOn(Object *o, BOOL st)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} object\+\_\+set\+\_\+prop\+\_\+\+Switched\+On (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} $\ast$}]{o, }
+\item[{{\bf B\+O\+OL}}]{st}
+\end{DoxyParamCaption}
+)}\hypertarget{object_8h_ae8d09d72e32a824c6eac741a623747ed}{}\label{object_8h_ae8d09d72e32a824c6eac741a623747ed}
+
+
+sets status of switching on 
+
+It sets a new status to objects, objects that can be iluminated, should also be able to be turned on and off with the help of the callback commands and this function.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em o} & pointer to object. \\
+\hline
+{\em st} & Boolean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

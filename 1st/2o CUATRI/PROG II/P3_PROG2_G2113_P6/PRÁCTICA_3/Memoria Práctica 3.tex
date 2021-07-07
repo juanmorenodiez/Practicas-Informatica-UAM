@@ -1,0 +1,36 @@
+\documentclass[spanish]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\usepackage{indentfirst}
+
+\title{MEMORIA PRÁCTICA 3 - PROGAMACIÓN 2}
+\author{Juan Moreno y Camilo Jené}
+\date{15-04-2019}
+
+
+
+\begin{document}
+	\maketitle
+	
+	\begin{enumerate}
+		\item \begin{large}\underline{Ejercicio 1:}\end{large}
+		
+	    \quad Tras realizar la práctica 3 se han encontrado una serie de diferencias a resaltar entre el uso de pilas o el uso de colas al recorrer los grafos.
+		
+		\quad En el caso de las pilas, cuando recorríamos el grafo y obteníamos los nodos, al introducir en la pila el primer nodo era el último en poder extraerse. En el caso de las colas es al revés. Al introducir los nodos, se va desplazando la cola pero el front sigue en el lugar inicial hasta que se extrae el elemento, en este caso se extrae el primero introducido y el front avanza una posición y así sucesivamente.
+		
+		\quad Por lo tanto, en el caso de las pilas, el primer elemento que se podía extraer era el último introducido y en el caso de las colas el primer elemento extraído es el primero introducido.
+		\newline
+		\item \begin{large}\underline{Ejercicio 2:}\end{large}
+
+		\quad En el ejercicio 3 se nos pide que se implemente el TAD cola utilizando como estructura de datos una lista enlazada circular manteniendo los prototipos de las funciones de ejercicios anteriores de cola.
+			\begin{itemize}
+				\item Para el ejercicio 3a, se han tenido que modificar el módulo queue.c y queue.h.
+				
+				En queue.c se han tenido que modificar todas las funciones para implementar lista, es decir en las funciones de queue se han añadido las funciones de list correspondientes, como por ejemplo: en queue\_print se llama directamente a la función list\_queue y no se realiza ningún calculo en queue. No olvidar que se han tenido que renombrar los punteros a funciones(en este caso añadiendo un '1') para evitar los warnings de similitud con list.h.
+				\item Para el ejercicio 3b se han tenido que crear un makefile nuevo para los módulos creados, no se ha debido modificar nada más excepto algún que otro error minoritario como cambiar "queue.h" por "queuel.h". 
+			\end{itemize} 
+		
+	\end{enumerate}
+\end{document}

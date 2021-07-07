@@ -1,0 +1,406 @@
+\hypertarget{screen_8c}{}\section{src/screen.c File Reference}
+\label{screen_8c}\index{src/screen.\+c@{src/screen.\+c}}
+
+
+Defines the screen.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\\*
+Include dependency graph for screen.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{screen_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Area}{\+\_\+\+Area}
+\begin{DoxyCompactList}\small\item\em screen of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{screen_8c_a3cfd3aa62338d12609f6d65bce97e9cd}{R\+O\+WS}~37
+\item 
+\#define \hyperlink{screen_8c_a06c6c391fc11d106e9909f0401b255b1}{C\+O\+L\+U\+M\+NS}~142
+\item 
+\#define \hyperlink{screen_8c_afba5c5b9f73273ce653f890bb64740b0}{T\+O\+T\+A\+L\+\_\+\+D\+A\+TA}~(\hyperlink{screen_8c_a3cfd3aa62338d12609f6d65bce97e9cd}{R\+O\+WS} $\ast$ \hyperlink{screen_8c_a06c6c391fc11d106e9909f0401b255b1}{C\+O\+L\+U\+M\+NS}) + 1
+\item 
+\#define \hyperlink{screen_8c_a5e7c78a2c827b39d4464f2fc84058f87}{B\+G\+\_\+\+C\+H\+AR}~\textquotesingle{}$\sim$\textquotesingle{}
+\item 
+\#define \hyperlink{screen_8c_a0bbf43d51e6cd6f7119cf1d0063a3a94}{F\+G\+\_\+\+C\+H\+AR}~\textquotesingle{} \textquotesingle{}
+\item 
+\#define \hyperlink{screen_8c_accdbea14ea06c15e271784368bd993e8}{P\+R\+O\+M\+PT}~\char`\"{} prompt\+:$>$ \char`\"{}
+\item 
+\#define \hyperlink{screen_8c_a28b37557462b06fbb08e707dc0ba2136}{A\+C\+C\+E\+SS}(d,  x,  y)~(d + ((y) $\ast$ \hyperlink{screen_8c_a06c6c391fc11d106e9909f0401b255b1}{C\+O\+L\+U\+M\+NS}) + (x))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em checks if cursor is out of the limits \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}{screen\+\_\+area\+\_\+scroll\+\_\+up} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em scrolls up the screen area \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em replaces special characters \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a9dbb6c251337c03c078dc330caee48d2}{screen\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em initialises a new screen \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}{screen\+\_\+destroy} ()
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}{screen\+\_\+paint} ()
+\begin{DoxyCompactList}\small\item\em paints the screen \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a57b2f852be623dca59255306c1482eb2}{screen\+\_\+gets} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em gets the data \end{DoxyCompactList}\item 
+\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$ \hyperlink{screen_8c_a194528bec3ed3b57618a8f2df9bea743}{screen\+\_\+area\+\_\+init} (int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em creates new area \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}{screen\+\_\+area\+\_\+destroy} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a0950dc68cba3d491b909a8abaac1c666}{screen\+\_\+area\+\_\+clear} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em clears the area \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}{screen\+\_\+area\+\_\+reset\+\_\+cursor} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em resets cursor \end{DoxyCompactList}\item 
+void \hyperlink{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}{screen\+\_\+area\+\_\+puts} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em puts area \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}{\+\_\+\+\_\+data}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the screen. 
+
+\begin{DoxyAuthor}{Author}
+Borja Pérez 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{screen.\+c@{screen.\+c}!A\+C\+C\+E\+SS@{A\+C\+C\+E\+SS}}
+\index{A\+C\+C\+E\+SS@{A\+C\+C\+E\+SS}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{A\+C\+C\+E\+SS}{ACCESS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+C\+C\+E\+SS(
+\begin{DoxyParamCaption}
+\item[{}]{d, }
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~(d + ((y) $\ast$ {\bf C\+O\+L\+U\+M\+NS}) + (x))}\hypertarget{screen_8c_a28b37557462b06fbb08e707dc0ba2136}{}\label{screen_8c_a28b37557462b06fbb08e707dc0ba2136}
+access to the screen \index{screen.\+c@{screen.\+c}!B\+G\+\_\+\+C\+H\+AR@{B\+G\+\_\+\+C\+H\+AR}}
+\index{B\+G\+\_\+\+C\+H\+AR@{B\+G\+\_\+\+C\+H\+AR}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{B\+G\+\_\+\+C\+H\+AR}{BG_CHAR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+G\+\_\+\+C\+H\+AR~\textquotesingle{}$\sim$\textquotesingle{}}\hypertarget{screen_8c_a5e7c78a2c827b39d4464f2fc84058f87}{}\label{screen_8c_a5e7c78a2c827b39d4464f2fc84058f87}
+action to make \index{screen.\+c@{screen.\+c}!C\+O\+L\+U\+M\+NS@{C\+O\+L\+U\+M\+NS}}
+\index{C\+O\+L\+U\+M\+NS@{C\+O\+L\+U\+M\+NS}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+NS}{COLUMNS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+L\+U\+M\+NS~142}\hypertarget{screen_8c_a06c6c391fc11d106e9909f0401b255b1}{}\label{screen_8c_a06c6c391fc11d106e9909f0401b255b1}
+columns of the game \index{screen.\+c@{screen.\+c}!F\+G\+\_\+\+C\+H\+AR@{F\+G\+\_\+\+C\+H\+AR}}
+\index{F\+G\+\_\+\+C\+H\+AR@{F\+G\+\_\+\+C\+H\+AR}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{F\+G\+\_\+\+C\+H\+AR}{FG_CHAR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+G\+\_\+\+C\+H\+AR~\textquotesingle{} \textquotesingle{}}\hypertarget{screen_8c_a0bbf43d51e6cd6f7119cf1d0063a3a94}{}\label{screen_8c_a0bbf43d51e6cd6f7119cf1d0063a3a94}
+blank space \index{screen.\+c@{screen.\+c}!P\+R\+O\+M\+PT@{P\+R\+O\+M\+PT}}
+\index{P\+R\+O\+M\+PT@{P\+R\+O\+M\+PT}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{P\+R\+O\+M\+PT}{PROMPT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+O\+M\+PT~\char`\"{} prompt\+:$>$ \char`\"{}}\hypertarget{screen_8c_accdbea14ea06c15e271784368bd993e8}{}\label{screen_8c_accdbea14ea06c15e271784368bd993e8}
+action to make \index{screen.\+c@{screen.\+c}!R\+O\+WS@{R\+O\+WS}}
+\index{R\+O\+WS@{R\+O\+WS}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{R\+O\+WS}{ROWS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+O\+WS~37}\hypertarget{screen_8c_a3cfd3aa62338d12609f6d65bce97e9cd}{}\label{screen_8c_a3cfd3aa62338d12609f6d65bce97e9cd}
+rows of the game \index{screen.\+c@{screen.\+c}!T\+O\+T\+A\+L\+\_\+\+D\+A\+TA@{T\+O\+T\+A\+L\+\_\+\+D\+A\+TA}}
+\index{T\+O\+T\+A\+L\+\_\+\+D\+A\+TA@{T\+O\+T\+A\+L\+\_\+\+D\+A\+TA}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{T\+O\+T\+A\+L\+\_\+\+D\+A\+TA}{TOTAL_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+O\+T\+A\+L\+\_\+\+D\+A\+TA~({\bf R\+O\+WS} $\ast$ {\bf C\+O\+L\+U\+M\+NS}) + 1}\hypertarget{screen_8c_afba5c5b9f73273ce653f890bb64740b0}{}\label{screen_8c_afba5c5b9f73273ce653f890bb64740b0}
+total data of the game 
+
+\subsection{Function Documentation}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+clear@{screen\+\_\+area\+\_\+clear}}
+\index{screen\+\_\+area\+\_\+clear@{screen\+\_\+area\+\_\+clear}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+clear(\+Area $\ast$area)}{screen_area_clear(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a0950dc68cba3d491b909a8abaac1c666}{}\label{screen_8c_a0950dc68cba3d491b909a8abaac1c666}
+
+
+clears the area 
+
+Deletes everthing in the area, leaving it as if it was just created.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds@{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds}}
+\index{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds@{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds(\+Area $\ast$area)}{screen_area_cursor_is_out_of_bounds(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}int screen\+\_\+area\+\_\+cursor\+\_\+is\+\_\+out\+\_\+of\+\_\+bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}{}\label{screen_8c_ad1b32d3d54fea228f1ef0c73de4a3929}
+
+
+checks if cursor is out of the limits 
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int (data of the cursor). 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+destroy@{screen\+\_\+area\+\_\+destroy}}
+\index{screen\+\_\+area\+\_\+destroy@{screen\+\_\+area\+\_\+destroy}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+destroy(\+Area $\ast$area)}{screen_area_destroy(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}{}\label{screen_8c_aca5123ed5a7afb75e79c0001e5d1df4f}
+
+
+frees memory 
+
+Receives pointer to area and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+init@{screen\+\_\+area\+\_\+init}}
+\index{screen\+\_\+area\+\_\+init@{screen\+\_\+area\+\_\+init}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+init(int x, int y, int width, int height)}{screen_area_init(int x, int y, int width, int height)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Area}$\ast$ screen\+\_\+area\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a194528bec3ed3b57618a8f2df9bea743}{}\label{screen_8c_a194528bec3ed3b57618a8f2df9bea743}
+
+
+creates new area 
+
+Allocates memory for an area, using x and y coordinates as a start point and width and height as the size.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int (coord x). \\
+\hline
+{\em y} & int (coord y). \\
+\hline
+{\em width} & int (width of the area). \\
+\hline
+{\em height} & int (height of the area). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to area. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+puts@{screen\+\_\+area\+\_\+puts}}
+\index{screen\+\_\+area\+\_\+puts@{screen\+\_\+area\+\_\+puts}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+puts(\+Area $\ast$area, char $\ast$str)}{screen_area_puts(Area *area, char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+puts (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area, }
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}{}\label{screen_8c_a4f4cd4c7899c096d6c90cc33de9a9814}
+
+
+puts area 
+
+Starts a new line in the area.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+{\em str} & char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+reset\+\_\+cursor@{screen\+\_\+area\+\_\+reset\+\_\+cursor}}
+\index{screen\+\_\+area\+\_\+reset\+\_\+cursor@{screen\+\_\+area\+\_\+reset\+\_\+cursor}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+reset\+\_\+cursor(\+Area $\ast$area)}{screen_area_reset_cursor(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+reset\+\_\+cursor (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}{}\label{screen_8c_af77fa9df4f7170e1e3bf1c6209b7f0c2}
+
+
+resets cursor 
+
+Resets the cursor, leaving it in the 0,0 coordinates of the area.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+area\+\_\+scroll\+\_\+up@{screen\+\_\+area\+\_\+scroll\+\_\+up}}
+\index{screen\+\_\+area\+\_\+scroll\+\_\+up@{screen\+\_\+area\+\_\+scroll\+\_\+up}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+scroll\+\_\+up(\+Area $\ast$area)}{screen_area_scroll_up(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+scroll\+\_\+up (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}{}\label{screen_8c_a110e0b378730322f5a2f1dc91e65e2aa}
+
+
+scrolls up the screen area 
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+destroy@{screen\+\_\+destroy}}
+\index{screen\+\_\+destroy@{screen\+\_\+destroy}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+destroy()}{screen_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}{}\label{screen_8c_a3d6d82dde2bb4f3ddc4d276dabe313ef}
+
+
+frees memory 
+
+frees the data that screen occupied.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+gets@{screen\+\_\+gets}}
+\index{screen\+\_\+gets@{screen\+\_\+gets}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+gets(char $\ast$str)}{screen_gets(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+gets (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a57b2f852be623dca59255306c1482eb2}{}\label{screen_8c_a57b2f852be623dca59255306c1482eb2}
+
+
+gets the data 
+
+Gets the data typed in the ingame console (commands).
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & char (data of the console). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+init@{screen\+\_\+init}}
+\index{screen\+\_\+init@{screen\+\_\+init}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+init()}{screen_init()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a9dbb6c251337c03c078dc330caee48d2}{}\label{screen_8c_a9dbb6c251337c03c078dc330caee48d2}
+
+
+initialises a new screen 
+
+Destroys any previous screen and allocates memory for a new one.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+paint@{screen\+\_\+paint}}
+\index{screen\+\_\+paint@{screen\+\_\+paint}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+paint()}{screen_paint()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+paint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}{}\label{screen_8c_a3eaa0547a956d39b6c55c9593524e0d1}
+
+
+paints the screen 
+
+Prints a screen in the console.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+c@{screen.\+c}!screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars@{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars}}
+\index{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars@{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars(char $\ast$str)}{screen_utils_replaces_special_chars(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+utils\+\_\+replaces\+\_\+special\+\_\+chars (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}{}\label{screen_8c_a55dedaa3b402fef825ceb6c3a957781d}
+
+
+replaces special characters 
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & (char string). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{screen.\+c@{screen.\+c}!\+\_\+\+\_\+data@{\+\_\+\+\_\+data}}
+\index{\+\_\+\+\_\+data@{\+\_\+\+\_\+data}!screen.\+c@{screen.\+c}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+data}{__data}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ \+\_\+\+\_\+data}\hypertarget{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}{}\label{screen_8c_a34a5b96f7a2aa5db335b9fd09706cf0a}
+data of the game 

@@ -1,0 +1,135 @@
+\hypertarget{graphic__engine_8c}{}\section{src/graphic\+\_\+engine.c File Reference}
+\label{graphic__engine_8c}\index{src/graphic\+\_\+engine.\+c@{src/graphic\+\_\+engine.\+c}}
+
+
+defines the graphic engine  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}screen.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}graphic\+\_\+engine.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\\*
+Include dependency graph for graphic\+\_\+engine.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphic__engine_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Graphic__engine}{\+\_\+\+Graphic\+\_\+engine}
+\begin{DoxyCompactList}\small\item\em graphic design \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{graphic__engine_8c_a285e2a8573a9f65f505d752acacc6d2c}{S\+S\+I\+ZE}~11
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine} $\ast$ \hyperlink{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}{graphic\+\_\+engine\+\_\+create} ()
+\begin{DoxyCompactList}\small\item\em creates the graphic engine \end{DoxyCompactList}\item 
+void \hyperlink{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}{graphic\+\_\+engine\+\_\+destroy} (\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine} $\ast$ge)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+void \hyperlink{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}{graphic\+\_\+engine\+\_\+paint\+\_\+game} (\hyperlink{graphic__engine_8h_ae1bc5cdbfce93098f066274fdea49af1}{Graphic\+\_\+engine} $\ast$ge, \hyperlink{game_8h_a57156d39c530aec3fba3a9dad8c2dc6a}{Game} $\ast$game)
+\begin{DoxyCompactList}\small\item\em paints the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+defines the graphic engine 
+
+Module that contains the graphic information of the game, it is in charge of printing everything.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+07-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}!S\+S\+I\+ZE@{S\+S\+I\+ZE}}
+\index{S\+S\+I\+ZE@{S\+S\+I\+ZE}!graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}}
+\subsubsection[{\texorpdfstring{S\+S\+I\+ZE}{SSIZE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+S\+I\+ZE~11}\hypertarget{graphic__engine_8c_a285e2a8573a9f65f505d752acacc6d2c}{}\label{graphic__engine_8c_a285e2a8573a9f65f505d752acacc6d2c}
+maximum size 
+
+\subsection{Function Documentation}
+\index{graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}!graphic\+\_\+engine\+\_\+create@{graphic\+\_\+engine\+\_\+create}}
+\index{graphic\+\_\+engine\+\_\+create@{graphic\+\_\+engine\+\_\+create}!graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}}
+\subsubsection[{\texorpdfstring{graphic\+\_\+engine\+\_\+create()}{graphic_engine_create()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Graphic\+\_\+engine}$\ast$ graphic\+\_\+engine\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}{}\label{graphic__engine_8c_a8c3d9abe7282bee1d77d23ea80a4bdec}
+
+
+creates the graphic engine 
+
+Allocates the memory for a new graphic engine and declares its parts
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+pointer to a graphic engine. 
+\end{DoxyReturn}
+\index{graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}!graphic\+\_\+engine\+\_\+destroy@{graphic\+\_\+engine\+\_\+destroy}}
+\index{graphic\+\_\+engine\+\_\+destroy@{graphic\+\_\+engine\+\_\+destroy}!graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}}
+\subsubsection[{\texorpdfstring{graphic\+\_\+engine\+\_\+destroy(\+Graphic\+\_\+engine $\ast$ge)}{graphic_engine_destroy(Graphic_engine *ge)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphic\+\_\+engine\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphic\+\_\+engine} $\ast$}]{ge}
+\end{DoxyParamCaption}
+)}\hypertarget{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}{}\label{graphic__engine_8c_a5a5eac4ef2033c5ad71aa6895f362f79}
+
+
+frees memory 
+
+Frees the memory allocated for the graphic engine and its parts.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & pointer to graphic engine. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function. 
+\end{DoxyReturn}
+\index{graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}!graphic\+\_\+engine\+\_\+paint\+\_\+game@{graphic\+\_\+engine\+\_\+paint\+\_\+game}}
+\index{graphic\+\_\+engine\+\_\+paint\+\_\+game@{graphic\+\_\+engine\+\_\+paint\+\_\+game}!graphic\+\_\+engine.\+c@{graphic\+\_\+engine.\+c}}
+\subsubsection[{\texorpdfstring{graphic\+\_\+engine\+\_\+paint\+\_\+game(\+Graphic\+\_\+engine $\ast$ge, Game $\ast$game)}{graphic_engine_paint_game(Graphic_engine *ge, Game *game)}}]{\setlength{\rightskip}{0pt plus 5cm}void graphic\+\_\+engine\+\_\+paint\+\_\+game (
+\begin{DoxyParamCaption}
+\item[{{\bf Graphic\+\_\+engine} $\ast$}]{ge, }
+\item[{{\bf Game} $\ast$}]{game}
+\end{DoxyParamCaption}
+)}\hypertarget{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}{}\label{graphic__engine_8c_a0e275aa477d5fa59e903da33a2a40a5d}
+
+
+paints the game 
+
+Shows a graphic interface with the contents of the game.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em ge} & pointer to graphic engine. \\
+\hline
+{\em game} & pointer to game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void function. 
+\end{DoxyReturn}

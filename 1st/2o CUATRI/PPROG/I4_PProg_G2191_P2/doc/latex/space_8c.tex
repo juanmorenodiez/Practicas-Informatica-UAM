@@ -1,0 +1,899 @@
+\hypertarget{space_8c}{}\section{src/space.c File Reference}
+\label{space_8c}\index{src/space.\+c@{src/space.\+c}}
+
+
+Defines the space related functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}space.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}link.\+h\char`\"{}}\\*
+Include dependency graph for space.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{space_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__Space}{\+\_\+\+Space}
+\begin{DoxyCompactList}\small\item\em spaces of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{space_8c_a82ebe192d237170b770156f2b2dd0ede}{space\+\_\+get\+\_\+gdesc\+\_\+line} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$s, int line)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a3d92143458bc73e064379d54b363ffb1}{space\+\_\+set\+\_\+gdesc\+\_\+line} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$s, int line, char $\ast$c)
+\begin{DoxyCompactList}\small\item\em sets description \end{DoxyCompactList}\item 
+\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$ \hyperlink{space_8c_a162866fcea156b800fd546d0ffd271c9}{space\+\_\+create} (\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em allocates memory for a new space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}{space\+\_\+destroy} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_aab5b468f9822ab78dbe16d1321870d93}{space\+\_\+set\+\_\+name} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, char $\ast$name)
+\begin{DoxyCompactList}\small\item\em sets the name of a space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a52d48979efbb5ba49c0988ddffc33769}{space\+\_\+set\+\_\+short\+\_\+description} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em sets description \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{space_8c_aa389d6b22e635bb9d2f1a18d9cd0d1cb}{space\+\_\+get\+\_\+short\+\_\+description} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_adaea1c731830282c8a29f3477a93ac2e}{space\+\_\+set\+\_\+long\+\_\+description} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, char $\ast$description)
+\begin{DoxyCompactList}\small\item\em sets description \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{space_8c_a5c38e8f0892b1683b4f058d17ea1549d}{space\+\_\+get\+\_\+long\+\_\+description} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets description \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a9e6e3e3bac4996ac6b8bd555e52bfb26}{space\+\_\+set\+\_\+north} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a422ab9f220b4c471c44256a27377de1a}{space\+\_\+set\+\_\+south} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a860a8f3e0227955ad56d1a12f0bdc44a}{space\+\_\+set\+\_\+east} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_ad44b14cb38902cf31fa1f341beaab0db}{space\+\_\+set\+\_\+west} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_aa2707bdca8fd356ed8d15fd48e820a4f}{space\+\_\+set\+\_\+up} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_ae5b9fef52456ffccffbd73f882a56d23}{space\+\_\+set\+\_\+down} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em sets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_ab2803dc6dee6ca4360860b0b9a66b34e}{space\+\_\+set\+\_\+iluminate} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} iluminate)
+\begin{DoxyCompactList}\small\item\em sets ilumination \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{space_8c_aef4fa60815bc64dde3c16855aa470f63}{space\+\_\+get\+\_\+iluminate} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em returns the iluminated space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a97f27baaafef8eb986d167788dc84bec}{space\+\_\+set\+\_\+object} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space, \hyperlink{object_8h_a7f8bbcda919b65ce67f92fba08e0212f}{Object} $\ast$o)
+\begin{DoxyCompactList}\small\item\em sets an object for a space \end{DoxyCompactList}\item 
+int \hyperlink{space_8c_ab39ec663cd2f64cd8406f5ba6f5493ea}{space\+\_\+get\+\_\+object\+\_\+number} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets number \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{space_8c_a310c540cd6e11073f7328add1f927001}{space\+\_\+get\+\_\+name} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets the name of a space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}{space\+\_\+get\+\_\+id} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets the id of a space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_ad331fba774897900f615d9d2e8d81a90}{space\+\_\+get\+\_\+north} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_a9b86e1335c423eaad832e50d4c12cf1f}{space\+\_\+get\+\_\+south} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_a978a22b77f74bb2dab68a00571abbe0b}{space\+\_\+get\+\_\+east} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_af495ebfd5d13eba1a48cebd10992a17f}{space\+\_\+get\+\_\+west} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_a174a988b899d5a0db889a31b70763c9c}{space\+\_\+get\+\_\+up} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} \hyperlink{space_8c_ab269eab72b9ea7254044b34b1c177602}{space\+\_\+get\+\_\+down} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets location of spaces \end{DoxyCompactList}\item 
+\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} $\ast$ \hyperlink{space_8c_ab24abae4e127bf0bca596cd71ba3aad6}{space\+\_\+get\+\_\+object} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em gets an object from a space \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_ab7c8deb146adb40f1c07660e5442650e}{space\+\_\+object\+\_\+destroy} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$s, \hyperlink{types_8h_a845e604fb28f7e3d97549da3448149d3}{Id} id)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a32c27cc471df37f4fc818d65de0a56c4}{S\+T\+A\+T\+US} \hyperlink{space_8c_a18eca058da6cdf20ae5eda9d122d992e}{space\+\_\+print} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$space)
+\begin{DoxyCompactList}\small\item\em prints the spaces \end{DoxyCompactList}\item 
+\hyperlink{types_8h_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \hyperlink{space_8c_a0642818ac93d8696fa46f371b8c2801d}{space\+\_\+is\+\_\+linked} (\hyperlink{space_8h_a67533ffc2b70463baecc38fb0629bbfc}{Space} $\ast$s)
+\begin{DoxyCompactList}\small\item\em checks if space is linked \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the space related functions. 
+
+Sets the new functionality of the space module that will allow is incorporate other new complements created.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\index{space.\+c@{space.\+c}!space\+\_\+create@{space\+\_\+create}}
+\index{space\+\_\+create@{space\+\_\+create}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+create(\+Id id)}{space_create(Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Space}$\ast$ space\+\_\+create (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a162866fcea156b800fd546d0ffd271c9}{}\label{space_8c_a162866fcea156b800fd546d0ffd271c9}
+
+
+allocates memory for a new space 
+
+It creates a new space initializing the variables of the structure, checks is something goes wrong and if it does go wrong, returns N\+U\+LL.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to space, N\+U\+LL if something goes wrong. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+destroy@{space\+\_\+destroy}}
+\index{space\+\_\+destroy@{space\+\_\+destroy}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+destroy(\+Space $\ast$space)}{space_destroy(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}{}\label{space_8c_a5c70c70398923693ddbe4dfac8d72a0d}
+
+
+frees memory 
+
+Receives pointer to space and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+down@{space\+\_\+get\+\_\+down}}
+\index{space\+\_\+get\+\_\+down@{space\+\_\+get\+\_\+down}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+down(\+Space $\ast$space)}{space_get_down(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+down (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ab269eab72b9ea7254044b34b1c177602}{}\label{space_8c_ab269eab72b9ea7254044b34b1c177602}
+
+
+gets location of spaces 
+
+Returns the down space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+east@{space\+\_\+get\+\_\+east}}
+\index{space\+\_\+get\+\_\+east@{space\+\_\+get\+\_\+east}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+east(\+Space $\ast$space)}{space_get_east(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+east (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a978a22b77f74bb2dab68a00571abbe0b}{}\label{space_8c_a978a22b77f74bb2dab68a00571abbe0b}
+
+
+gets location of spaces 
+
+Returns the eastern space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+gdesc\+\_\+line@{space\+\_\+get\+\_\+gdesc\+\_\+line}}
+\index{space\+\_\+get\+\_\+gdesc\+\_\+line@{space\+\_\+get\+\_\+gdesc\+\_\+line}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+gdesc\+\_\+line(\+Space $\ast$s, int line)}{space_get_gdesc_line(Space *s, int line)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ space\+\_\+get\+\_\+gdesc\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{s, }
+\item[{int}]{line}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a82ebe192d237170b770156f2b2dd0ede}{}\label{space_8c_a82ebe192d237170b770156f2b2dd0ede}
+
+
+gets description 
+
+returns a char string with the graphic description.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to space. \\
+\hline
+{\em line} & int value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to char. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+id@{space\+\_\+get\+\_\+id}}
+\index{space\+\_\+get\+\_\+id@{space\+\_\+get\+\_\+id}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+id(\+Space $\ast$space)}{space_get_id(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}{}\label{space_8c_ac8ddfd0d8692fd852ee49698c446cb50}
+
+
+gets the id of a space 
+
+Function in charge of getting the id of a space by using a pointer to it.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if space is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+iluminate@{space\+\_\+get\+\_\+iluminate}}
+\index{space\+\_\+get\+\_\+iluminate@{space\+\_\+get\+\_\+iluminate}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+iluminate(\+Space $\ast$space)}{space_get_iluminate(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} space\+\_\+get\+\_\+iluminate (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_aef4fa60815bc64dde3c16855aa470f63}{}\label{space_8c_aef4fa60815bc64dde3c16855aa470f63}
+
+
+returns the iluminated space 
+
+It is the function in charge of returning a iluminated space that has already been set.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+long\+\_\+description@{space\+\_\+get\+\_\+long\+\_\+description}}
+\index{space\+\_\+get\+\_\+long\+\_\+description@{space\+\_\+get\+\_\+long\+\_\+description}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+long\+\_\+description(\+Space $\ast$space)}{space_get_long_description(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ space\+\_\+get\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a5c38e8f0892b1683b4f058d17ea1549d}{}\label{space_8c_a5c38e8f0892b1683b4f058d17ea1549d}
+
+
+gets description 
+
+Returns a char string that describe the space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to space (char string). 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+name@{space\+\_\+get\+\_\+name}}
+\index{space\+\_\+get\+\_\+name@{space\+\_\+get\+\_\+name}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+name(\+Space $\ast$space)}{space_get_name(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ space\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a310c540cd6e11073f7328add1f927001}{}\label{space_8c_a310c540cd6e11073f7328add1f927001}
+
+
+gets the name of a space 
+
+Function in charge of showing the name of a space that has already been set.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char (string that contains the name of the space). 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+north@{space\+\_\+get\+\_\+north}}
+\index{space\+\_\+get\+\_\+north@{space\+\_\+get\+\_\+north}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+north(\+Space $\ast$space)}{space_get_north(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+north (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ad331fba774897900f615d9d2e8d81a90}{}\label{space_8c_ad331fba774897900f615d9d2e8d81a90}
+
+
+gets location of spaces 
+
+Returns the northern space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+object@{space\+\_\+get\+\_\+object}}
+\index{space\+\_\+get\+\_\+object@{space\+\_\+get\+\_\+object}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+object(\+Space $\ast$space)}{space_get_object(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Set}$\ast$ space\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ab24abae4e127bf0bca596cd71ba3aad6}{}\label{space_8c_ab24abae4e127bf0bca596cd71ba3aad6}
+
+
+gets an object from a space 
+
+Returns a space\textquotesingle{}s set where the ids of the objects in the space are saved.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{set_8h_a6d3b7f7c92cbb4577ef3ef7ddbf93161}{Set} ==$>$ The space\textquotesingle{}s set 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+object\+\_\+number@{space\+\_\+get\+\_\+object\+\_\+number}}
+\index{space\+\_\+get\+\_\+object\+\_\+number@{space\+\_\+get\+\_\+object\+\_\+number}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+object\+\_\+number(\+Space $\ast$space)}{space_get_object_number(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}int space\+\_\+get\+\_\+object\+\_\+number (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ab39ec663cd2f64cd8406f5ba6f5493ea}{}\label{space_8c_ab39ec663cd2f64cd8406f5ba6f5493ea}
+
+
+gets number 
+
+Function in charge of getting the number of objects that are located in a space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int (number of objects). 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+short\+\_\+description@{space\+\_\+get\+\_\+short\+\_\+description}}
+\index{space\+\_\+get\+\_\+short\+\_\+description@{space\+\_\+get\+\_\+short\+\_\+description}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+short\+\_\+description(\+Space $\ast$space)}{space_get_short_description(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ space\+\_\+get\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_aa389d6b22e635bb9d2f1a18d9cd0d1cb}{}\label{space_8c_aa389d6b22e635bb9d2f1a18d9cd0d1cb}
+
+
+gets description 
+
+Returns a char string that describe the space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to space (char string). 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+south@{space\+\_\+get\+\_\+south}}
+\index{space\+\_\+get\+\_\+south@{space\+\_\+get\+\_\+south}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+south(\+Space $\ast$space)}{space_get_south(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+south (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a9b86e1335c423eaad832e50d4c12cf1f}{}\label{space_8c_a9b86e1335c423eaad832e50d4c12cf1f}
+
+
+gets location of spaces 
+
+Returns the southern space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+up@{space\+\_\+get\+\_\+up}}
+\index{space\+\_\+get\+\_\+up@{space\+\_\+get\+\_\+up}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+up(\+Space $\ast$space)}{space_get_up(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+up (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a174a988b899d5a0db889a31b70763c9c}{}\label{space_8c_a174a988b899d5a0db889a31b70763c9c}
+
+
+gets location of spaces 
+
+Returns the upper space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+get\+\_\+west@{space\+\_\+get\+\_\+west}}
+\index{space\+\_\+get\+\_\+west@{space\+\_\+get\+\_\+west}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+get\+\_\+west(\+Space $\ast$space)}{space_get_west(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} space\+\_\+get\+\_\+west (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_af495ebfd5d13eba1a48cebd10992a17f}{}\label{space_8c_af495ebfd5d13eba1a48cebd10992a17f}
+
+
+gets location of spaces 
+
+Returns the western space\textquotesingle{}s id.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id, N\+O\+\_\+\+ID if inventory is pointing N\+U\+LL. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+is\+\_\+linked@{space\+\_\+is\+\_\+linked}}
+\index{space\+\_\+is\+\_\+linked@{space\+\_\+is\+\_\+linked}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+is\+\_\+linked(\+Space $\ast$s)}{space_is_linked(Space *s)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+O\+OL} space\+\_\+is\+\_\+linked (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a0642818ac93d8696fa46f371b8c2801d}{}\label{space_8c_a0642818ac93d8696fa46f371b8c2801d}
+
+
+checks if space is linked 
+
+It determines if a space is linked to another one by using the \char`\"{}link\char`\"{} module functions.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+B\+O\+OL, F\+A\+L\+SE if when checking is not correct, if it is correct, T\+R\+UE. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+object\+\_\+destroy@{space\+\_\+object\+\_\+destroy}}
+\index{space\+\_\+object\+\_\+destroy@{space\+\_\+object\+\_\+destroy}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+object\+\_\+destroy(\+Space $\ast$s, Id id)}{space_object_destroy(Space *s, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+object\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{s, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ab7c8deb146adb40f1c07660e5442650e}{}\label{space_8c_ab7c8deb146adb40f1c07660e5442650e}
+
+
+frees memory 
+
+Receives pointer to space and frees the memory it occupied. I this case, it destroys an object from a space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to space. \\
+\hline
+{\em id} & long int. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+print@{space\+\_\+print}}
+\index{space\+\_\+print@{space\+\_\+print}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+print(\+Space $\ast$space)}{space_print(Space *space)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a18eca058da6cdf20ae5eda9d122d992e}{}\label{space_8c_a18eca058da6cdf20ae5eda9d122d992e}
+
+
+prints the spaces 
+
+Function in charge of printing spaces, in order to check that everything is working correctly.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+down@{space\+\_\+set\+\_\+down}}
+\index{space\+\_\+set\+\_\+down@{space\+\_\+set\+\_\+down}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+down(\+Space $\ast$space, Id id)}{space_set_down(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+down (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ae5b9fef52456ffccffbd73f882a56d23}{}\label{space_8c_ae5b9fef52456ffccffbd73f882a56d23}
+
+
+sets location of spaces 
+
+Modifies down link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+east@{space\+\_\+set\+\_\+east}}
+\index{space\+\_\+set\+\_\+east@{space\+\_\+set\+\_\+east}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+east(\+Space $\ast$space, Id id)}{space_set_east(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+east (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a860a8f3e0227955ad56d1a12f0bdc44a}{}\label{space_8c_a860a8f3e0227955ad56d1a12f0bdc44a}
+
+
+sets location of spaces 
+
+Modifies the eastern link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+gdesc\+\_\+line@{space\+\_\+set\+\_\+gdesc\+\_\+line}}
+\index{space\+\_\+set\+\_\+gdesc\+\_\+line@{space\+\_\+set\+\_\+gdesc\+\_\+line}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+gdesc\+\_\+line(\+Space $\ast$s, int line, char $\ast$c)}{space_set_gdesc_line(Space *s, int line, char *c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+gdesc\+\_\+line (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{s, }
+\item[{int}]{line, }
+\item[{char $\ast$}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a3d92143458bc73e064379d54b363ffb1}{}\label{space_8c_a3d92143458bc73e064379d54b363ffb1}
+
+
+sets description 
+
+Sets a status for the graphic description.
+
+\begin{DoxyAuthor}{Author}
+Juan Moreno 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & pointer to space. \\
+\hline
+{\em line} & int value. \\
+\hline
+{\em c} & pointer to char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+iluminate@{space\+\_\+set\+\_\+iluminate}}
+\index{space\+\_\+set\+\_\+iluminate@{space\+\_\+set\+\_\+iluminate}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+iluminate(\+Space $\ast$space, B\+O\+O\+L iluminate)}{space_set_iluminate(Space *space, BOOL iluminate)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+iluminate (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf B\+O\+OL}}]{iluminate}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ab2803dc6dee6ca4360860b0b9a66b34e}{}\label{space_8c_ab2803dc6dee6ca4360860b0b9a66b34e}
+
+
+sets ilumination 
+
+Adds a new functionality that enables us to iluminate spaces.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em iluminate} & Boolean. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+long\+\_\+description@{space\+\_\+set\+\_\+long\+\_\+description}}
+\index{space\+\_\+set\+\_\+long\+\_\+description@{space\+\_\+set\+\_\+long\+\_\+description}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+long\+\_\+description(\+Space $\ast$space, char $\ast$description)}{space_set_long_description(Space *space, char *description)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{char $\ast$}]{description}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_adaea1c731830282c8a29f3477a93ac2e}{}\label{space_8c_adaea1c731830282c8a29f3477a93ac2e}
+
+
+sets description 
+
+Adds a new description for an specific space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em description} & char (description of the space). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+name@{space\+\_\+set\+\_\+name}}
+\index{space\+\_\+set\+\_\+name@{space\+\_\+set\+\_\+name}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+name(\+Space $\ast$space, char $\ast$name)}{space_set_name(Space *space, char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{char $\ast$}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_aab5b468f9822ab78dbe16d1321870d93}{}\label{space_8c_aab5b468f9822ab78dbe16d1321870d93}
+
+
+sets the name of a space 
+
+Modifies a space\textquotesingle{}s name in order to set a name for that space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em name} & char (name of the space). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+north@{space\+\_\+set\+\_\+north}}
+\index{space\+\_\+set\+\_\+north@{space\+\_\+set\+\_\+north}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+north(\+Space $\ast$space, Id id)}{space_set_north(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+north (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a9e6e3e3bac4996ac6b8bd555e52bfb26}{}\label{space_8c_a9e6e3e3bac4996ac6b8bd555e52bfb26}
+
+
+sets location of spaces 
+
+Modifies the northern link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+object@{space\+\_\+set\+\_\+object}}
+\index{space\+\_\+set\+\_\+object@{space\+\_\+set\+\_\+object}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+object(\+Space $\ast$space, Object $\ast$o)}{space_set_object(Space *space, Object *o)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Object} $\ast$}]{o}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a97f27baaafef8eb986d167788dc84bec}{}\label{space_8c_a97f27baaafef8eb986d167788dc84bec}
+
+
+sets an object for a space 
+
+Adds a new id to the object set in the space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em o} & pointer to object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+short\+\_\+description@{space\+\_\+set\+\_\+short\+\_\+description}}
+\index{space\+\_\+set\+\_\+short\+\_\+description@{space\+\_\+set\+\_\+short\+\_\+description}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+short\+\_\+description(\+Space $\ast$space, char $\ast$description)}{space_set_short_description(Space *space, char *description)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{char $\ast$}]{description}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a52d48979efbb5ba49c0988ddffc33769}{}\label{space_8c_a52d48979efbb5ba49c0988ddffc33769}
+
+
+sets description 
+
+Adds a new description for an specific space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em description} & char (description of the space). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+south@{space\+\_\+set\+\_\+south}}
+\index{space\+\_\+set\+\_\+south@{space\+\_\+set\+\_\+south}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+south(\+Space $\ast$space, Id id)}{space_set_south(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+south (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_a422ab9f220b4c471c44256a27377de1a}{}\label{space_8c_a422ab9f220b4c471c44256a27377de1a}
+
+
+sets location of spaces 
+
+Modifies the southern link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+up@{space\+\_\+set\+\_\+up}}
+\index{space\+\_\+set\+\_\+up@{space\+\_\+set\+\_\+up}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+up(\+Space $\ast$space, Id id)}{space_set_up(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+up (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_aa2707bdca8fd356ed8d15fd48e820a4f}{}\label{space_8c_aa2707bdca8fd356ed8d15fd48e820a4f}
+
+
+sets location of spaces 
+
+Modifies the upper link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}
+\index{space.\+c@{space.\+c}!space\+\_\+set\+\_\+west@{space\+\_\+set\+\_\+west}}
+\index{space\+\_\+set\+\_\+west@{space\+\_\+set\+\_\+west}!space.\+c@{space.\+c}}
+\subsubsection[{\texorpdfstring{space\+\_\+set\+\_\+west(\+Space $\ast$space, Id id)}{space_set_west(Space *space, Id id)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+T\+A\+T\+US} space\+\_\+set\+\_\+west (
+\begin{DoxyParamCaption}
+\item[{{\bf Space} $\ast$}]{space, }
+\item[{{\bf Id}}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{space_8c_ad44b14cb38902cf31fa1f341beaab0db}{}\label{space_8c_ad44b14cb38902cf31fa1f341beaab0db}
+
+
+sets location of spaces 
+
+Modifies the western link with another space.
+
+\begin{DoxyAuthor}{Author}
+Dan Roife 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em space} & pointer to space. \\
+\hline
+{\em id} & (long int). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S\+T\+A\+T\+US, E\+R\+R\+OR if argument received is N\+U\+LL, if not, OK. 
+\end{DoxyReturn}

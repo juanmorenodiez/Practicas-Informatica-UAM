@@ -1,0 +1,1107 @@
+\hypertarget{space__test_8c}{}\section{src/space\+\_\+test.c File Reference}
+\label{space__test_8c}\index{src/space\+\_\+test.\+c@{src/space\+\_\+test.\+c}}
+
+
+It tests space module.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}space.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}space\+\_\+test.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}test.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}inventory.\+h\char`\"{}}\\*
+Include dependency graph for space\+\_\+test.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{space__test_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{space__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}{M\+A\+X\+\_\+\+T\+E\+S\+TS}~61
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{space__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main function for space unit tests. \end{DoxyCompactList}\item 
+void \hyperlink{space__test_8c_a69278cc022dc5688d4725f8d36317b30}{test1\+\_\+space\+\_\+create} ()
+\item 
+void \hyperlink{space__test_8c_a012cd3cf37a8d91e2d7098a264c29d65}{test2\+\_\+space\+\_\+create} ()
+\item 
+void \hyperlink{space__test_8c_af3febdc46ce54799ebfcdbc4330ee93e}{test1\+\_\+space\+\_\+destroy} ()
+\item 
+void \hyperlink{space__test_8c_ad8a5df09bd9f731be1ce6048e92e58c4}{test2\+\_\+space\+\_\+destroy} ()
+\item 
+void \hyperlink{space__test_8c_a2569bab6cfeec15f722d232bb8c78c9e}{test1\+\_\+space\+\_\+set\+\_\+name} ()
+\item 
+void \hyperlink{space__test_8c_a5a868ba017602ba6b58447cb394e81a6}{test2\+\_\+space\+\_\+set\+\_\+name} ()
+\item 
+void \hyperlink{space__test_8c_aa24a337830006e33706ab6ac1c416b47}{test3\+\_\+space\+\_\+set\+\_\+name} ()
+\item 
+void \hyperlink{space__test_8c_ad12c42523c517507566c5c68b1527689}{test1\+\_\+space\+\_\+get\+\_\+name} ()
+\item 
+void \hyperlink{space__test_8c_aee88ed31c63efc674051a4563aed86e2}{test2\+\_\+space\+\_\+get\+\_\+name} ()
+\item 
+void \hyperlink{space__test_8c_a36f278e9a36d1af63082a6aeb968a094}{test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a1e5f764e51c98d987ceb47df09ed08d7}{test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_afe042540e90d5901e352bbd4a45ec4ac}{test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_ace49b6853779ebcd4d4d403e73ad6cda}{test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a67b5e5c2289fb036c25e3618e2658954}{test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a3d3457a89f705948102cf1e5d4a7b45b}{test1\+\_\+space\+\_\+set\+\_\+north} ()
+\item 
+void \hyperlink{space__test_8c_a3bc7fe26c1e36ffd195099a9983206e1}{test2\+\_\+space\+\_\+set\+\_\+north} ()
+\item 
+void \hyperlink{space__test_8c_ac2961dcc4d7645660ca6953a70315b0a}{test3\+\_\+space\+\_\+set\+\_\+north} ()
+\item 
+void \hyperlink{space__test_8c_a3a87f1e1e173d622bfbd3bcd14e060ca}{test1\+\_\+space\+\_\+get\+\_\+north} ()
+\item 
+void \hyperlink{space__test_8c_a61891c9cebb9d26dc9f149ad8341517c}{test2\+\_\+space\+\_\+get\+\_\+north} ()
+\item 
+void \hyperlink{space__test_8c_ab1f093af4be3ca8e525d0517cc846f47}{test1\+\_\+space\+\_\+set\+\_\+east} ()
+\item 
+void \hyperlink{space__test_8c_a5df66d103388be4518c379b224f53770}{test2\+\_\+space\+\_\+set\+\_\+east} ()
+\item 
+void \hyperlink{space__test_8c_adf98486d8745110660515d14b71b5656}{test3\+\_\+space\+\_\+set\+\_\+east} ()
+\item 
+void \hyperlink{space__test_8c_a354adb2722b06ec65b7212d2736d6417}{test1\+\_\+space\+\_\+get\+\_\+east} ()
+\item 
+void \hyperlink{space__test_8c_a249293510e61c6d5465f52c14343d02b}{test2\+\_\+space\+\_\+get\+\_\+east} ()
+\item 
+void \hyperlink{space__test_8c_ab680a8797f793dffd58546074b87d21f}{test1\+\_\+space\+\_\+set\+\_\+west} ()
+\item 
+void \hyperlink{space__test_8c_aa51b05ffd99b7bbd8f2dfc23c8f85870}{test2\+\_\+space\+\_\+set\+\_\+west} ()
+\item 
+void \hyperlink{space__test_8c_a8150758940559ef958649a2fab36bee0}{test3\+\_\+space\+\_\+set\+\_\+west} ()
+\item 
+void \hyperlink{space__test_8c_a1f08c6866885bfc093717f57b1b86539}{test1\+\_\+space\+\_\+get\+\_\+west} ()
+\item 
+void \hyperlink{space__test_8c_af1cf02b01c007aec0684186b39666c32}{test2\+\_\+space\+\_\+get\+\_\+west} ()
+\item 
+void \hyperlink{space__test_8c_a21938e16547b3080e9251f960117a859}{test1\+\_\+space\+\_\+set\+\_\+south} ()
+\item 
+void \hyperlink{space__test_8c_ac9f950741f12ccfcc5ad5d9e71d3d90a}{test2\+\_\+space\+\_\+set\+\_\+south} ()
+\item 
+void \hyperlink{space__test_8c_ab2626f0045b225c79a8c5d56298e2065}{test3\+\_\+space\+\_\+set\+\_\+south} ()
+\item 
+void \hyperlink{space__test_8c_a8e345065f58565e131bdb3a9d0096ed5}{test1\+\_\+space\+\_\+get\+\_\+south} ()
+\item 
+void \hyperlink{space__test_8c_a40fe07c07c1069023b362a9e506c4c59}{test2\+\_\+space\+\_\+get\+\_\+south} ()
+\item 
+void \hyperlink{space__test_8c_a208ae9352ff979024f6ebef4e791356a}{test1\+\_\+space\+\_\+set\+\_\+object} ()
+\item 
+void \hyperlink{space__test_8c_a6349e2b547c71dee23b96d8bbf7a1806}{test2\+\_\+space\+\_\+set\+\_\+object} ()
+\item 
+void \hyperlink{space__test_8c_a4a1ca89fa511c04bb07c14edb19c17ba}{test1\+\_\+space\+\_\+get\+\_\+object} ()
+\item 
+void \hyperlink{space__test_8c_a920df9e02482f4f1e6a5ebcaec523860}{test1\+\_\+space\+\_\+get\+\_\+id} ()
+\item 
+void \hyperlink{space__test_8c_af9087176b0d3c41d83a17a4918b13e31}{test2\+\_\+space\+\_\+get\+\_\+id} ()
+\item 
+void \hyperlink{space__test_8c_a07d793d51acfebb4d3261cafbbf35a4b}{test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number} ()
+\item 
+void \hyperlink{space__test_8c_a77ab44cb3b3511ecdda66c13718d9048}{test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number} ()
+\item 
+void \hyperlink{space__test_8c_ace18d8edf7b88e4b4d3e84dfa0b244bf}{test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number} ()
+\item 
+void \hyperlink{space__test_8c_a5eac430f7edc2c3c762186580bf2f7cb}{test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a669293c8c232547b7bfc913e38856abd}{test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a1273cecbf0126415fa33af5639ee3058}{test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_aaec8bbc606d2e3294f4efbe7c102d482}{test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a102af2c9cd571ef59b393a93ecde63aa}{test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description} ()
+\item 
+void \hyperlink{space__test_8c_a43e340258ebc17b956c845dd0f4d93fa}{test1\+\_\+space\+\_\+get\+\_\+iluminate} ()
+\item 
+void \hyperlink{space__test_8c_ac3a020093f98ed086245f3f80bd4d415}{test2\+\_\+space\+\_\+get\+\_\+iluminate} ()
+\item 
+void \hyperlink{space__test_8c_af91f2dc174c3e15c5db66317f1c1a25d}{test1\+\_\+space\+\_\+set\+\_\+iluminate} ()
+\item 
+void \hyperlink{space__test_8c_a2576a23407d714fa26ce8f988a5df0e5}{test2\+\_\+space\+\_\+set\+\_\+iluminate} ()
+\item 
+void \hyperlink{space__test_8c_a087e9efe152864bbb919b3d4208f66b7}{test1\+\_\+space\+\_\+set\+\_\+up} ()
+\item 
+void \hyperlink{space__test_8c_a93508104720cd2f5ba4ac9652d8d238e}{test2\+\_\+space\+\_\+set\+\_\+up} ()
+\item 
+void \hyperlink{space__test_8c_a4b9cd940aa6ec095996f2051ee938070}{test3\+\_\+space\+\_\+set\+\_\+up} ()
+\item 
+void \hyperlink{space__test_8c_a27def98869466837b2b9e46c8979b795}{test1\+\_\+space\+\_\+get\+\_\+up} ()
+\item 
+void \hyperlink{space__test_8c_a293a03e22f1bc96f193cc84abfd23fa4}{test2\+\_\+space\+\_\+get\+\_\+up} ()
+\item 
+void \hyperlink{space__test_8c_acfdc180b8543b1fd7e320423416a7eec}{test1\+\_\+space\+\_\+set\+\_\+down} ()
+\item 
+void \hyperlink{space__test_8c_a4d579ee19e22dfc43891f0dca5db14a6}{test2\+\_\+space\+\_\+set\+\_\+down} ()
+\item 
+void \hyperlink{space__test_8c_a38591396f4d83f2f2783de8944fe93eb}{test3\+\_\+space\+\_\+set\+\_\+down} ()
+\item 
+void \hyperlink{space__test_8c_a31b56fea7bd46484d0e2e21dda7add5d}{test1\+\_\+space\+\_\+get\+\_\+down} ()
+\item 
+void \hyperlink{space__test_8c_a4390a534575e1516d30140e8e40e3b52}{test2\+\_\+space\+\_\+get\+\_\+down} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+It tests space module. 
+
+\begin{DoxyAuthor}{Author}
+Andres Mena 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+31-\/03-\/2018 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\+NU Public License 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!M\+A\+X\+\_\+\+T\+E\+S\+TS@{M\+A\+X\+\_\+\+T\+E\+S\+TS}}
+\index{M\+A\+X\+\_\+\+T\+E\+S\+TS@{M\+A\+X\+\_\+\+T\+E\+S\+TS}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+T\+E\+S\+TS}{MAX_TESTS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+T\+E\+S\+TS~61}\hypertarget{space__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}{}\label{space__test_8c_a2a77d2f2c5b698c69c19e1f8782bf709}
+Max amount of tests posible 
+
+\subsection{Function Documentation}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!main@{main}}
+\index{main@{main}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$$\ast$argv)}{main(int argc, char **argv)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}{}\label{space__test_8c_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Main function for space unit tests. 
+
+You may execute A\+LL or a S\+I\+N\+G\+LE test 1.-\/ No parameter -\/$>$ A\+LL test are executed 2.-\/ A number means a particular test (the one identified by that number) is executed \index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+create@{test1\+\_\+space\+\_\+create}}
+\index{test1\+\_\+space\+\_\+create@{test1\+\_\+space\+\_\+create}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+create()}{test1_space_create()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a69278cc022dc5688d4725f8d36317b30}{}\label{space__test_8c_a69278cc022dc5688d4725f8d36317b30}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000121}{Test}]Test space creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Non N\+U\+LL pointer to space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+destroy@{test1\+\_\+space\+\_\+destroy}}
+\index{test1\+\_\+space\+\_\+destroy@{test1\+\_\+space\+\_\+destroy}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+destroy()}{test1_space_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_af3febdc46ce54799ebfcdbc4330ee93e}{}\label{space__test_8c_af3febdc46ce54799ebfcdbc4330ee93e}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000123}{Test}]Test space destruction \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL pointer to space 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US==E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+down@{test1\+\_\+space\+\_\+get\+\_\+down}}
+\index{test1\+\_\+space\+\_\+get\+\_\+down@{test1\+\_\+space\+\_\+get\+\_\+down}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+down()}{test1_space_get_down()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a31b56fea7bd46484d0e2e21dda7add5d}{}\label{space__test_8c_a31b56fea7bd46484d0e2e21dda7add5d}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000180}{Test}]Test function for getting down space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+east@{test1\+\_\+space\+\_\+get\+\_\+east}}
+\index{test1\+\_\+space\+\_\+get\+\_\+east@{test1\+\_\+space\+\_\+get\+\_\+east}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+east()}{test1_space_get_east()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+east (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a354adb2722b06ec65b7212d2736d6417}{}\label{space__test_8c_a354adb2722b06ec65b7212d2736d6417}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000161}{Test}]Test function for getting east space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+id@{test1\+\_\+space\+\_\+get\+\_\+id}}
+\index{test1\+\_\+space\+\_\+get\+\_\+id@{test1\+\_\+space\+\_\+get\+\_\+id}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+id()}{test1_space_get_id()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a920df9e02482f4f1e6a5ebcaec523860}{}\label{space__test_8c_a920df9e02482f4f1e6a5ebcaec523860}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000125}{Test}]Test id of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+iluminate@{test1\+\_\+space\+\_\+get\+\_\+iluminate}}
+\index{test1\+\_\+space\+\_\+get\+\_\+iluminate@{test1\+\_\+space\+\_\+get\+\_\+iluminate}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+iluminate()}{test1_space_get_iluminate()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+iluminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a43e340258ebc17b956c845dd0f4d93fa}{}\label{space__test_8c_a43e340258ebc17b956c845dd0f4d93fa}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000168}{Test}]Test function for getting iluminate property of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+F\+A\+L\+SE 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description@{test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description}}
+\index{test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description@{test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description()}{test1_space_get_long_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_aaec8bbc606d2e3294f4efbe7c102d482}{}\label{space__test_8c_aaec8bbc606d2e3294f4efbe7c102d482}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000143}{Test}]Test function for description of space obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+String with name 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+name@{test1\+\_\+space\+\_\+get\+\_\+name}}
+\index{test1\+\_\+space\+\_\+get\+\_\+name@{test1\+\_\+space\+\_\+get\+\_\+name}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+name()}{test1_space_get_name()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ad12c42523c517507566c5c68b1527689}{}\label{space__test_8c_ad12c42523c517507566c5c68b1527689}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000133}{Test}]Test function for space\+\_\+name obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+String with name 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+north@{test1\+\_\+space\+\_\+get\+\_\+north}}
+\index{test1\+\_\+space\+\_\+get\+\_\+north@{test1\+\_\+space\+\_\+get\+\_\+north}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+north()}{test1_space_get_north()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+north (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a3a87f1e1e173d622bfbd3bcd14e060ca}{}\label{space__test_8c_a3a87f1e1e173d622bfbd3bcd14e060ca}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000151}{Test}]Test function for getting north space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+object@{test1\+\_\+space\+\_\+get\+\_\+object}}
+\index{test1\+\_\+space\+\_\+get\+\_\+object@{test1\+\_\+space\+\_\+get\+\_\+object}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+object()}{test1_space_get_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a4a1ca89fa511c04bb07c14edb19c17ba}{}\label{space__test_8c_a4a1ca89fa511c04bb07c14edb19c17ba}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000147}{Test}]Test function for getting objects \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and object pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Not N\+U\+LL 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number}}
+\index{test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number()}{test1_space_get_object_number()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+object\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a07d793d51acfebb4d3261cafbbf35a4b}{}\label{space__test_8c_a07d793d51acfebb4d3261cafbbf35a4b}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000127}{Test}]Test number of objects in space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description@{test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description}}
+\index{test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description@{test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description()}{test1_space_get_short_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ace49b6853779ebcd4d4d403e73ad6cda}{}\label{space__test_8c_ace49b6853779ebcd4d4d403e73ad6cda}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000138}{Test}]Test function for description of space obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+String with name 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+south@{test1\+\_\+space\+\_\+get\+\_\+south}}
+\index{test1\+\_\+space\+\_\+get\+\_\+south@{test1\+\_\+space\+\_\+get\+\_\+south}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+south()}{test1_space_get_south()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+south (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a8e345065f58565e131bdb3a9d0096ed5}{}\label{space__test_8c_a8e345065f58565e131bdb3a9d0096ed5}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000156}{Test}]Test function for getting south space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+up@{test1\+\_\+space\+\_\+get\+\_\+up}}
+\index{test1\+\_\+space\+\_\+get\+\_\+up@{test1\+\_\+space\+\_\+get\+\_\+up}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+up()}{test1_space_get_up()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a27def98869466837b2b9e46c8979b795}{}\label{space__test_8c_a27def98869466837b2b9e46c8979b795}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000175}{Test}]Test function for getting up space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+get\+\_\+west@{test1\+\_\+space\+\_\+get\+\_\+west}}
+\index{test1\+\_\+space\+\_\+get\+\_\+west@{test1\+\_\+space\+\_\+get\+\_\+west}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+get\+\_\+west()}{test1_space_get_west()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+get\+\_\+west (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a1f08c6866885bfc093717f57b1b86539}{}\label{space__test_8c_a1f08c6866885bfc093717f57b1b86539}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000166}{Test}]Test function for getting west space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+down@{test1\+\_\+space\+\_\+set\+\_\+down}}
+\index{test1\+\_\+space\+\_\+set\+\_\+down@{test1\+\_\+space\+\_\+set\+\_\+down}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+down()}{test1_space_set_down()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_acfdc180b8543b1fd7e320423416a7eec}{}\label{space__test_8c_acfdc180b8543b1fd7e320423416a7eec}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000177}{Test}]Test function for setting down space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+east@{test1\+\_\+space\+\_\+set\+\_\+east}}
+\index{test1\+\_\+space\+\_\+set\+\_\+east@{test1\+\_\+space\+\_\+set\+\_\+east}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+east()}{test1_space_set_east()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+east (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ab1f093af4be3ca8e525d0517cc846f47}{}\label{space__test_8c_ab1f093af4be3ca8e525d0517cc846f47}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000158}{Test}]Test function for setting east space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+iluminate@{test1\+\_\+space\+\_\+set\+\_\+iluminate}}
+\index{test1\+\_\+space\+\_\+set\+\_\+iluminate@{test1\+\_\+space\+\_\+set\+\_\+iluminate}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+iluminate()}{test1_space_set_iluminate()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+iluminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_af91f2dc174c3e15c5db66317f1c1a25d}{}\label{space__test_8c_af91f2dc174c3e15c5db66317f1c1a25d}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000170}{Test}]Test function for setting iluminate property of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and F\+A\+L\+SE 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+F\+A\+L\+SE 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description}}
+\index{test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description()}{test1_space_set_long_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a5eac430f7edc2c3c762186580bf2f7cb}{}\label{space__test_8c_a5eac430f7edc2c3c762186580bf2f7cb}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000140}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+String of characters 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+name@{test1\+\_\+space\+\_\+set\+\_\+name}}
+\index{test1\+\_\+space\+\_\+set\+\_\+name@{test1\+\_\+space\+\_\+set\+\_\+name}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+name()}{test1_space_set_name()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a2569bab6cfeec15f722d232bb8c78c9e}{}\label{space__test_8c_a2569bab6cfeec15f722d232bb8c78c9e}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000130}{Test}]Test function for space\+\_\+name setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+String with space name 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ouput==OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+north@{test1\+\_\+space\+\_\+set\+\_\+north}}
+\index{test1\+\_\+space\+\_\+set\+\_\+north@{test1\+\_\+space\+\_\+set\+\_\+north}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+north()}{test1_space_set_north()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+north (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a3d3457a89f705948102cf1e5d4a7b45b}{}\label{space__test_8c_a3d3457a89f705948102cf1e5d4a7b45b}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000148}{Test}]Test function for setting north space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+object@{test1\+\_\+space\+\_\+set\+\_\+object}}
+\index{test1\+\_\+space\+\_\+set\+\_\+object@{test1\+\_\+space\+\_\+set\+\_\+object}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+object()}{test1_space_set_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a208ae9352ff979024f6ebef4e791356a}{}\label{space__test_8c_a208ae9352ff979024f6ebef4e791356a}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000145}{Test}]Test function for setting objects \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL and object pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description}}
+\index{test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description()}{test1_space_set_short_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a36f278e9a36d1af63082a6aeb968a094}{}\label{space__test_8c_a36f278e9a36d1af63082a6aeb968a094}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000135}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+String of characters 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+south@{test1\+\_\+space\+\_\+set\+\_\+south}}
+\index{test1\+\_\+space\+\_\+set\+\_\+south@{test1\+\_\+space\+\_\+set\+\_\+south}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+south()}{test1_space_set_south()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+south (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a21938e16547b3080e9251f960117a859}{}\label{space__test_8c_a21938e16547b3080e9251f960117a859}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000153}{Test}]Test function for setting south space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+up@{test1\+\_\+space\+\_\+set\+\_\+up}}
+\index{test1\+\_\+space\+\_\+set\+\_\+up@{test1\+\_\+space\+\_\+set\+\_\+up}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+up()}{test1_space_set_up()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a087e9efe152864bbb919b3d4208f66b7}{}\label{space__test_8c_a087e9efe152864bbb919b3d4208f66b7}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000172}{Test}]Test function for setting up space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test1\+\_\+space\+\_\+set\+\_\+west@{test1\+\_\+space\+\_\+set\+\_\+west}}
+\index{test1\+\_\+space\+\_\+set\+\_\+west@{test1\+\_\+space\+\_\+set\+\_\+west}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test1\+\_\+space\+\_\+set\+\_\+west()}{test1_space_set_west()}}]{\setlength{\rightskip}{0pt plus 5cm}void test1\+\_\+space\+\_\+set\+\_\+west (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ab680a8797f793dffd58546074b87d21f}{}\label{space__test_8c_ab680a8797f793dffd58546074b87d21f}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000163}{Test}]Test function for setting west space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+create@{test2\+\_\+space\+\_\+create}}
+\index{test2\+\_\+space\+\_\+create@{test2\+\_\+space\+\_\+create}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+create()}{test2_space_create()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a012cd3cf37a8d91e2d7098a264c29d65}{}\label{space__test_8c_a012cd3cf37a8d91e2d7098a264c29d65}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000122}{Test}]Test space creation \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Space\+\_\+\+ID == Supplied Space Id 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+destroy@{test2\+\_\+space\+\_\+destroy}}
+\index{test2\+\_\+space\+\_\+destroy@{test2\+\_\+space\+\_\+destroy}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+destroy()}{test2_space_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ad8a5df09bd9f731be1ce6048e92e58c4}{}\label{space__test_8c_ad8a5df09bd9f731be1ce6048e92e58c4}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000124}{Test}]Test space destruction \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US==OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+down@{test2\+\_\+space\+\_\+get\+\_\+down}}
+\index{test2\+\_\+space\+\_\+get\+\_\+down@{test2\+\_\+space\+\_\+get\+\_\+down}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+down()}{test2_space_get_down()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a4390a534575e1516d30140e8e40e3b52}{}\label{space__test_8c_a4390a534575e1516d30140e8e40e3b52}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000181}{Test}]Test function for getting down space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of down space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+east@{test2\+\_\+space\+\_\+get\+\_\+east}}
+\index{test2\+\_\+space\+\_\+get\+\_\+east@{test2\+\_\+space\+\_\+get\+\_\+east}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+east()}{test2_space_get_east()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+east (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a249293510e61c6d5465f52c14343d02b}{}\label{space__test_8c_a249293510e61c6d5465f52c14343d02b}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000162}{Test}]Test function for getting east space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of east space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+id@{test2\+\_\+space\+\_\+get\+\_\+id}}
+\index{test2\+\_\+space\+\_\+get\+\_\+id@{test2\+\_\+space\+\_\+get\+\_\+id}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+id()}{test2_space_get_id()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_af9087176b0d3c41d83a17a4918b13e31}{}\label{space__test_8c_af9087176b0d3c41d83a17a4918b13e31}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000126}{Test}]Test id of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer not N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Id of the space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+iluminate@{test2\+\_\+space\+\_\+get\+\_\+iluminate}}
+\index{test2\+\_\+space\+\_\+get\+\_\+iluminate@{test2\+\_\+space\+\_\+get\+\_\+iluminate}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+iluminate()}{test2_space_get_iluminate()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+iluminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ac3a020093f98ed086245f3f80bd4d415}{}\label{space__test_8c_ac3a020093f98ed086245f3f80bd4d415}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000169}{Test}]Test function for getting iluminate property of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+null Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+F\+A\+L\+SE 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description@{test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description}}
+\index{test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description@{test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description()}{test2_space_get_long_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a102af2c9cd571ef59b393a93ecde63aa}{}\label{space__test_8c_a102af2c9cd571ef59b393a93ecde63aa}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000144}{Test}]Test function for description of space obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+U\+LL 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+name@{test2\+\_\+space\+\_\+get\+\_\+name}}
+\index{test2\+\_\+space\+\_\+get\+\_\+name@{test2\+\_\+space\+\_\+get\+\_\+name}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+name()}{test2_space_get_name()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_aee88ed31c63efc674051a4563aed86e2}{}\label{space__test_8c_aee88ed31c63efc674051a4563aed86e2}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000134}{Test}]Test function for space\+\_\+name obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+U\+LL 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+north@{test2\+\_\+space\+\_\+get\+\_\+north}}
+\index{test2\+\_\+space\+\_\+get\+\_\+north@{test2\+\_\+space\+\_\+get\+\_\+north}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+north()}{test2_space_get_north()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+north (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a61891c9cebb9d26dc9f149ad8341517c}{}\label{space__test_8c_a61891c9cebb9d26dc9f149ad8341517c}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000152}{Test}]Test function for getting north space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of north space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number}}
+\index{test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number()}{test2_space_get_object_number()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+object\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a77ab44cb3b3511ecdda66c13718d9048}{}\label{space__test_8c_a77ab44cb3b3511ecdda66c13718d9048}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000128}{Test}]Test number of objects in space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space without objects pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+O\+\_\+\+ID 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description@{test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description}}
+\index{test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description@{test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description()}{test2_space_get_short_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a67b5e5c2289fb036c25e3618e2658954}{}\label{space__test_8c_a67b5e5c2289fb036c25e3618e2658954}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000139}{Test}]Test function for description of space obtaining \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+N\+U\+LL 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+south@{test2\+\_\+space\+\_\+get\+\_\+south}}
+\index{test2\+\_\+space\+\_\+get\+\_\+south@{test2\+\_\+space\+\_\+get\+\_\+south}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+south()}{test2_space_get_south()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+south (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a40fe07c07c1069023b362a9e506c4c59}{}\label{space__test_8c_a40fe07c07c1069023b362a9e506c4c59}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000157}{Test}]Test function for getting south space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of south space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+up@{test2\+\_\+space\+\_\+get\+\_\+up}}
+\index{test2\+\_\+space\+\_\+get\+\_\+up@{test2\+\_\+space\+\_\+get\+\_\+up}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+up()}{test2_space_get_up()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a293a03e22f1bc96f193cc84abfd23fa4}{}\label{space__test_8c_a293a03e22f1bc96f193cc84abfd23fa4}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000176}{Test}]Test function for getting up space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of up space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+get\+\_\+west@{test2\+\_\+space\+\_\+get\+\_\+west}}
+\index{test2\+\_\+space\+\_\+get\+\_\+west@{test2\+\_\+space\+\_\+get\+\_\+west}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+get\+\_\+west()}{test2_space_get_west()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+get\+\_\+west (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_af1cf02b01c007aec0684186b39666c32}{}\label{space__test_8c_af1cf02b01c007aec0684186b39666c32}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000167}{Test}]Test function for getting west space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+ID of west space 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+down@{test2\+\_\+space\+\_\+set\+\_\+down}}
+\index{test2\+\_\+space\+\_\+set\+\_\+down@{test2\+\_\+space\+\_\+set\+\_\+down}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+down()}{test2_space_set_down()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a4d579ee19e22dfc43891f0dca5db14a6}{}\label{space__test_8c_a4d579ee19e22dfc43891f0dca5db14a6}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000178}{Test}]Test function for setting down space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+east@{test2\+\_\+space\+\_\+set\+\_\+east}}
+\index{test2\+\_\+space\+\_\+set\+\_\+east@{test2\+\_\+space\+\_\+set\+\_\+east}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+east()}{test2_space_set_east()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+east (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a5df66d103388be4518c379b224f53770}{}\label{space__test_8c_a5df66d103388be4518c379b224f53770}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000159}{Test}]Test function for setting east space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+iluminate@{test2\+\_\+space\+\_\+set\+\_\+iluminate}}
+\index{test2\+\_\+space\+\_\+set\+\_\+iluminate@{test2\+\_\+space\+\_\+set\+\_\+iluminate}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+iluminate()}{test2_space_set_iluminate()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+iluminate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a2576a23407d714fa26ce8f988a5df0e5}{}\label{space__test_8c_a2576a23407d714fa26ce8f988a5df0e5}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000171}{Test}]Test function for setting iluminate property of space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+null Space pointer and T\+R\+UE 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+T\+R\+UE 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description}}
+\index{test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description()}{test2_space_set_long_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a669293c8c232547b7bfc913e38856abd}{}\label{space__test_8c_a669293c8c232547b7bfc913e38856abd}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000141}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+name@{test2\+\_\+space\+\_\+set\+\_\+name}}
+\index{test2\+\_\+space\+\_\+set\+\_\+name@{test2\+\_\+space\+\_\+set\+\_\+name}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+name()}{test2_space_set_name()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a5a868ba017602ba6b58447cb394e81a6}{}\label{space__test_8c_a5a868ba017602ba6b58447cb394e81a6}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000131}{Test}]Test function for space\+\_\+name setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer = N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+north@{test2\+\_\+space\+\_\+set\+\_\+north}}
+\index{test2\+\_\+space\+\_\+set\+\_\+north@{test2\+\_\+space\+\_\+set\+\_\+north}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+north()}{test2_space_set_north()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+north (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a3bc7fe26c1e36ffd195099a9983206e1}{}\label{space__test_8c_a3bc7fe26c1e36ffd195099a9983206e1}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000149}{Test}]Test function for setting north space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+object@{test2\+\_\+space\+\_\+set\+\_\+object}}
+\index{test2\+\_\+space\+\_\+set\+\_\+object@{test2\+\_\+space\+\_\+set\+\_\+object}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+object()}{test2_space_set_object()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a6349e2b547c71dee23b96d8bbf7a1806}{}\label{space__test_8c_a6349e2b547c71dee23b96d8bbf7a1806}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000146}{Test}]Test function for setting objects \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and object pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description}}
+\index{test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description()}{test2_space_set_short_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a1e5f764e51c98d987ceb47df09ed08d7}{}\label{space__test_8c_a1e5f764e51c98d987ceb47df09ed08d7}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000136}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL space pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+south@{test2\+\_\+space\+\_\+set\+\_\+south}}
+\index{test2\+\_\+space\+\_\+set\+\_\+south@{test2\+\_\+space\+\_\+set\+\_\+south}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+south()}{test2_space_set_south()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+south (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ac9f950741f12ccfcc5ad5d9e71d3d90a}{}\label{space__test_8c_ac9f950741f12ccfcc5ad5d9e71d3d90a}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000154}{Test}]Test function for setting south space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+up@{test2\+\_\+space\+\_\+set\+\_\+up}}
+\index{test2\+\_\+space\+\_\+set\+\_\+up@{test2\+\_\+space\+\_\+set\+\_\+up}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+up()}{test2_space_set_up()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a93508104720cd2f5ba4ac9652d8d238e}{}\label{space__test_8c_a93508104720cd2f5ba4ac9652d8d238e}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000173}{Test}]Test function for setting up space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test2\+\_\+space\+\_\+set\+\_\+west@{test2\+\_\+space\+\_\+set\+\_\+west}}
+\index{test2\+\_\+space\+\_\+set\+\_\+west@{test2\+\_\+space\+\_\+set\+\_\+west}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test2\+\_\+space\+\_\+set\+\_\+west()}{test2_space_set_west()}}]{\setlength{\rightskip}{0pt plus 5cm}void test2\+\_\+space\+\_\+set\+\_\+west (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_aa51b05ffd99b7bbd8f2dfc23c8f85870}{}\label{space__test_8c_aa51b05ffd99b7bbd8f2dfc23c8f85870}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000164}{Test}]Test function for setting west space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and N\+O\+\_\+\+ID 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number}}
+\index{test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number@{test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number()}{test3_space_get_object_number()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+get\+\_\+object\+\_\+number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ace18d8edf7b88e4b4d3e84dfa0b244bf}{}\label{space__test_8c_ace18d8edf7b88e4b4d3e84dfa0b244bf}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000129}{Test}]Test number of objects in space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space (with one object) pointer 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Number of objects in the space (1) 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+down@{test3\+\_\+space\+\_\+set\+\_\+down}}
+\index{test3\+\_\+space\+\_\+set\+\_\+down@{test3\+\_\+space\+\_\+set\+\_\+down}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+down()}{test3_space_set_down()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+down (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a38591396f4d83f2f2783de8944fe93eb}{}\label{space__test_8c_a38591396f4d83f2f2783de8944fe93eb}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000179}{Test}]Test function for setting down space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+east@{test3\+\_\+space\+\_\+set\+\_\+east}}
+\index{test3\+\_\+space\+\_\+set\+\_\+east@{test3\+\_\+space\+\_\+set\+\_\+east}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+east()}{test3_space_set_east()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+east (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_adf98486d8745110660515d14b71b5656}{}\label{space__test_8c_adf98486d8745110660515d14b71b5656}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000160}{Test}]Test function for setting east space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description}}
+\index{test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description@{test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description()}{test3_space_set_long_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+long\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a1273cecbf0126415fa33af5639ee3058}{}\label{space__test_8c_a1273cecbf0126415fa33af5639ee3058}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000142}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+String of characters N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+name@{test3\+\_\+space\+\_\+set\+\_\+name}}
+\index{test3\+\_\+space\+\_\+set\+\_\+name@{test3\+\_\+space\+\_\+set\+\_\+name}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+name()}{test3_space_set_name()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_aa24a337830006e33706ab6ac1c416b47}{}\label{space__test_8c_aa24a337830006e33706ab6ac1c416b47}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000132}{Test}]Test function for space\+\_\+name setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+N\+U\+LL string 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+north@{test3\+\_\+space\+\_\+set\+\_\+north}}
+\index{test3\+\_\+space\+\_\+set\+\_\+north@{test3\+\_\+space\+\_\+set\+\_\+north}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+north()}{test3_space_set_north()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+north (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ac2961dcc4d7645660ca6953a70315b0a}{}\label{space__test_8c_ac2961dcc4d7645660ca6953a70315b0a}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000150}{Test}]Test function for setting north space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description}}
+\index{test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description@{test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description()}{test3_space_set_short_description()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+short\+\_\+description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_afe042540e90d5901e352bbd4a45ec4ac}{}\label{space__test_8c_afe042540e90d5901e352bbd4a45ec4ac}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000137}{Test}]Test function for description of space setting \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+String of characters N\+U\+LL 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+S\+T\+A\+T\+US=E\+R\+R\+OR 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+south@{test3\+\_\+space\+\_\+set\+\_\+south}}
+\index{test3\+\_\+space\+\_\+set\+\_\+south@{test3\+\_\+space\+\_\+set\+\_\+south}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+south()}{test3_space_set_south()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+south (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_ab2626f0045b225c79a8c5d56298e2065}{}\label{space__test_8c_ab2626f0045b225c79a8c5d56298e2065}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000155}{Test}]Test function for setting south space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+up@{test3\+\_\+space\+\_\+set\+\_\+up}}
+\index{test3\+\_\+space\+\_\+set\+\_\+up@{test3\+\_\+space\+\_\+set\+\_\+up}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+up()}{test3_space_set_up()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a4b9cd940aa6ec095996f2051ee938070}{}\label{space__test_8c_a4b9cd940aa6ec095996f2051ee938070}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000174}{Test}]Test function for setting up space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}
+\index{space\+\_\+test.\+c@{space\+\_\+test.\+c}!test3\+\_\+space\+\_\+set\+\_\+west@{test3\+\_\+space\+\_\+set\+\_\+west}}
+\index{test3\+\_\+space\+\_\+set\+\_\+west@{test3\+\_\+space\+\_\+set\+\_\+west}!space\+\_\+test.\+c@{space\+\_\+test.\+c}}
+\subsubsection[{\texorpdfstring{test3\+\_\+space\+\_\+set\+\_\+west()}{test3_space_set_west()}}]{\setlength{\rightskip}{0pt plus 5cm}void test3\+\_\+space\+\_\+set\+\_\+west (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{space__test_8c_a8150758940559ef958649a2fab36bee0}{}\label{space__test_8c_a8150758940559ef958649a2fab36bee0}
+\begin{DoxyRefDesc}{Test}
+\item[\hyperlink{test__test000165}{Test}]Test function for setting west space \end{DoxyRefDesc}
+\begin{DoxyPrecond}{Precondition}
+Space pointer and id 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+OK 
+\end{DoxyPostcond}

@@ -1,0 +1,32 @@
+Ejercicio 3
+
+a) No se puede saber a priori que imprimirá el texto porque hay dos salidas posibles ya que el proceso padre y el 
+proceso hijo estan siendo ejecutados de forma concurrente. Entonces no sabemos a que proceso da preferencia el
+sistema operativo.
+
+b) else if(pid ==  0)
+		{
+			printf("HIJO %d\n", getpid());
+			printf("PADRE %d\n", getpid());
+			exit(EXIT_SUCCESS);
+		}
+
+c) 
+
+Ejercicio 4
+
+a) Deja procesos huérfanos porque debe de haber un wait por cada hijo que se crea y no lo hay.
+
+b) else if(pid >  0)
+		{
+			printf("PADRE %d\n", i);
+			wait(NULL);
+		}
+
+Ejercicio 5
+
+a) Cuando ejecutamos el programa, primero se reserva memoria para una cadena de caracteres. A continuación, el padre tiene un hijo (se crea una copia del proceso padre, reservando un espacio de memoria para el hijo). El proceso hijo ejecuta una sentencia en la que se copia nuestra frase “hola” en el string para el que habíamos reservado memoria (la cadena que estamos llenando se encuentra en la zona de memoria que ha reservado el proceso hijo para datos). El proceso padre, intenta imprimir lo que hay en la cadena para la cual hemos reservado memoria al principio del programa, sin embargo, esta cadena está vacía, ya que el proceso hijo había llenado la string en la zona de memoria que ha reservado él mismo, diferente a la del proceso padre.
+
+5b) la memoria hay que liberarla en ambos, ya que al crear un proceso hijo se ha reservado una zona de memoria para este, ya que el hijo tiene su propia entrada en el BCP, pilas (de so y de usuario), y datos. Por ello, el string esta reservado tanto en el proceso padre como en el hijo. 
+
+	

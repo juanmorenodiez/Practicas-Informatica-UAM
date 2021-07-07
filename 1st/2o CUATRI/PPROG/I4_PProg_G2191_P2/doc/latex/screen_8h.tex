@@ -1,0 +1,294 @@
+\hypertarget{screen_8h}{}\section{include/screen.h File Reference}
+\label{screen_8h}\index{include/screen.\+h@{include/screen.\+h}}
+
+
+Defines the screen.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{screen_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{screen_8h_aab63df3ae7b979d59ea0188055ea0763}{S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR}~80
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct__Area}{\+\_\+\+Area} \hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area}
+\begin{DoxyCompactList}\small\item\em screen of the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{screen_8h_a9dbb6c251337c03c078dc330caee48d2}{screen\+\_\+init} ()
+\begin{DoxyCompactList}\small\item\em initialises a new screen \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a3d6d82dde2bb4f3ddc4d276dabe313ef}{screen\+\_\+destroy} ()
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a3eaa0547a956d39b6c55c9593524e0d1}{screen\+\_\+paint} ()
+\begin{DoxyCompactList}\small\item\em paints the screen \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a57b2f852be623dca59255306c1482eb2}{screen\+\_\+gets} (char $\ast$str)
+\begin{DoxyCompactList}\small\item\em gets the data \end{DoxyCompactList}\item 
+\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$ \hyperlink{screen_8h_a194528bec3ed3b57618a8f2df9bea743}{screen\+\_\+area\+\_\+init} (int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em creates new area \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_aca5123ed5a7afb75e79c0001e5d1df4f}{screen\+\_\+area\+\_\+destroy} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em frees memory \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a0950dc68cba3d491b909a8abaac1c666}{screen\+\_\+area\+\_\+clear} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em clears the area \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_af77fa9df4f7170e1e3bf1c6209b7f0c2}{screen\+\_\+area\+\_\+reset\+\_\+cursor} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area)
+\begin{DoxyCompactList}\small\item\em resets cursor \end{DoxyCompactList}\item 
+void \hyperlink{screen_8h_a4f4cd4c7899c096d6c90cc33de9a9814}{screen\+\_\+area\+\_\+puts} (\hyperlink{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{Area} $\ast$area, char $\ast$str)
+\begin{DoxyCompactList}\small\item\em puts area \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the screen. 
+
+Composes the screen of the game which is the visual part where we will be seeing every element of the game.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08-\/04-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\index{screen.\+h@{screen.\+h}!S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR@{S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR@{S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR}{SCREEN_MAX_STR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+R\+E\+E\+N\+\_\+\+M\+A\+X\+\_\+\+S\+TR~80}\hypertarget{screen_8h_aab63df3ae7b979d59ea0188055ea0763}{}\label{screen_8h_aab63df3ae7b979d59ea0188055ea0763}
+max str of the screen 
+
+\subsection{Typedef Documentation}
+\index{screen.\+h@{screen.\+h}!Area@{Area}}
+\index{Area@{Area}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{Area}{Area}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \+\_\+\+Area} {\bf Area}}\hypertarget{screen_8h_acfdfc42f6522d75fa3c16713afde8127}{}\label{screen_8h_acfdfc42f6522d75fa3c16713afde8127}
+
+
+screen of the game 
+
+Struct for storing the variables that compose the screen of the game. 
+
+\subsection{Function Documentation}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+area\+\_\+clear@{screen\+\_\+area\+\_\+clear}}
+\index{screen\+\_\+area\+\_\+clear@{screen\+\_\+area\+\_\+clear}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+clear(\+Area $\ast$area)}{screen_area_clear(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+clear (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a0950dc68cba3d491b909a8abaac1c666}{}\label{screen_8h_a0950dc68cba3d491b909a8abaac1c666}
+
+
+clears the area 
+
+Deletes everthing in the area, leaving it as if it was just created.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+area\+\_\+destroy@{screen\+\_\+area\+\_\+destroy}}
+\index{screen\+\_\+area\+\_\+destroy@{screen\+\_\+area\+\_\+destroy}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+destroy(\+Area $\ast$area)}{screen_area_destroy(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+destroy (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_aca5123ed5a7afb75e79c0001e5d1df4f}{}\label{screen_8h_aca5123ed5a7afb75e79c0001e5d1df4f}
+
+
+frees memory 
+
+Receives pointer to area and frees the memory it occupied.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+area\+\_\+init@{screen\+\_\+area\+\_\+init}}
+\index{screen\+\_\+area\+\_\+init@{screen\+\_\+area\+\_\+init}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+init(int x, int y, int width, int height)}{screen_area_init(int x, int y, int width, int height)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Area}$\ast$ screen\+\_\+area\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a194528bec3ed3b57618a8f2df9bea743}{}\label{screen_8h_a194528bec3ed3b57618a8f2df9bea743}
+
+
+creates new area 
+
+Allocates memory for an area, using x and y coordinates as a start point and width and height as the size.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & int (coord x). \\
+\hline
+{\em y} & int (coord y). \\
+\hline
+{\em width} & int (width of the area). \\
+\hline
+{\em height} & int (height of the area). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to area. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+area\+\_\+puts@{screen\+\_\+area\+\_\+puts}}
+\index{screen\+\_\+area\+\_\+puts@{screen\+\_\+area\+\_\+puts}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+puts(\+Area $\ast$area, char $\ast$str)}{screen_area_puts(Area *area, char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+puts (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area, }
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a4f4cd4c7899c096d6c90cc33de9a9814}{}\label{screen_8h_a4f4cd4c7899c096d6c90cc33de9a9814}
+
+
+puts area 
+
+Starts a new line in the area.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+{\em str} & char. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+area\+\_\+reset\+\_\+cursor@{screen\+\_\+area\+\_\+reset\+\_\+cursor}}
+\index{screen\+\_\+area\+\_\+reset\+\_\+cursor@{screen\+\_\+area\+\_\+reset\+\_\+cursor}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+area\+\_\+reset\+\_\+cursor(\+Area $\ast$area)}{screen_area_reset_cursor(Area *area)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+area\+\_\+reset\+\_\+cursor (
+\begin{DoxyParamCaption}
+\item[{{\bf Area} $\ast$}]{area}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_af77fa9df4f7170e1e3bf1c6209b7f0c2}{}\label{screen_8h_af77fa9df4f7170e1e3bf1c6209b7f0c2}
+
+
+resets cursor 
+
+Resets the cursor, leaving it in the 0,0 coordinates of the area.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em area} & pointer to area. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+destroy@{screen\+\_\+destroy}}
+\index{screen\+\_\+destroy@{screen\+\_\+destroy}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+destroy()}{screen_destroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a3d6d82dde2bb4f3ddc4d276dabe313ef}{}\label{screen_8h_a3d6d82dde2bb4f3ddc4d276dabe313ef}
+
+
+frees memory 
+
+frees the data that screen occupied.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+gets@{screen\+\_\+gets}}
+\index{screen\+\_\+gets@{screen\+\_\+gets}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+gets(char $\ast$str)}{screen_gets(char *str)}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+gets (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a57b2f852be623dca59255306c1482eb2}{}\label{screen_8h_a57b2f852be623dca59255306c1482eb2}
+
+
+gets the data 
+
+Gets the data typed in the ingame console (commands).
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & char (data of the console). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+init@{screen\+\_\+init}}
+\index{screen\+\_\+init@{screen\+\_\+init}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+init()}{screen_init()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a9dbb6c251337c03c078dc330caee48d2}{}\label{screen_8h_a9dbb6c251337c03c078dc330caee48d2}
+
+
+initialises a new screen 
+
+Destroys any previous screen and allocates memory for a new one.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
+\index{screen.\+h@{screen.\+h}!screen\+\_\+paint@{screen\+\_\+paint}}
+\index{screen\+\_\+paint@{screen\+\_\+paint}!screen.\+h@{screen.\+h}}
+\subsubsection[{\texorpdfstring{screen\+\_\+paint()}{screen_paint()}}]{\setlength{\rightskip}{0pt plus 5cm}void screen\+\_\+paint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{screen_8h_a3eaa0547a956d39b6c55c9593524e0d1}{}\label{screen_8h_a3eaa0547a956d39b6c55c9593524e0d1}
+
+
+paints the screen 
+
+Prints a screen in the console.
+
+\begin{DoxyAuthor}{Author}
+Andrés Mena 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void. 
+\end{DoxyReturn}
